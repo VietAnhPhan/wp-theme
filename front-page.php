@@ -23,39 +23,38 @@ get_header();
         <button class="next"></button>
     </div>
 </div>
-<div class="tieuchi container">
-    <div class="tieuchi-wrapper flex flex-wrap gap-laptop-2 container">
-        <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
-            <span class="icon"></span>
-            <span class="description text-bold">nhân viên</span>
-            <span class="number main-color text-bold">2000+</span>
-            <i class="fa-solid fa-caret-down text-white"></i>
+<div class="tieuchi">
+    <div class="container">
+        <div class="tieuchi-wrapper flex flex-wrap gap-laptop-2 container">
+            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
+                <span class="icon"></span>
+                <span class="description text-bold">nhân viên</span>
+                <span class="number main-color text-bold">2000+</span>
+                <i class="fa-solid fa-caret-down text-white"></i>
+            </div>
+            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
+                <span class="icon"></span>
+                <span class="description text-bold">khách hàng</span>
+                <span class="number main-color text-bold">1000+</span>
+                <i class="fa-solid fa-caret-down text-white"></i>
+            </div>
+            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
+                <span class="icon"></span>
+                <span class="description text-bold">chi nhánh</span>
+                <span class="number main-color text-bold">30+</span>
+                <i class="fa-solid fa-caret-down text-white"></i>
+            </div>
+            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
+                <span class="icon"></span>
+                <span class="description text-bold">năm kinh nghiệm</span>
+                <span class="number main-color text-bold">10+</span>
+                <i class="fa-solid fa-caret-down text-white"></i>
+            </div>
         </div>
-        <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
-            <span class="icon"></span>
-
-            <span class="description text-bold">khách hàng</span>
-            <span class="number main-color text-bold">1000+</span>
-            <i class="fa-solid fa-caret-down text-white"></i>
+        <div class="tieuchi-convince">
+            <p class="text-white text-bold fs-l">Với hơn 10 năm kinh nghiệm trong nghề, việt bảo long cung cấp</p>
+            <p class="main-color text-bold fs-xl">DỊCH VỤ BẢO VỆ CHUYÊN NGHIỆP VỚI CHI PHÍ TỐI ƯU NHẤT</p>
         </div>
-        <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
-            <span class="icon"></span>
-
-            <span class="description text-bold">chi nhánh</span>
-            <span class="number main-color text-bold">30+</span>
-            <i class="fa-solid fa-caret-down text-white"></i>
-        </div>
-        <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
-            <span class="icon"></span>
-
-            <span class="description text-bold">năm kinh nghiệm</span>
-            <span class="number main-color text-bold">10+</span>
-            <i class="fa-solid fa-caret-down text-white"></i>
-        </div>
-    </div>
-    <div class="tieuchi-convince">
-        <p class="text-white text-bold fs-l">Với hơn 10 năm kinh nghiệm trong nghề, việt bảo long cung cấp</p>
-        <p class="main-color text-bold fs-xl">DỊCH VỤ BẢO VỆ CHUYÊN NGHIỆP VỚI CHI PHÍ TỐI ƯU NHẤT</p>
     </div>
 </div>
 <div class="su-menh container flex align-items-center gap-10 content-inner flex-wrap">

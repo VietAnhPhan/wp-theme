@@ -16,13 +16,16 @@ dropdown.addEventListener("click", function () {
     dropdownMenu.classList.toggle("display-none");
 });
 
-// wp.api.loadPromise.done(function () {
-//     const post = new wp.api.models.Post({ id: 1 });
+const subMenu = document.querySelector(".submenu");
+console.log(subMenu.closest(".menu-item"));
+subMenu.addEventListener("mouseenter", () => {
+    const MenuItem = subMenu.previousElementSibling;
+    MenuItem.classList.add("menu-item__active");
+    console.log("mouse enter");
+});
 
-//     post.fetch().done(function (data) {
-//         console.log("Post data:", data);
-//     });
-// });
-
-const track = document.querySelector(".slides");
+subMenu.addEventListener("mouseleave", () => {
+    const MenuItem = subMenu.previousElementSibling;
+    MenuItem.classList.remove("menu-item__active");
+});
 

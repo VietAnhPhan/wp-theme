@@ -19,11 +19,11 @@
             <span> CÔNG TY BẢO VỆ VIỆT BẢO LONG — NƠI ĐẶT TRỌN NIỀM TIN </span>
             <div class="multi-language"></div>
         </div>
-        <div class="search-overlay search-overlay__top container container-fluid ">
-            <div class="container flex align-items-center gap-20">
+        <div class="search-overlay search-overlay__top container container-fluid">
+            <div class="container flex align-items-center gap-20 justify-content-lg-center">
                 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                <input type="text" id="search-term" class="search-term" placeholder="Nhập từ khóa tìm kiếm">
-                <i class="fa-solid fa-times search-overlay__close" aria-hidden="true"></i>
+                <input type="text" id="search-term" class="search-term flex-50" placeholder="Nhập từ khóa tìm kiếm">
+                <i class="fa-solid fa-times search-overlay__close flex-0" aria-hidden="true"></i>
             </div>
             <div class="container">
                 <ul id="search-overlay__results" class="list-type-none">
@@ -43,7 +43,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li class="menu-item"><a href="#">Trang chủ</a></li>
+                    <li class="menu-item"><a href="<?php echo site_url("/")?>">Trang chủ</a></li>
                     <li class="menu-item"><a href="<?php echo site_url('/gioi-thieu') ?>">Giới thiệu</a></li>
                     <li class="menu-item position-relative">
                         <a href="<?php echo site_url('/dich-vu') ?>">
