@@ -12,11 +12,13 @@
 
 <body>
     <div class="top-bar__mobile container text-center">
-        <span> CÔNG TY BẢO VỆ VIỆT BẢO LONG — NƠI ĐẶT TRỌN NIỀM TIN </span>
+        <span class="top-bar__color slogan__identity display-block"> BẢO VỆ VIỆT BẢO LONG</span>
+        <span class="slogan__text">An ninh tiên phong, bảo vệ chuyên nghiệp</span>
     </div>
     <header>
         <div class="top-bar container">
-            <span> CÔNG TY BẢO VỆ VIỆT BẢO LONG — NƠI ĐẶT TRỌN NIỀM TIN </span>
+            <span> BẢO VỆ VIỆT BẢO LONG</span>
+            <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span>
             <div class="multi-language"></div>
         </div>
         <div class="search-overlay search-overlay__top container container-fluid">
