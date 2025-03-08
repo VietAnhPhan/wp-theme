@@ -753,6 +753,10 @@ img {
     padding: 20px;
 }
 
+.mt-0 {
+    margin-top: 0;
+}
+
 .prev,
 .next {
     background-color: #ff5e14;
@@ -943,10 +947,13 @@ img {
     display: none;
 }
 
+.form__input-color {
+    color: var(--tab-btn-color);
+}
 
 form {
     padding: 30px;
-    color: var(--tab-btn-color);
+
 
     input,
     textarea {
@@ -1128,7 +1135,7 @@ iframe {
     display: block;
 }
 
-.contact__bubble-zalo img{
+.contact__bubble-zalo img {
     background-color: #00AFF0;
     width: 41px;
     height: 41px;
@@ -1161,7 +1168,7 @@ iframe {
     animation: 1s ease-in-out 0s normal none infinite running ring-alo-animation;
 }
 
-.ring-alo-phone-circle{
+.ring-alo-phone-circle {
     animation: 1.2s ease-in-out 0s normal none infinite running ring-alo-circle-animation;
     background-color: transparent;
     border: 2px solid #ec1d25;
@@ -1175,21 +1182,47 @@ iframe {
     opacity: 0.5;
 }
 
+.contact-page__box {
+    border: 2px solid rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .01);
+}
+
+.contact-page__form{
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 20px 0px;
+    margin-top: 0px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.contact-page__form__input{
+    border:1px solid #e1e6eb;
+    height: 40px;
+    line-height: 20px;
+    padding: 9px 12px;
+    border-width: 0 0 1px;
+    font-size: 16px;
+}
+
 @keyframes ring-alo-circle-animation {
     0% {
         opacity: 0.1;
         transform: rotate(0deg) scale(0.5) skew(1deg);
     }
+
     30% {
         opacity: 0.5;
         transform: rotate(0deg) scale(0.7) skew(1deg);
     }
+
     100% {
         opacity: 0.6;
         transform: rotate(0deg) scale(1) skew(1deg);
     }
-    
+
 }
+
 @keyframes ring-alo-animation {
     0% {
         transform: rotate(0deg) scale(1) skew(1deg);

@@ -3,8 +3,8 @@ function theme_enqueue_styles()
 {
     wp_enqueue_script('wp-api');
     wp_enqueue_style('theme-style', get_stylesheet_uri(),array(),filemtime(get_template_directory() . '/style.css'));
-    wp_enqueue_script('theme-script', get_template_directory_uri() . '/assets/js/main.js', array(), filemtime(get_template_directory_uri() . '/assets/js/main.js'), true);
-    wp_enqueue_script('js', get_template_directory_uri() . '/js/index.js', array('wp-api'),filemtime(get_template_directory_uri() . '/js/index.js'), true);
+    wp_enqueue_script('theme-script', get_template_directory_uri() . '/assets/js/main.js', array(), filemtime(get_template_directory() . '/assets/js/main.js'), true);
+    wp_enqueue_script('js', get_template_directory_uri() . '/js/index.js', array('wp-api'),filemtime(get_template_directory() . '/js/index.js'), true);
 }
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
@@ -92,3 +92,124 @@ function create_taxonomy()
 }
 
 add_action('init', 'create_taxonomy');
+
+
+function create_custom_form_table() {
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'custom_form_data';
+
+    $charset_collate = $wpdb->get_charset_collate();
+    $sql = "CREATE TABLE IF NOT EXISTS $table_name (
+        id INT NOT NULL AUTO_INCREMENT,
+        fullname VARCHAR(255) NOT NULL,
+        mobile_phone VARCHAR(20) NOT NULL,
+        email VARCHAR(255) NOT NULL,
+        address TEXT NOT NULL,
+        message_content TEXT NOT NULL,
+        submitted_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+        PRIMARY KEY (id)
+    ) $charset_collate;";
+
+    require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+    dbDelta($sql);
+}
+add_action('after_setup_theme', 'create_custom_form_table');
+
+function handle_custom_form_submission() {
+    error_log('Form submission started.'); // Log start
+    error_log('Raw POST Data: ' . print_r($_POST, true));
+    if (isset($_POST['fullname'], $_POST['mobile_phone'], $_POST['email'], $_POST['address'], $_POST['message_content'])) {
+        error_log('Form data received.');
+
+        global $wpdb;
+        $table_name = $wpdb->prefix . 'custom_form_data';
+
+        $fullname = sanitize_text_field($_POST['fullname']);
+        $mobile_phone = sanitize_text_field($_POST['mobile_phone']);
+        $email = sanitize_email($_POST['email']);
+        $address = sanitize_textarea_field($_POST['address']);
+        $message_content = sanitize_textarea_field($_POST['message_content']);
+
+        $insert_result = $wpdb->insert(
+            $table_name,
+            [
+                'fullname' => $fullname,
+                'mobile_phone' => $mobile_phone,
+                'email' => $email,
+                'address' => $address,
+                'message_content' => $message_content,
+            ],
+            ['%s', '%s', '%s', '%s', '%s']
+        );
+
+        if ($insert_result === false) {
+            error_log('Database insert failed: ' . $wpdb->last_error);
+        } else {
+            error_log('Database insert successful.');
+        }
+
+        // Redirect to a thank you page
+        error_log('Redirecting to home page.');
+        wp_redirect(home_url('/'));
+        exit;
+    } else {
+        error_log('Missing form fields!');
+        wp_redirect(home_url('/error/')); // Redirect to an error page
+        exit;
+    }
+}
+
+// Hook for logged-in users
+add_action('admin_post_custom_form_submission', 'handle_custom_form_submission');
+// Hook for guests (non-logged-in users)
+add_action('admin_post_nopriv_custom_form_submission', 'handle_custom_form_submission');
+
+function custom_form_admin_menu() {
+    add_menu_page(
+        'Form Submissions',
+        'Form Data', 
+        'manage_options', 
+        'custom-form-submissions', 
+        'display_custom_form_submissions',
+        'dashicons-feedback', 
+        20
+    );
+}
+add_action('admin_menu', 'custom_form_admin_menu');
+
+function display_custom_form_submissions() {
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'custom_form_data';
+    $results = $wpdb->get_results("SELECT * FROM $table_name ORDER BY submitted_at DESC");
+
+    echo '<div class="wrap"><h1>Form Submissions</h1>';
+    echo '<table class="wp-list-table widefat fixed striped">';
+    echo '<thead><tr>
+        <th>ID</th>
+        <th>Họ và tên</th>
+        <th>SĐT</th>
+        <th>Email</th>
+        <th>Địa chỉ</th>
+        <th>Nội dung</th>
+        <th>Gửi vào lúc</th>
+    </tr></thead>';
+    echo '<tbody>';
+
+    if ($results) {
+        foreach ($results as $row) {
+            echo "<tr>
+                <td>{$row->id}</td>
+                <td>{$row->fullname}</td>
+                <td>{$row->mobile_phone}</td>
+                <td>{$row->email}</td>
+                <td>{$row->address}</td>
+                <td>{$row->message_content}</td>
+                <td>{$row->submitted_at}</td>
+            </tr>";
+        }
+    } else {
+        echo '<tr><td colspan="7">No submissions found.</td></tr>';
+    }
+
+    echo '</tbody></table></div>';
+}

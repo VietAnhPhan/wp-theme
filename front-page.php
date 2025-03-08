@@ -13,7 +13,7 @@ get_header();
         </div>
         <div class="slide overlay-black-light">
             <?php
-            $image_url = get_template_directory_uri().'/assets/bg/DSC_0115.jpg';
+            $image_url = get_template_directory_uri() . '/assets/bg/DSC_0115.jpg';
             ?>
             <img src="<?php echo esc_url($image_url); ?>" alt="Slide 1">
         </div>
@@ -224,7 +224,7 @@ get_header();
         while ($recentPosts->have_posts()) {
             $recentPosts->the_post(); ?>
             <div class="post flex-laptop-30 post__border flex-sm-100 overflow-hidden flex-col justify-content-between slide">
-                <a href="<?php the_permalink();?>"><?php the_post_thumbnail(); ?></a>
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                 <div class="post__info">
                     <h3 class="post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     <div class="post-excerpt">
@@ -266,14 +266,15 @@ get_header();
                 <h3 class="page__title">Nhận yêu cầu báo giá chi tiết dịch vụ bảo vệ</h3>
                 <p class="third-color opacity-75">Nếu quý khách đang thắc mắc bất kỳ gì về dịch vụ bảo vệ của Việt Bảo Long, bạn hãy để lại thông tin, chúng tôi sẽ gọi lại hỗ trợ cho quý khách!</p>
             </div>
-            <form action="#" class="flex-col primary-color-bg gap-25">
+            <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" class="flex-col primary-color-bg gap-25" method="POST">
+                <input type="hidden" name="action" value="custom_form_submission">
                 <div class="flex gap-30 flex-wrap">
-                    <input type="text" name="hoten" id="hoten" placeholder="Họ tên">
-                    <input type="tel" name="sdt" id="sdt" placeholder="Điện thoại">
+                    <input type="text" name="fullname" id="hoten" placeholder="Họ tên">
+                    <input type="tel" name="mobile_phone" id="sdt" placeholder="Điện thoại">
                 </div>
                 <input type="email" name="email" id="email" placeholder="Email">
-                <input type="text" name="Địa chỉ" id="địa chỉ" placeholder="Địa chỉ">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Nội dung"></textarea>
+                <input type="text" name="address" id="địa chỉ" placeholder="Địa chỉ">
+                <textarea name="message_content" id="message" cols="30" rows="10" placeholder="Nội dung"></textarea>
                 <button class="btn">Gửi yêu cầu</button>
             </form>
         </div>
