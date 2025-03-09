@@ -20,15 +20,16 @@ get_header();
     </div>
     <div class="flex-60">
 
-        <form action="#" class="flex-col gap-25 contact-page__form">
+        <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" class="flex-col gap-25 contact-page__form" method="POST">
+            <input type="hidden" name="action" value="custom_form_submission">
             <h3 class="fs-l mt-0">GỬI THÔNG TIN TƯ VẤN</h3>
             <div class="flex gap-30 flex-wrap">
-                <input class="contact-page__form__input" type="text" name="hoten" id="hoten" placeholder="Họ tên">
-                <input class="contact-page__form__input" type="tel" name="sdt" id="sdt" placeholder="Điện thoại">
+                <input class="contact-page__form__input" type="text" name="fullname" id="hoten" placeholder="Họ tên" required>
+                <input class="contact-page__form__input" type="tel" name="mobile_phone" id="sdt" placeholder="Điện thoại" required>
             </div>
-            <input class="contact-page__form__input" type="email" name="email" id="email" placeholder="Email">
-            <input class="contact-page__form__input" type="text" name="Địa chỉ" id="địa chỉ" placeholder="Địa chỉ">
-            <textarea class="contact-page__form__input" name="message" id="message" cols="30" rows="10" placeholder="Nội dung"></textarea>
+            <input class="contact-page__form__input" type="email" name="email" id="email" placeholder="Email" required>
+            <input class="contact-page__form__input" type="text" name="address" id="địa chỉ" placeholder="Địa chỉ">
+            <textarea class="contact-page__form__input" name="message_content" id="message" cols="30" rows="10" placeholder="Nội dung"></textarea>
             <button class="btn primary-color-bg third-color">Gửi yêu cầu</button>
         </form>
 

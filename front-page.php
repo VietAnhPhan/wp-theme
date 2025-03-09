@@ -269,10 +269,10 @@ get_header();
             <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" class="flex-col primary-color-bg gap-25" method="POST">
                 <input type="hidden" name="action" value="custom_form_submission">
                 <div class="flex gap-30 flex-wrap">
-                    <input type="text" name="fullname" id="hoten" placeholder="Họ tên">
-                    <input type="tel" name="mobile_phone" id="sdt" placeholder="Điện thoại">
+                    <input type="text" name="fullname" id="hoten" placeholder="Họ tên" required>
+                    <input type="tel" name="mobile_phone" id="sdt" placeholder="Điện thoại" required>
                 </div>
-                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="email" name="email" id="email" placeholder="Email" required>
                 <input type="text" name="address" id="địa chỉ" placeholder="Địa chỉ">
                 <textarea name="message_content" id="message" cols="30" rows="10" placeholder="Nội dung"></textarea>
                 <button class="btn">Gửi yêu cầu</button>

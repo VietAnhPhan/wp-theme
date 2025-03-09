@@ -196,7 +196,11 @@ function display_custom_form_submissions() {
     echo '<tbody>';
 
     if ($results) {
+        date_default_timezone_set('Europe/London');
+        $bangkok_time = new DateTimeZone('Asia/Bangkok');
         foreach ($results as $row) {
+            $submitted_at = new DateTime($row->submitted_at);
+            $submitted_at->setTimezone($bangkok_time);
             echo "<tr>
                 <td>{$row->id}</td>
                 <td>{$row->fullname}</td>
@@ -204,7 +208,7 @@ function display_custom_form_submissions() {
                 <td>{$row->email}</td>
                 <td>{$row->address}</td>
                 <td>{$row->message_content}</td>
-                <td>{$row->submitted_at}</td>
+                <td>{$submitted_at->format('d-m-Y H:i:s')}</td>
             </tr>";
         }
     } else {
