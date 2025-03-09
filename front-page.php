@@ -58,7 +58,7 @@ get_header();
     </div>
 </div>
 <div class="su-menh container flex align-items-center gap-10 content-inner flex-wrap">
-    <div class="flex-laptop">
+    <div class="flex-laptop left-hidden__section">
         <h2 class="text-bold main-color">SỨ MỆNH CỦA việt bảo long</h2>
         <p>Ban Lãnh đạo Bảo Vệ việt bảo long xin gửi lời tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long vững mạnh, đoàn kết như ngày nay. Chúng tôi xin cam kết:</p>
         <div class="su-menh-items">

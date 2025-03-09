@@ -17,11 +17,10 @@ dropdown.addEventListener("click", function () {
 });
 
 const subMenu = document.querySelector(".submenu");
-console.log(subMenu.closest(".menu-item"));
+
 subMenu.addEventListener("mouseenter", () => {
     const MenuItem = subMenu.previousElementSibling;
     MenuItem.classList.add("menu-item__active");
-    console.log("mouse enter");
 });
 
 subMenu.addEventListener("mouseleave", () => {

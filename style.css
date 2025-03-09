@@ -119,6 +119,16 @@ Text Domain: dichvubaove
         object-fit: cover;
     }
 
+    .left-hidden__section{
+        transform: translateX(-100%);
+        opacity: 0.5;
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
+    
+    .left-hidden__section.show{
+        transform: translateX(0);
+        opacity: 1;
+    }
 
 
 }
@@ -528,11 +538,13 @@ i {
 
 .slide {
     flex: 0 0 100%;
+    transform: translateX(0);
+    transition: transform 2s ease-out 0.25s;
 }
 
 .slide {
-    animation-duration: 6s;
-    animation-name: shift-to-left;
+    animation-duration: 3s;
+    /* animation-name: shift-to-left; */
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-timing-function: linear;
@@ -541,10 +553,6 @@ i {
 @keyframes shift-to-left {
     30% {
         transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(-100%);
     }
 
     100% {
@@ -1253,3 +1261,4 @@ iframe {
     }
 
 }
+
