@@ -96,7 +96,7 @@ get_header();
     </div>
 </div>
 
-<div class="dich-vu-bao-ve content-inner city-bg">
+<div class="dich-vu-bao-ve content-inner city-bg opacity-full__section">
     <div class="container">
 
         <h2 class="fs-xl main-color text-center uppercase">Dịch vụ bảo vệ việt bảo long</h2>
@@ -142,12 +142,12 @@ get_header();
     </div>
 
 </div>
-<div class="li-do-chon-chung-toi content-inner">
+<div class="li-do-chon-chung-toi content-inner opacity-full__section">
     <div class="container">
         <h2 class="main-color text-center">6 LÝ DO ĐỂ CHỌN BẢO VỆ VIỆT BẢO LONG:</h2>
         <p class="text-white max-w700 margin-auto text-center m-bottom50">Dịch vụ bảo vệ VIỆT BẢO LONG chú trọng trong việc đào tạo đội ngũ cân bộ nhân viên bài bản và chuyên sâu, luôn đảm bảo mang tới cho quý khách hàng một đội ngũ bảo vệ chuyên nghiệp – tâm huyết với nghề</p>
     </div>
-    <div class="flex container align-items-center gap-20 flex-wrap">
+    <div class="flex container align-items-center gap-20 flex-wrap down-hidden__section">
         <div class="flex-col flex-laptop">
             <div class="flex">
                 <div class="icon-content text-white text-white">
@@ -261,7 +261,7 @@ get_header();
 
 <div class="yeu-cau-bao-gia flex flex-wrap">
     <div class="flex-laptop-60 camera-bg page-content p-b0">
-        <div class="form__wrapper">
+        <div class="form__wrapper down-hidden__section">
             <div class="container">
                 <h3 class="page__title">Nhận yêu cầu báo giá chi tiết dịch vụ bảo vệ</h3>
                 <p class="third-color opacity-75">Nếu quý khách đang thắc mắc bất kỳ gì về dịch vụ bảo vệ của Việt Bảo Long, bạn hãy để lại thông tin, chúng tôi sẽ gọi lại hỗ trợ cho quý khách!</p>
@@ -279,7 +279,7 @@ get_header();
             </form>
         </div>
     </div>
-    <div class="flex-laptop-40">
+    <div class="flex-laptop-40 right-hidden__section">
         <img class="height-100 object-fit-cover display-sm-none" src="<?php echo get_template_directory_uri(); ?>/assets/bg/TA9A0315.jpg" alt="Yêu cầu báo giá">
     </div>
 </div>

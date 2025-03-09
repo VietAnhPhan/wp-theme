@@ -130,6 +130,36 @@ Text Domain: dichvubaove
         opacity: 1;
     }
 
+    .right-hidden__section{
+        transform: translateX(100%);
+        opacity: 0.5;
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
+    
+    .right-hidden__section.show{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .down-hidden__section{
+        transform: translateY(50%);
+        opacity: 0.5;
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    }
+    
+    .down-hidden__section.show{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .opacity-full__section{
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+
+    .opacity-full__section.show{
+        opacity: 1;
+    }
 
 }
 
