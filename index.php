@@ -13,23 +13,27 @@ get_header();
     </div>
 </div>
 
-<div class="container flex gap-30 page-content container flex gap-30 overflow-hidden">
-    <?php
-    while (have_posts()) {
-        the_post(); ?>
-        <div class="post flex-30 post__border flex-col justify-content-between">
-            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-            <div class="post__info">
-                <h2 class="post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <div class="post-excerpt">
-                    <?php echo wp_trim_words(get_the_content(), 18); ?>
-                    <p><a class="btn btn__post_detail" href="<?php the_permalink(); ?>">CHI TIẾT</a></p>
+<div class="container page-content">
+    <div class="flex gap-30 flex gap-30 overflow-hidden pb-10">
+        <?php
+        while (have_posts()) {
+            the_post(); ?>
+            <div class="post flex-30 post__border flex-col justify-content-between">
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                <div class="post__info">
+                    <h2 class="post__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <div class="post-excerpt">
+                        <?php echo wp_trim_words(get_the_content(), 18); ?>
+                        <p><a class="btn btn__post_detail" href="<?php the_permalink(); ?>">CHI TIẾT</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
-    <?php } ?>
+        <?php }
+        ?>
+    </div>
+    <?php echo paginate_links();?>
 </div>
-</div>
+
 <!-- Your main content goes here -->
 
 <?php

@@ -1,9 +1,9 @@
 import {Search} from "./modules/Search.js";
-import { Carousal } from "./modules/Carousal.js";
+import { Carousel } from "./modules/Carousel.js";
 import { TransitionElement } from "./modules/TransitionElements.js";
 
 const search = new Search();
-// const carousal = new Carousal();
+const carousel = new Carousel();
 document.addEventListener("DOMContentLoaded", () => {
     new TransitionElement();
 });

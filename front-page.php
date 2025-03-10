@@ -17,7 +17,17 @@ get_header();
             ?>
             <img src="<?php echo esc_url($image_url); ?>" alt="Slide 1">
         </div>
+        <div class="slide overlay-black-light">
+            <?php
+            $image_url = get_template_directory_uri() . '/assets/bg/DSC_0066.jpg';
+            ?>
+            <img src="<?php echo esc_url($image_url); ?>" alt="Slide 1">
+        </div>
     </div>
+  
+        <button class="arrow-navigation__prev arrow-navigation"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="arrow-navigation__next arrow-navigation"><i class="fa-solid fa-arrow-right"></i></button>
+
     <div class="navigation flex gap-8">
         <button class="prev"></button>
         <button class="next"></button>

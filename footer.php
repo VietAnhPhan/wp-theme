@@ -2,15 +2,16 @@
     <div class="flex container flex-wrap gap-30">
         <div class="footer__contact-info third-color flex-laptop-30">
             <h5 class="footer__title">THÔNG TIN LIÊN HỆ</h5>
-            <p>CÔNG TY CỔ PHẦN DỊCH VỤ BẢO VỆ VIỆT BẢO LONG</p>
+            <p>CÔNG TY TNHH DỊCH VỤ BẢO VỆ VIỆT BẢO LONG</p>
 
-            <p>Địa chỉ: 111/11 Nguyễn Văn X, Phường 6, Quận Bình Thạnh, TPHCM.</p>
+            <p>T4/1M, khu phố Bình Thuận 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam</p>
 
-            <p>Hotline: (028) 5555 2222 – 1111 111 111</p>
+            <p>Hotline: 0966 673 288</p>
 
             <p>Website: <?php echo home_url(); ?></p>
 
-            <p>Email: info.vietbaonlong@gmail.com</p>
+            <p>Email: thanhtamht0302@gmail.com</p>
+            <p>MST: 3703270485</p>
         </div>
         <div class="footer__services">
             <h5 class="third-color footer__title flex-laptop-30">
