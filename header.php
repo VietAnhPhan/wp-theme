@@ -14,12 +14,15 @@
     <div class="top-bar__mobile container text-center">
         <span class="top-bar__color slogan__identity display-block"> BẢO VỆ VIỆT BẢO LONG</span>
         <span class="slogan__text">An ninh tiên phong, bảo vệ chuyên nghiệp</span>
+        <?php echo do_shortcode('[gtranslate]');?>
     </div>
     <header>
-        <div class="top-bar container">
-            <span> BẢO VỆ VIỆT BẢO LONG</span>
-            <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span>
-            <div class="multi-language"></div>
+        <div class="top-bar container flex-md justify-content-between">
+            <div>
+                <span> BẢO VỆ VIỆT BẢO LONG</span>
+                <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span>
+            </div>
+            <div class="multi-language"><?php echo do_shortcode('[gtranslate]');?></div>
         </div>
         <div class="search-overlay search-overlay__top container container-fluid">
             <div class="container flex align-items-center gap-20 justify-content-lg-center">

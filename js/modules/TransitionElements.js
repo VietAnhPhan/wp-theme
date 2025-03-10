@@ -16,8 +16,8 @@ export class TransitionElement {
        
         this.observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                console.log(entry.target)
-                console.log("👀 isIntersecting:", entry.isIntersecting);
+                // console.log(entry.target)
+                // console.log("👀 isIntersecting:", entry.isIntersecting);
                 if (entry.isIntersecting) {
                    
                     entry.target.classList.add("show");
@@ -35,8 +35,8 @@ export class TransitionElement {
     downToUp(){
         this.observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                console.log(entry.target)
-                console.log("👀 isIntersecting:", entry.isIntersecting);
+                // console.log(entry.target)
+                // console.log("👀 isIntersecting:", entry.isIntersecting);
                 if (entry.isIntersecting) {
                    
                     entry.target.classList.add("show");
@@ -53,8 +53,8 @@ export class TransitionElement {
     fillFullOpacity(){
         this.observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                console.log(entry.target)
-                console.log("👀 isIntersecting:", entry.isIntersecting);
+                // console.log(entry.target)
+                // console.log("👀 isIntersecting:", entry.isIntersecting);
                 if (entry.isIntersecting) {
                    
                     entry.target.classList.add("show");
@@ -71,8 +71,8 @@ export class TransitionElement {
     rightToLeft(){
         this.observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                console.log(entry.target)
-                console.log("👀 isIntersecting:", entry.isIntersecting);
+                // console.log(entry.target)
+                // console.log("👀 isIntersecting:", entry.isIntersecting);
                 if (entry.isIntersecting) {
                    
                     entry.target.classList.add("show");

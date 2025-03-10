@@ -27,4 +27,3 @@ subMenu.addEventListener("mouseleave", () => {
     const MenuItem = subMenu.previousElementSibling;
     MenuItem.classList.remove("menu-item__active");
 });
-

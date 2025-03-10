@@ -52,6 +52,10 @@ Text Domain: dichvubaove
 }
 
 @media (min-width: 0) {
+    .flex-30 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
     .icon__mobile {
         padding: 1rem;
     }
@@ -164,6 +168,13 @@ Text Domain: dichvubaove
 }
 
 @media (min-width: 992px) {
+    .flex-md{
+        display: flex;
+    }
+    .flex-30 {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
     .justify-content-lg-center {
         justify-content: center;
     }
@@ -289,6 +300,7 @@ Text Domain: dichvubaove
     background-color: var(--third-color);
     padding: 30px 25px;
     width: 280px;
+    height: 100%;
 
 }
 
@@ -542,7 +554,7 @@ nav a {
 .search-button i {
     font-size: 1.5rem;
     color: var(--nav-item-color);
-    padding: 0 1.5rem;
+    padding-left: 1.5rem;
 }
 
 i {
@@ -1153,10 +1165,7 @@ iframe {
     position: relative;
 }
 
-.flex-30 {
-    flex: 0 0 30%;
-    max-width: 30%;
-}
+
 
 .contact__bubble {
     position: fixed;
