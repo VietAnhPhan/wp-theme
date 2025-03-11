@@ -5,7 +5,7 @@ export class Carousel {
         this.slideItems = Array.from(this.slide.querySelectorAll(".slide"));
         this.nextButton = document.querySelector(".arrow-navigation__next");
         this.prevButton = document.querySelector(".arrow-navigation__prev");
-        this.counter = 0;
+        this.index = 0;
         this.range = 0;
         this.nextImage();
         this.prevImage();
@@ -16,15 +16,45 @@ export class Carousel {
 
     nextImage() {
         // console.log(this.nextButton);
-
+        this.slideItems[this.index].setAttribute("data-source", "active");
         this.nextButton.addEventListener("click", () => {
-            // this.counter += 1;
-            this.range -=100;
 
-            this.slideItems.forEach(item => {
-                item.style.transform = `translateX(${this.range}%)`;
-            });
+            // console.log(this.range);
+            if (this.index < this.slideItems.length - 1) {
 
+                this.index++;
+                // this.counter += 1;
+                // if(this.slideItems[this.slideItems.length - 2].getAttribute("data-source") == "active"){}
+                this.range -= 100;
+                this.slideItems[this.index].setAttribute("data-source", "active");
+                this.slideItems.forEach(item => {
+                    if (item != this.slideItems[this.index]) {
+                        item.setAttribute("data-source", "unactive");
+                    }
+                    item.style.transform = `translateX(${this.range}%)`;
+                });
+            }
+            // if (this.slideItems[this.slideItems.length - 1].getAttribute("data-source") == "active") {
+
+            //     this.range = 100;
+            //     // this.slideItems.splice(this.slideItems.length - 2, 1);
+            //     this.slideItems.forEach(item => {
+            //         if (item != this.slideItems[this.slideItems.length - 2]) {
+            //             item.style.transform = `translateX(${this.range}%)`;
+            //         }
+            //     });
+
+            // }
+            // else {
+            //     this.range -= 100;
+            //     this.slideItems[this.slideItems.length - 1].style.transform = `translateX(${this.range}%)`;
+            //     this.slideItems.splice(this.slideItems.length - 1, 1);
+            //     //    console.log(this.slideItems);
+            //     this.range = 100;
+            //     this.slideItems.forEach(item => {
+            //         item.style.transform = `translateX(${this.range}%)`;
+            //     });
+            // }
         })
 
     }
@@ -33,12 +63,15 @@ export class Carousel {
         // console.log(this.nextButton);
 
         this.prevButton.addEventListener("click", () => {
-            this.range += 100;
+            if (this.index > 0) {
+                this.index--;
+                this.range += 100;
 
-            console.log(this.range)
-            this.slideItems.forEach(item => {
-                item.style.transform = `translateX(${this.range}%)`;
-            });
+                this.slideItems.forEach(item => {
+                    item.style.transform = `translateX(${this.range}%)`;
+                });
+            }
+
 
         })
 

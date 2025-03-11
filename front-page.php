@@ -7,21 +7,21 @@ get_header();
     <div class="slides">
         <div class="slide overlay-black-light">
             <?php
-            $image_url = get_template_directory_uri() . '/assets/bg/DSC_0066.jpg';
+            $image_url = get_template_directory_uri() . '/assets/banners/banner01_compressed.jpg';
             ?>
-            <img src="<?php echo esc_url($image_url); ?>" alt="Slide 1">
+            <img src="<?php echo esc_url($image_url); ?>" alt="Banner 1">
         </div>
         <div class="slide overlay-black-light">
             <?php
-            $image_url = get_template_directory_uri() . '/assets/bg/DSC_0115.jpg';
+            $image_url = get_template_directory_uri() . '/assets/banners/banner02_compressed.jpg';
             ?>
-            <img src="<?php echo esc_url($image_url); ?>" alt="Slide 1">
+            <img src="<?php echo esc_url($image_url); ?>" alt="Banner 2">
         </div>
         <div class="slide overlay-black-light">
             <?php
-            $image_url = get_template_directory_uri() . '/assets/bg/DSC_0066.jpg';
+            $image_url = get_template_directory_uri() . '/assets/banners/banner01_compressed.jpg';
             ?>
-            <img src="<?php echo esc_url($image_url); ?>" alt="Slide 1">
+            <img src="<?php echo esc_url($image_url); ?>" alt="Banner 1">
         </div>
     </div>
   
@@ -269,7 +269,7 @@ get_header();
     </div>
 </div>
 
-<div class="yeu-cau-bao-gia flex flex-wrap">
+<div class="yeu-cau-bao-gia flex flex-wrap overflow-hidden">
     <div class="flex-laptop-60 camera-bg page-content p-b0">
         <div class="form__wrapper down-hidden__section">
             <div class="container">
