@@ -6,7 +6,20 @@ get_header();
         <h1 class="text-white position-relative z-2 capitalize"><?php the_title(); ?></h1>
     </div>
 </div>
+<div class="container">
+    <?php
+     while (have_posts()) {
+        the_post(); ?>
 
+        <div class="post__info">
+            <div class="post-excerpt">
+                <?php echo get_the_content(); ?>
+
+            </div>
+        </div>
+
+    <?php } ?>
+</div>
 <div class="container flex gap-30 page-content container flex gap-30">
     <div class="flex-40">
         <div class="contact-page__box  p-20">

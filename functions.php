@@ -42,6 +42,7 @@ function create_post_type()
         'rewrite' => array('slug' => 'dich-vu'),
         'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
         'taxonomies' => array('service-category'),
+        'show_in_rest'  => true
     ));
 
     register_post_type('hiring', array(
@@ -55,7 +56,8 @@ function create_post_type()
         ),
         'public' => true,
         'rewrite' => array('slug' => 'tuyen-dung'),
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt')
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+        'show_in_rest'  => true
     ));
 
     register_post_type('project', array(
@@ -69,7 +71,8 @@ function create_post_type()
         ),
         'public' => true,
         'rewrite' => array('slug' => 'du-an'),
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt')
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+        'show_in_rest'  => true
     ));
 }
 

@@ -13,7 +13,7 @@ get_header();
     </div>
 </div>
 
-<div class="container flex gap-30 page-content container flex gap-30 overflow-hidden">
+<div class="container flex gap-30 page-content container flex gap-30 flex-wrap">
     <?php
     while (have_posts()) {
         the_post(); ?>

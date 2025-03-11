@@ -248,8 +248,8 @@ Text Domain: dichvubaove
     }
 
     .flex-laptop-30 {
-        flex: 0 0 calc(100%/3);
-        max-width: calc(100%/3);
+        flex: 0 0 30%;
+        max-width: 30%;
     }
 
     .flex-laptop-60 {
