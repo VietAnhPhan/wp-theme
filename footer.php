@@ -58,14 +58,27 @@
 </div>
 <?php wp_footer(); ?>
 
-<div class="contact__bubble">
+<div class="contact__bubble medium-screen">
     <a href="#" class="contact__bubble-zalo"><img class="contact__bubble-ring" src="<?php echo get_template_directory_uri(); ?>/assets/icons/iconzalo.png" alt="Zalo button"></a>
     <a href="tel:0966 673 288" class="flex align-items-center contact__bubble-phone">
         <div class="ring-alo-phone-circle"></div>
-        <img class="contact__bubble-ring" src="<?php echo get_template_directory_uri();?>/assets/icons/goi.png" alt="Phone button">
+        <img class="contact__bubble-ring" src="<?php echo get_template_directory_uri(); ?>/assets/icons/goi.png" alt="Phone button">
         <span class="contact__bubble_phone-number">0966 673 288</span>
     </a>
 </div>
+
+<div class="contact__bar mobile flex">
+    <a href="tel:0966 673 288" class="flex align-items-center flex-1 flex-col text-center p-10">
+
+        <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/icons/goi.png" alt="Phone button">
+        <span class="">Gọi ngay</span>
+    </a>
+    <a href="#" class="flex-1 flex-col align-items-center p-10"><img class="" src="<?php echo get_template_directory_uri(); ?>/assets/icons/iconzalo.png" alt="Zalo button">
+    <span class="">Zalo</span>
+</a>
+
+</div>
+
 </body>
 
 </html>

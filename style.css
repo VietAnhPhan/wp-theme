@@ -52,6 +52,10 @@ Text Domain: dichvubaove
 }
 
 @media (min-width: 0) {
+ 
+    .medium-screen{
+        display: none;
+    }
     .flex-30 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -116,6 +120,12 @@ Text Domain: dichvubaove
 }
 
 @media (min-width: 786px) {
+    .contact__bar.mobile{
+        display: none;
+    }
+    .medium-screen{
+        display: block;
+    }
     .container {
         max-width: 720px;
     }
@@ -1331,4 +1341,23 @@ iframe {
 }
 .arrow-navigation__next {
     right: 0;
+}
+
+.contact__bar{
+    position: fixed;
+    bottom: 0;
+    background-color: #74787B;
+    width: 100%;
+
+}
+.contact__bar img{
+    max-width: 50px;
+}
+
+.contact__bar a{
+    text-decoration: none;
+    color: #FED130;
+}
+.contact__bar a:last-child{
+    border-left: 1px solid #4B4F4E;
 }
