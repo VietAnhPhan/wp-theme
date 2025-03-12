@@ -54,6 +54,9 @@ Text Domain: dichvubaove
 
 @media (min-width: 0) {
    
+    .menu__mobile{
+        z-index: 3;
+    }
     .logo img{
         max-width: 40px;
     }
@@ -329,6 +332,7 @@ Text Domain: dichvubaove
     padding: 30px 25px;
     width: 280px;
     height: 100%;
+    z-index: 10;
 
 }
 
@@ -1106,7 +1110,7 @@ iframe {
     height: 100%;
     position: fixed;
     left: 0;
-    top: 45px;
+    top: 0;
     z-index: -1;
 
 }

@@ -94,7 +94,7 @@
                             <i class="fa-solid fa-bars icon__mobile">
                             </i>
                         </div>
-                        <div class="dropdown__opened display-none overlay__background">
+                        <div class="dropdown__opened display-none overlay__background icon__mobile">
                             <i class="fa-solid fa-times"></i>
                         </div>
                     </div>
