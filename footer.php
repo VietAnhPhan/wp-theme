@@ -58,7 +58,7 @@
 </div>
 <?php wp_footer(); ?>
 
-<div class="contact__bubble medium-screen">
+<div class="contact__bubble">
     <a href="#" class="contact__bubble-zalo"><img class="contact__bubble-ring" src="<?php echo get_template_directory_uri(); ?>/assets/icons/iconzalo.png" alt="Zalo button"></a>
     <a href="tel:0966 673 288" class="flex align-items-center contact__bubble-phone">
         <div class="ring-alo-phone-circle"></div>
@@ -67,7 +67,7 @@
     </a>
 </div>
 
-<div class="contact__bar mobile flex">
+<!-- <div class="contact__bar mobile flex">
     <a href="tel:0966 673 288" class="flex align-items-center flex-1 flex-col text-center p-10">
 
         <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/icons/goi.png" alt="Phone button">
@@ -77,7 +77,7 @@
     <span class="">Zalo</span>
 </a>
 
-</div>
+</div> -->
 
 </body>
 

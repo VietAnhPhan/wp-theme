@@ -5,28 +5,28 @@ get_header();
 <!-- Your main content goes here -->
 <div class="slider">
     <div class="slides">
-        <div class="slide overlay-black-light">
+        <div class="slide">
             <?php
             $image_url = get_template_directory_uri() . '/assets/banners/banner01_compressed.jpg';
             ?>
             <img src="<?php echo esc_url($image_url); ?>" alt="Banner 1">
         </div>
-        <div class="slide overlay-black-light">
+        <div class="slide">
             <?php
             $image_url = get_template_directory_uri() . '/assets/banners/banner02_compressed.jpg';
             ?>
             <img src="<?php echo esc_url($image_url); ?>" alt="Banner 2">
         </div>
-        <div class="slide overlay-black-light">
+        <div class="slide">
             <?php
             $image_url = get_template_directory_uri() . '/assets/banners/banner01_compressed.jpg';
             ?>
             <img src="<?php echo esc_url($image_url); ?>" alt="Banner 1">
         </div>
     </div>
-  
-        <button class="arrow-navigation__prev arrow-navigation"><i class="fa-solid fa-arrow-left"></i></button>
-        <button class="arrow-navigation__next arrow-navigation"><i class="fa-solid fa-arrow-right"></i></button>
+
+    <button class="arrow-navigation__prev arrow-navigation"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="arrow-navigation__next arrow-navigation"><i class="fa-solid fa-arrow-right"></i></button>
 
     <div class="navigation flex gap-8">
         <button class="prev"></button>
@@ -69,7 +69,7 @@ get_header();
 </div>
 <div class="su-menh container flex align-items-center gap-10 content-inner flex-wrap">
     <div class="flex-laptop left-hidden__section">
-        <h2 class="text-bold main-color">SỨ MỆNH CỦA việt bảo long</h2>
+        <h2 class="text-bold main-color uppercase">SỨ MỆNH CỦA Việt Bảo Long</h2>
         <p>Ban Lãnh đạo Bảo Vệ việt bảo long xin gửi lời tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long vững mạnh, đoàn kết như ngày nay. Chúng tôi xin cam kết:</p>
         <div class="su-menh-items">
             <div class="su-menh-item flex align-items-center gap-20">
@@ -102,7 +102,7 @@ get_header();
         </div>
     </div>
     <div class="flex-laptop">
-        <img src="<?php echo wp_get_attachment_image_src(19, "full")[0]; ?>" alt="hình đội ngũ">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/08.jpg" alt="hình đội ngũ">
     </div>
 </div>
 
@@ -112,44 +112,64 @@ get_header();
         <h2 class="fs-xl main-color text-center uppercase">Dịch vụ bảo vệ việt bảo long</h2>
         <p class="text-white text-center max-w700 margin-auto m-bottom50">Ban Lãnh đạo Bảo vệ việt bảo long® xin gửi tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long® vững mạnh, đoàn kết như ngày nay</p>
     </div>
-    <div class="dich-vu-bao-ve-items flex gap-30 overflow-hidden justify-content-center overflow-hidden">
-        <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide">
-            <img src="<?php echo wp_get_attachment_image_src(20, "large")[0]; ?>" alt="">
-            <p class="text-bold text-center">Bảo vệ mục tiêu cố định</p>
+    <div class="dich-vu-bao-ve-items overflow-hidden justify-content-center overflow-hidden carousel">
+        <div class="carousel-track flex gap-30">
+            <?php
+            $services = new WP_Query(array(
+                'post_type' => 'service',
+                'posts_per_page' => 9,
+                'order' => 'ASC'
+            ));
+            while ($services->have_posts()) {
+                $services->the_post(); ?>
+                <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide carousel-item">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail(); ?>
+                        <p class="text-bold text-center"><?php the_title(); ?></p>
+                    </a>
+                </div>
+            <?php }
+            wp_reset_postdata();
+            ?>
+            <!-- <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide carousel-item">
+                <img src="<?php echo wp_get_attachment_image_src(20, "large")[0]; ?>" alt="">
+                <p class="text-bold text-center">Bảo vệ mục tiêu cố định</p>
+            </div>
+            <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide carousel-item">
+                <img src="<?php echo wp_get_attachment_image_src(21, "large")[0]; ?>" alt="">
+                <p class="text-bold text-center">Bảo vệ áp tải</p>
+            </div>
+            <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide carousel-item">
+                <img src="<?php echo wp_get_attachment_image_src(22, "large")[0]; ?>" alt="">
+                <p class="text-bold text-center">Bảo vệ sự kiện</p>
+            </div>
+            <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide carousel-item">
+                <img src="<?php echo wp_get_attachment_image_src(23, "large")[0]; ?>" alt="">
+                <p class="text-bold text-center">Bảo vệ tòa nhà</p>
+            </div>
+            <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide carousel-item">
+                <img src="<?php echo wp_get_attachment_image_src(24, "large")[0]; ?>" alt="">
+                <p class="text-bold text-center">Bảo vệ nhà ở</p>
+            </div>
+            <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide carousel-item">
+                <img src="<?php echo wp_get_attachment_image_src(25, "large")[0]; ?>" alt="">
+                <p class="text-bold text-center">Bảo vệ cửa hàng</p>
+            </div>
+            <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide carousel-item">
+                <img src="<?php echo wp_get_attachment_image_src(26, "large")[0]; ?>" alt="">
+                <p class="text-bold text-center">Bảo vệ cửa hàng</p>
+            </div>
+            <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide carousel-item">
+                <img src="<?php echo wp_get_attachment_image_src(27, "large")[0]; ?>" alt="">
+                <p class="text-bold text-center">Bảo vệ cửa hàng</p>
+            </div> -->
         </div>
-        <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide">
-            <img src="<?php echo wp_get_attachment_image_src(21, "large")[0]; ?>" alt="">
-            <p class="text-bold text-center">Bảo vệ áp tải</p>
-        </div>
-        <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide">
-            <img src="<?php echo wp_get_attachment_image_src(22, "large")[0]; ?>" alt="">
-            <p class="text-bold text-center">Bảo vệ sự kiện</p>
-        </div>
-        <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide">
-            <img src="<?php echo wp_get_attachment_image_src(23, "large")[0]; ?>" alt="">
-            <p class="text-bold text-center">Bảo vệ tòa nhà</p>
-        </div>
-        <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide">
-            <img src="<?php echo wp_get_attachment_image_src(24, "large")[0]; ?>" alt="">
-            <p class="text-bold text-center">Bảo vệ nhà ở</p>
-        </div>
-        <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide">
-            <img src="<?php echo wp_get_attachment_image_src(25, "large")[0]; ?>" alt="">
-            <p class="text-bold text-center">Bảo vệ cửa hàng</p>
-        </div>
-        <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide">
-            <img src="<?php echo wp_get_attachment_image_src(26, "large")[0]; ?>" alt="">
-            <p class="text-bold text-center">Bảo vệ cửa hàng</p>
-        </div>
-        <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide">
-            <img src="<?php echo wp_get_attachment_image_src(27, "large")[0]; ?>" alt="">
-            <p class="text-bold text-center">Bảo vệ cửa hàng</p>
+        <div class="text-center flex justify-content-center gap-20 p-20">
+            <button class="prev__dich-vu prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next__dich-vu next"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </div>
-    <div class="carousel text-center flex justify-content-center gap-20 p-20">
-        <button class="prev__dich-vu"><i class="fa-solid fa-arrow-left"></i></button>
-        <button class="next__dich-vu"><i class="fa-solid fa-arrow-right"></i></button>
-    </div>
+
 
 </div>
 <div class="li-do-chon-chung-toi content-inner opacity-full__section">
@@ -188,7 +208,7 @@ get_header();
             </div>
         </div>
         <div class="flex-laptop">
-            <img src="<?php echo wp_get_attachment_image_src(36, "large")[0]; ?>" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/circle.png ?>" alt="">
         </div>
         <div class="flex-col flex-laptop">
             <div class="flex">
@@ -247,24 +267,24 @@ get_header();
     </div>
 </div>
 
-<div class="thu-vien-hinh-anh city-bg page-content">
+<!-- <div class="thu-vien-hinh-anh city-bg page-content">
     <h2 class="page__title text-center">THƯ VIỆN HÌNH ẢNH</h2>
     <div class="tabs text-center">
         <button class="tab__btn tab__btn_active uppercase" onclick="openTab(event, 'tab1')">dịch vụ</button>
         <button class="tab__btn uppercase" onclick="openTab(event, 'tab2')">hoạt động</button>
         <button class="tab__btn uppercase" onclick="openTab(event, 'tab3')">sự kiện</button>
-
+            <?php echo do_shortcode('[image_tabs]')?>
     </div>
-</div>
+</div> -->
 
 <div class="lien-he-ve-chung-toi page-content primary-color-bg">
     <div class="flex justify-content-between align-items-center container">
         <div class="contact__text flex-75">
-            <h2 class="page__title third-color">Liên Hệ Với Chúng Tôi: 111.111.111</h2>
+            <h2 class="page__title third-color">Liên Hệ Với Chúng Tôi: 0966 673 288</h2>
             <p class="third-color">Việt Bảo Long hân hạnh được hợp tác với các Khách Hàng tiêu biểu</p>
         </div>
         <div class="contact__btn flex-25">
-            <a class="btn" href="#">Liên hệ</a>
+            <a class="btn" href="<?php echo site_url("/lien-he"); ?>">Liên hệ</a>
         </div>
     </div>
 </div>

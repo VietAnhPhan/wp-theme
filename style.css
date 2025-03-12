@@ -32,6 +32,7 @@ Text Domain: dichvubaove
     padding-right: var(--container-padding); */
     margin: 0 auto;
     padding: 0.3rem;
+    width: 100%;
 }
 
 .top-bar__color {
@@ -52,7 +53,10 @@ Text Domain: dichvubaove
 }
 
 @media (min-width: 0) {
- 
+   
+    .logo img{
+        max-width: 40px;
+    }
     .medium-screen{
         display: none;
     }
@@ -179,6 +183,10 @@ Text Domain: dichvubaove
 }
 
 @media (min-width: 992px) {
+
+    .logo img {
+        max-width: 60px;
+    }
     .flex-md {
         display: flex;
     }
@@ -299,6 +307,13 @@ Text Domain: dichvubaove
         font-size: 0.9rem;
     }
 
+}
+
+@media screen and (max-width:768px) {
+    .no-padding__top-bottom-sm{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 .container-fluid {
@@ -458,8 +473,8 @@ html {
 
 
 header {
-    width: 100%;
-    position: absolute;
+    /* width: 100%; */
+    /* position: absolute; */
     z-index: 10;
     /* Ensure the header is above the overlay */
     color: var(--nav-item-color);
@@ -483,7 +498,7 @@ nav {
 }
 
 .nav-items {
-    margin-top: 0.2rem;
+    /* margin-top: 0.2rem; */
 }
 
 nav ul {
@@ -539,9 +554,7 @@ nav a {
 
 .logo {}
 
-.logo img {
-    max-width: 60px;
-}
+
 
 .site-button {
     background: linear-gradient(45deg, #ffb52d 34%, #ffd684 100%);
@@ -787,9 +800,16 @@ img {
     background-size: cover;
 }
 
-.dich-vu-bao-ve-item {}
+.dich-vu-bao-ve-item img {
+    object-fit: cover;
+    object-position: center 0;
+    height: 200px;
+}
 
-
+.dich-vu-bao-ve-item a{
+    text-decoration: none;
+    color: var(--second-color);
+}
 
 
 .overflow-hidden {
@@ -847,6 +867,9 @@ img {
     font-size: 1rem;
 }
 
+.prev,.next:hover{
+cursor: pointer;
+}
 
 .uppercase {
     text-transform: uppercase;
@@ -936,6 +959,10 @@ img {
 
 .secondary-color-bg {
     background-color: var(--second-color);
+}
+
+.second-color{
+    color: var(--second-color);
 }
 
 .third-color {
