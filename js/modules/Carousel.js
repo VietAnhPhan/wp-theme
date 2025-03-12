@@ -15,16 +15,19 @@ export class Carousel {
         this.carousels.forEach(carousel => {
             const track = carousel.querySelector(".carousel-track");
             const items = track.querySelectorAll(".carousel-item");
+            const range = carousel.getAttribute("data-range");
+            const unit = carousel.getAttribute("data-unit");
             let index = 0 ;
+            
             carousel.querySelector(".next").addEventListener("click", () => {
                 index = (index + 1) % items.length; // Loop back to start
-                this.updateCarousel(track, items, index);
+                this.updateCarousel(track, items, index, range, unit);
             
             });
 
             carousel.querySelector(".prev").addEventListener("click", () => {
                 index = (index - 1) % items.length; // Loop back to start
-                this.updateCarousel(track, items, index);
+                this.updateCarousel(track, items, index, range, unit);
             });
         });
 
@@ -111,8 +114,8 @@ export class Carousel {
     // }
 
 
-    updateCarousel(track, items, index) {
-        track.style.transform = `translateX(-${index * 300}px)`;
+    updateCarousel(track, items, index, range, unit) {
+        track.style.transform = `translateX(-${index * range}${unit})`;
     }
 
     translateToLeft() {

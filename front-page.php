@@ -3,21 +3,21 @@ get_header();
 ?>
 
 <!-- Your main content goes here -->
-<div class="slider">
-    <div class="slides">
-        <div class="slide">
+<div class="slider carousel" data-range="100" data-unit="%">
+    <div class="slides carousel-track">
+        <div class="slide carousel-item">
             <?php
             $image_url = get_template_directory_uri() . '/assets/banners/banner01_compressed.jpg';
             ?>
             <img src="<?php echo esc_url($image_url); ?>" alt="Banner 1">
         </div>
-        <div class="slide">
+        <div class="slide carousel-item">
             <?php
             $image_url = get_template_directory_uri() . '/assets/banners/banner02_compressed.jpg';
             ?>
             <img src="<?php echo esc_url($image_url); ?>" alt="Banner 2">
         </div>
-        <div class="slide">
+        <div class="slide carousel-item">
             <?php
             $image_url = get_template_directory_uri() . '/assets/banners/banner01_compressed.jpg';
             ?>
@@ -25,8 +25,8 @@ get_header();
         </div>
     </div>
 
-    <button class="arrow-navigation__prev arrow-navigation"><i class="fa-solid fa-arrow-left"></i></button>
-    <button class="arrow-navigation__next arrow-navigation"><i class="fa-solid fa-arrow-right"></i></button>
+    <button class="arrow-navigation__prev arrow-navigation prev"><i class="fa-solid fa-arrow-left"></i></button>
+    <button class="arrow-navigation__next arrow-navigation next"><i class="fa-solid fa-arrow-right"></i></button>
 
     <div class="navigation flex gap-8">
         <button class="prev"></button>
@@ -112,7 +112,7 @@ get_header();
         <h2 class="fs-xl main-color text-center uppercase">Dịch vụ bảo vệ việt bảo long</h2>
         <p class="text-white text-center max-w700 margin-auto m-bottom50">Ban Lãnh đạo Bảo vệ việt bảo long® xin gửi tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long® vững mạnh, đoàn kết như ngày nay</p>
     </div>
-    <div class="dich-vu-bao-ve-items overflow-hidden justify-content-center overflow-hidden carousel">
+    <div class="dich-vu-bao-ve-items overflow-hidden carousel" data-range="300" data-unit="px">
         <div class="carousel-track flex gap-30">
             <?php
             $services = new WP_Query(array(

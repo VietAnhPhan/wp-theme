@@ -610,16 +610,16 @@ i {
 
 .slide {
     flex: 0 0 100%;
-    transform: translateX(0);
-    transition: transform 2s ease-out 0.25s;
+    /* transform: translateX(0); */
+    /* transition: transform 2s ease-out 0.25s; */
 }
 
 .slide {
-    animation-duration: 3s;
-    /* animation-name: shift-to-left; */
+    /* animation-duration: 3s;
+    animation-name: shift-to-left;
     animation-iteration-count: infinite;
     animation-direction: normal;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
 }
 
 @keyframes shift-to-left {
