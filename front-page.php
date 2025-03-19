@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <!-- Your main content goes here -->
-<div class="slider carousel" data-range="100" data-unit="%">
+<div class="slider carousel overflow-x-hidden" data-range="100" data-unit="%">
     <div class="slides carousel-track">
         <div class="slide carousel-item">
             <?php
@@ -17,21 +17,15 @@ get_header();
             ?>
             <img src="<?php echo esc_url($image_url); ?>" alt="Banner 2">
         </div>
-        <div class="slide carousel-item">
-            <?php
-            $image_url = get_template_directory_uri() . '/assets/banners/banner01_compressed.jpg';
-            ?>
-            <img src="<?php echo esc_url($image_url); ?>" alt="Banner 1">
-        </div>
     </div>
 
     <button class="arrow-navigation__prev arrow-navigation prev"><i class="fa-solid fa-arrow-left"></i></button>
     <button class="arrow-navigation__next arrow-navigation next"><i class="fa-solid fa-arrow-right"></i></button>
 
-    <div class="navigation flex gap-8">
+    <!-- <div class="navigation flex gap-8">
         <button class="prev"></button>
         <button class="next"></button>
-    </div>
+    </div> -->
 </div>
 <div class="tieuchi">
     <div class="container">
@@ -164,7 +158,7 @@ get_header();
                 <p class="text-bold text-center">Bảo vệ cửa hàng</p>
             </div> -->
         </div>
-        <div class="text-center flex justify-content-center gap-20 p-20">
+        <div class="text-center flex justify-content-center gap-10 p-20">
             <button class="prev__dich-vu prev"><i class="fa-solid fa-arrow-left"></i></button>
             <button class="next__dich-vu next"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
@@ -273,7 +267,7 @@ get_header();
         <button class="tab__btn tab__btn_active uppercase" onclick="openTab(event, 'tab1')">dịch vụ</button>
         <button class="tab__btn uppercase" onclick="openTab(event, 'tab2')">hoạt động</button>
         <button class="tab__btn uppercase" onclick="openTab(event, 'tab3')">sự kiện</button>
-            <?php echo do_shortcode('[image_tabs]')?>
+            <?php echo do_shortcode('[gallery]'); ?>
     </div>
 </div> -->
 

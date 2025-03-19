@@ -1,12 +1,12 @@
 export class Carousel {
     constructor() {
 
-        this.slide = document.querySelector(".slides");
-        this.slideItems = Array.from(this.slide.querySelectorAll(".slide"));
-        this.nextButton = document.querySelector(".arrow-navigation__next");
-        this.prevButton = document.querySelector(".arrow-navigation__prev");
-        this.index = 0;
-        this.range = 0;
+        // this.slide = document.querySelector(".slides");
+        // this.slideItems = Array.from(this.slide.querySelectorAll(".slide"));
+        // this.nextButton = document.querySelector(".arrow-navigation__next");
+        // this.prevButton = document.querySelector(".arrow-navigation__prev");
+        // this.index = 0;
+        // this.range = 0;
         // this.nextImage();
         // this.prevImage();
 
@@ -15,10 +15,10 @@ export class Carousel {
         this.carousels.forEach(carousel => {
             const track = carousel.querySelector(".carousel-track");
             const items = track.querySelectorAll(".carousel-item");
-            const range = carousel.getAttribute("data-range");
-            const unit = carousel.getAttribute("data-unit");
+            const range = items[0].offsetWidth;
+            const unit = "px";
             let index = 0 ;
-            
+            // const itemWidth = items[0].offsetWidth;
             carousel.querySelector(".next").addEventListener("click", () => {
                 index = (index + 1) % items.length; // Loop back to start
                 this.updateCarousel(track, items, index, range, unit);
@@ -29,6 +29,11 @@ export class Carousel {
                 index = (index - 1) % items.length; // Loop back to start
                 this.updateCarousel(track, items, index, range, unit);
             });
+
+            // setInterval(() => {
+            //     index = (index + 1) % items.length; // Loop back to start
+            //     this.updateCarousel(track, items, index, range, unit);
+            // }, 5000);
         });
 
         // this.translateToLeft();
@@ -118,27 +123,27 @@ export class Carousel {
         track.style.transform = `translateX(-${index * range}${unit})`;
     }
 
-    translateToLeft() {
-        const slideItems = Array.from(this.slide.querySelectorAll(".slide"));
-        let index = slideItems.length;
-        slideItems.forEach(item => {
-            item.style.zIndex = index;
-            index--;
-        });
-        function loopItems() {
-            slideItems.forEach(item => {
-                setTimeout(() => {
-                    item.style.transform = "translateX(-100%)";
-                    // item.style.animationName="shift-to-left";
-                }, 3000);
-            })
-            // slideItems[index].style.transform = "translateX(0)";
+    // translateToLeft() {
+    //     const slideItems = Array.from(this.slide.querySelectorAll(".slide"));
+    //     let index = slideItems.length;
+    //     slideItems.forEach(item => {
+    //         item.style.zIndex = index;
+    //         index--;
+    //     });
+    //     function loopItems() {
+    //         slideItems.forEach(item => {
+    //             setTimeout(() => {
+    //                 item.style.transform = "translateX(-100%)";
+    //                 // item.style.animationName="shift-to-left";
+    //             }, 3000);
+    //         })
+    //         // slideItems[index].style.transform = "translateX(0)";
 
-            // index = (index+1)% slideItems.length;
+    //         // index = (index+1)% slideItems.length;
 
-        }
-        loopItems();
-        // setInterval(loopItems, 1000);
-    }
+    //     }
+    //     loopItems();
+    //     // setInterval(loopItems, 1000);
+    // }
 
 }

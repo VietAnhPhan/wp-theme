@@ -53,7 +53,17 @@ Text Domain: dichvubaove
 }
 
 @media (min-width: 0) {
-   
+    .flex-wrap-sm{
+        flex-wrap: wrap;
+    }
+   .flex-40{
+    flex:0 0 100%;
+    max-width: 100%;
+   }
+   .flex-60{
+    flex:0 0 100%;
+    max-width: 100%;
+   }
     .menu__mobile{
         z-index: 3;
     }
@@ -127,6 +137,8 @@ Text Domain: dichvubaove
 }
 
 @media (min-width: 786px) {
+  
+    
     .contact__bar.mobile{
         display: none;
     }
@@ -186,7 +198,18 @@ Text Domain: dichvubaove
 }
 
 @media (min-width: 992px) {
-
+    .flex-wrap-sm{
+        flex-wrap: nowrap;
+    }
+    .flex-40 {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+    
+    .flex-60 {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
     .logo img {
         max-width: 60px;
     }
@@ -604,14 +627,20 @@ i {
 
 .slides {
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
+}
+
+.overflow-x-hidden{
+    overflow-x: hidden;
 }
 
 .slide {
     flex: 0 0 100%;
-    /* transform: translateX(0); */
-    /* transition: transform 2s ease-out 0.25s; */
+   
+}
+.carousel-track{
+    transition: transform 2s ease-out 0.25s;
 }
 
 .slide {
@@ -1170,15 +1199,6 @@ iframe {
     border-radius: 3px;
 }
 
-.flex-40 {
-    flex: 0 0 40%;
-    max-width: 40%;
-}
-
-.flex-60 {
-    flex: 0 0 60%;
-    max-width: 60%;
-}
 
 .submenu-item a {
     font-weight: 400;
@@ -1191,6 +1211,7 @@ iframe {
     width: 300px;
     display: none;
     top: 2rem;
+    z-index: 2;
 }
 
 

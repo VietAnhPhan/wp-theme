@@ -20,7 +20,7 @@ get_header();
 
     <?php } ?>
 </div>
-<div class="container flex gap-30 page-content container flex gap-30">
+<div class="container flex gap-30 page-content container flex gap-30 flex-wrap-sm">
     <div class="flex-40">
         <div class="contact-page__box  p-20">
             <h5 class="flex align-items-center gap-10 fs-md mt-0"><i class="fa-solid fa-location-dot"></i>THÔNG TIN LIÊN HỆ</h5>
