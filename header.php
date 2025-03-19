@@ -14,15 +14,17 @@
     <div class="top-bar__mobile container text-center">
         <span class="top-bar__color slogan__identity display-block"> BẢO VỆ VIỆT BẢO LONG</span>
         <span class="slogan__text">An ninh tiên phong, bảo vệ chuyên nghiệp</span>
-        <?php echo do_shortcode('[gtranslate]');?>
+        <div class="pt-sm-6"><?php echo do_shortcode('[gtranslate]');?></div>
     </div>
     <header>
-        <div class="top-bar container flex-md justify-content-between">
-            <div class="second-color">
-                <span> BẢO VỆ VIỆT BẢO LONG</span>
-                <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span>
+        <div class="top-bar bg-color-2">
+            <div class="container flex-md justify-content-between align-items-center">
+                <div class="text-color__white">
+                    <span> BẢO VỆ VIỆT BẢO LONG</span>
+                    <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span>
+                </div>
+                <div class="multi-language"><?php echo do_shortcode('[gtranslate]');?></div>
             </div>
-            <div class="multi-language"><?php echo do_shortcode('[gtranslate]');?></div>
         </div>
         <div class="search-overlay search-overlay__top container container-fluid">
             <div class="container flex align-items-center gap-20 justify-content-lg-center">
@@ -36,7 +38,7 @@
                 </ul>
             </div>
         </div>
-        <nav class="nav-items secondary-color-bg">
+        <nav class="nav-items bg-color-1">
             <div class="container flex align-items-center justify-content-between no-padding__top-bottom-sm">
                 <div class="logo">
                     <a href="<?php echo site_url(); ?>">
@@ -77,7 +79,7 @@
                         <li class="menu-item"><a href="<?php echo site_url('/tuyen-dung') ?>">tuyển dụng</a></li>
                         <li class="menu-item"><a href="<?php echo site_url('/lien-he') ?>">liên hệ</a></li>
                         <li class="menu-item"><a href="<?php echo site_url('/du-an') ?>">dự án</a></li>
-                        <li><a class="site-button" href="">Hồ sơ năng lực</a></li>
+                        <!-- <li><a class="site-button" href="">Hồ sơ năng lực</a></li> -->
                         <li>
                             <button class="search-button">
                                 <i class="fa-solid fa-magnifying-glass"></i>

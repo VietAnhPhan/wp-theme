@@ -7,7 +7,7 @@ get_header();
     <div class="slides carousel-track">
         <div class="slide carousel-item">
             <?php
-            $image_url = get_template_directory_uri() . '/assets/banners/banner01_compressed.jpg';
+            $image_url = get_template_directory_uri() . '/assets/banners/banner03_compressed.jpg';
             ?>
             <img src="<?php echo esc_url($image_url); ?>" alt="Banner 1">
         </div>
@@ -61,49 +61,51 @@ get_header();
         </div>
     </div>
 </div>
-<div class="su-menh container flex align-items-center gap-10 content-inner flex-wrap">
-    <div class="flex-laptop left-hidden__section">
-        <h2 class="text-bold main-color uppercase">SỨ MỆNH CỦA Việt Bảo Long</h2>
-        <p>Ban Lãnh đạo Bảo Vệ việt bảo long xin gửi lời tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long vững mạnh, đoàn kết như ngày nay. Chúng tôi xin cam kết:</p>
-        <div class="su-menh-items">
-            <div class="su-menh-item flex align-items-center gap-20">
-                <div class="icon">
-                    <img class="icon-border" src="<?php echo wp_get_attachment_image_src(18)[0]; ?>" alt="">
+<div class="su-menh bg-color-3">
+    <div class="container flex align-items-center gap-10 content-inner flex-wrap">
+        <div class="flex-laptop left-hidden__section">
+            <h2 class="text-bold main-color uppercase">SỨ MỆNH CỦA Việt Bảo Long</h2>
+            <p>Ban Lãnh đạo Bảo Vệ việt bảo long xin gửi lời tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long vững mạnh, đoàn kết như ngày nay. Chúng tôi xin cam kết:</p>
+            <div class="su-menh-items">
+                <div class="su-menh-item flex align-items-center gap-20">
+                    <div class="icon">
+                        <img class="icon-border" src="<?php echo wp_get_attachment_image_src(18)[0]; ?>" alt="">
+                    </div>
+                    <div class="icon-content">
+                        <p class="text-bold">Đối Với Khách Hàng</p>
+                        <p>Cung cấp dịch vụ bảo vệ chuyên nghiệp nhất đáp ứng mọi nhu cầu của khách hàng</p>
+                    </div>
                 </div>
-                <div class="icon-content">
-                    <p class="text-bold">Đối Với Khách Hàng</p>
-                    <p>Cung cấp dịch vụ bảo vệ chuyên nghiệp nhất đáp ứng mọi nhu cầu của khách hàng</p>
+                <div class="su-menh-item flex align-items-center gap-20">
+                    <div class="icon">
+                        <img class="icon-border" src="<?php echo wp_get_attachment_image_src(17)[0]; ?>" alt="">
+                    </div>
+                    <div class="icon-content">
+                        <p class="text-bold">Đối Với Nhân Viên</p>
+                        <p>Tạo môi trường làm việc chuyên nghiệp và nguồn thu nhập ổn định cho cán bộ nhân viên</p>
+                    </div>
                 </div>
-            </div>
-            <div class="su-menh-item flex align-items-center gap-20">
-                <div class="icon">
-                    <img class="icon-border" src="<?php echo wp_get_attachment_image_src(17)[0]; ?>" alt="">
-                </div>
-                <div class="icon-content">
-                    <p class="text-bold">Đối Với Nhân Viên</p>
-                    <p>Tạo môi trường làm việc chuyên nghiệp và nguồn thu nhập ổn định cho cán bộ nhân viên</p>
-                </div>
-            </div>
-            <div class="su-menh-item flex align-items-center gap-20">
-                <div class="icon">
-                    <img class="icon-border" src="<?php echo wp_get_attachment_image_src(16)[0]; ?>" alt="">
-                </div>
-                <div class="icon-content">
-                    <p class="text-bold">Đối Với Xã Hội</p>
-                    <p>Góp phần giữ gìn trật tự an toàn xã hội, Đóng góp vào sự phát triển kinh tế đất nước</p>
+                <div class="su-menh-item flex align-items-center gap-20">
+                    <div class="icon">
+                        <img class="icon-border" src="<?php echo wp_get_attachment_image_src(16)[0]; ?>" alt="">
+                    </div>
+                    <div class="icon-content">
+                        <p class="text-bold">Đối Với Xã Hội</p>
+                        <p>Góp phần giữ gìn trật tự an toàn xã hội, Đóng góp vào sự phát triển kinh tế đất nước</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="flex-laptop">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/08.jpg" alt="hình đội ngũ">
+        <div class="flex-laptop">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/08.jpg" alt="hình đội ngũ">
+        </div>
     </div>
 </div>
 
-<div class="dich-vu-bao-ve content-inner city-bg opacity-full__section">
+<div class="dich-vu-bao-ve content-inner opacity-full__section">
     <div class="container">
 
-        <h2 class="fs-xl main-color text-center uppercase">Dịch vụ bảo vệ việt bảo long</h2>
+        <h2 class="fs-xl main-color text-center uppercase title__decoration">Dịch vụ bảo vệ việt bảo long</h2>
         <p class="text-white text-center max-w700 margin-auto m-bottom50">Ban Lãnh đạo Bảo vệ việt bảo long® xin gửi tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long® vững mạnh, đoàn kết như ngày nay</p>
     </div>
     <div class="dich-vu-bao-ve-items overflow-hidden carousel" data-range="300" data-unit="px">
@@ -116,7 +118,7 @@ get_header();
             ));
             while ($services->have_posts()) {
                 $services->the_post(); ?>
-                <div class="dich-vu-bao-ve-item bg-white p-10 flex-sm-100 flex-laptop-20 slide carousel-item">
+                <div class="dich-vu-bao-ve-item bg-color-1 p-10 flex-sm-100 flex-laptop-20 slide carousel-item">
                     <a href="<?php the_permalink(); ?>">
                         <?php the_post_thumbnail(); ?>
                         <p class="text-bold text-center"><?php the_title(); ?></p>
@@ -168,13 +170,13 @@ get_header();
 </div>
 <div class="li-do-chon-chung-toi content-inner opacity-full__section">
     <div class="container">
-        <h2 class="main-color text-center">6 LÝ DO ĐỂ CHỌN BẢO VỆ VIỆT BẢO LONG:</h2>
-        <p class="text-white max-w700 margin-auto text-center m-bottom50">Dịch vụ bảo vệ VIỆT BẢO LONG chú trọng trong việc đào tạo đội ngũ cân bộ nhân viên bài bản và chuyên sâu, luôn đảm bảo mang tới cho quý khách hàng một đội ngũ bảo vệ chuyên nghiệp – tâm huyết với nghề</p>
+        <h2 class="text-color__white text-center title__decoration">6 LÝ DO ĐỂ CHỌN BẢO VỆ VIỆT BẢO LONG:</h2>
+        <p class="text-color__white max-w700 margin-auto text-center m-bottom50">Dịch vụ bảo vệ VIỆT BẢO LONG chú trọng trong việc đào tạo đội ngũ cân bộ nhân viên bài bản và chuyên sâu, luôn đảm bảo mang tới cho quý khách hàng một đội ngũ bảo vệ chuyên nghiệp – tâm huyết với nghề</p>
     </div>
     <div class="flex container align-items-center gap-20 flex-wrap down-hidden__section">
         <div class="flex-col flex-laptop">
             <div class="flex">
-                <div class="icon-content text-white text-white">
+                <div class="icon-content text-color__white">
                     <p class="fs-md text-bold">Tiêu chuẩn chất lượng</p>
                     <p>Tiêu chuẩn chất lượng bảo vệ theo ISO 9001 - 2015</p>
                 </div>
@@ -183,7 +185,7 @@ get_header();
                 </div>
             </div>
             <div class="flex">
-                <div class="icon-content text-white">
+                <div class="icon-content text-color__white">
                     <p class="fs-md text-bold">Bảo hiểm trách nhiệm</p>
                     <p>Bảo hiểm trách nhiệm dân sự lên đến 10 tỷ đồng</p>
                 </div>
@@ -192,7 +194,7 @@ get_header();
                 </div>
             </div>
             <div class="flex">
-                <div class="icon-content text-white">
+                <div class="icon-content text-color__white">
                     <p class="fs-md text-bold">Trình độ chuyên môn</p>
                     <p>100% Đào tạo bài bản, chuyên nghiệp cho nhân viên</p>
                 </div>
@@ -206,7 +208,7 @@ get_header();
         </div>
         <div class="flex-col flex-laptop">
             <div class="flex">
-                <div class="icon-content text-white">
+                <div class="icon-content text-color__white">
                     <p class="fs-md text-bold">Tiêu chuẩn chất lượng</p>
                     <p>Tiêu chuẩn chất lượng bảo vệ theo ISO 9001 - 2015</p>
                 </div>
@@ -215,7 +217,7 @@ get_header();
                 </div>
             </div>
             <div class="flex">
-                <div class="icon-content text-white">
+                <div class="icon-content text-color__white">
                     <p class="fs-md text-bold">Bảo hiểm trách nhiệm</p>
                     <p>Bảo hiểm trách nhiệm dân sự lên đến 10 tỷ đồng</p>
                 </div>
@@ -224,7 +226,7 @@ get_header();
                 </div>
             </div>
             <div class="flex">
-                <div class="icon-content text-white">
+                <div class="icon-content text-color__white">
                     <p class="fs-md text-bold">Trình độ chuyên môn</p>
                     <p>100% Đào tạo bài bản, chuyên nghiệp cho nhân viên</p>
                 </div>
@@ -237,7 +239,7 @@ get_header();
 </div>
 
 <div class="tin-tuc page-content">
-    <h2 class="page__title text-center">Tin tức mới nhất</h2>
+    <h2 class="page__title text-center title__decoration">Tin tức mới nhất</h2>
     <p class="text-center">Tin tức liên quan đến bảo vệ cập nhật mới nhất</p>
     <div class="container flex gap-30 overflow-hidden">
         <?php
@@ -261,15 +263,21 @@ get_header();
     </div>
 </div>
 
-<!-- <div class="thu-vien-hinh-anh city-bg page-content">
-    <h2 class="page__title text-center">THƯ VIỆN HÌNH ẢNH</h2>
-    <div class="tabs text-center">
+<div class="thu-vien-hinh-anh city-bg page-content">
+    <h2 class="page__title text-center title__decoration text-color__white">THƯ VIỆN HÌNH ẢNH</h2>
+    <!-- <div class="tabs text-center">
         <button class="tab__btn tab__btn_active uppercase" onclick="openTab(event, 'tab1')">dịch vụ</button>
         <button class="tab__btn uppercase" onclick="openTab(event, 'tab2')">hoạt động</button>
         <button class="tab__btn uppercase" onclick="openTab(event, 'tab3')">sự kiện</button>
-            <?php echo do_shortcode('[gallery]'); ?>
+         
+    </div> -->
+    <div class="container">
+        <div class="custom-gallery grid grid-template__column_5">
+            <?php echo do_shortcode('[custom_gallery start=120 end=130]'); ?>
+        </div>
     </div>
-</div> -->
+</div>
+
 
 <div class="lien-he-ve-chung-toi page-content primary-color-bg">
     <div class="flex justify-content-between align-items-center container">
@@ -287,7 +295,7 @@ get_header();
     <div class="flex-laptop-60 camera-bg page-content p-b0">
         <div class="form__wrapper down-hidden__section">
             <div class="container">
-                <h3 class="page__title">Nhận yêu cầu báo giá chi tiết dịch vụ bảo vệ</h3>
+                <h3 class="page__title text-color__white">Nhận yêu cầu báo giá chi tiết dịch vụ bảo vệ</h3>
                 <p class="third-color opacity-75">Nếu quý khách đang thắc mắc bất kỳ gì về dịch vụ bảo vệ của Việt Bảo Long, bạn hãy để lại thông tin, chúng tôi sẽ gọi lại hỗ trợ cho quý khách!</p>
             </div>
             <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" class="flex-col primary-color-bg gap-25" method="POST">
