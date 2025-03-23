@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <!-- Your main content goes here -->
-<div class="slider carousel overflow-x-hidden" data-range="100" data-unit="%">
+<!-- <div class="slider carousel overflow-x-hidden" data-range="100" data-unit="%">
     <div class="slides carousel-track">
         <div class="slide carousel-item">
             <?php
@@ -21,36 +21,32 @@ get_header();
 
     <button class="arrow-navigation__prev arrow-navigation prev"><i class="fa-solid fa-arrow-left"></i></button>
     <button class="arrow-navigation__next arrow-navigation next"><i class="fa-solid fa-arrow-right"></i></button>
-
-    <!-- <div class="navigation flex gap-8">
-        <button class="prev"></button>
-        <button class="next"></button>
-    </div> -->
-</div>
+</div> -->
+<?php echo do_shortcode('[metaslider id="156"]');?>
 <div class="tieuchi">
     <div class="container">
-        <div class="tieuchi-wrapper flex flex-wrap gap-laptop-2 container">
-            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
-                <span class="icon"></span>
-                <span class="description text-bold">nhân viên</span>
+        <div class="tieuchi-wrapper row flex-wrap gap-laptop-2 container justify-around">
+            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
+                <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
+                <span class="description text-bold fun-fact-card__milestone">nhân viên</span>
                 <span class="number main-color text-bold">2000+</span>
                 <i class="fa-solid fa-caret-down text-white"></i>
             </div>
-            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
-                <span class="icon"></span>
-                <span class="description text-bold">khách hàng</span>
+            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
+                <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
+                <span class="description text-bold fun-fact-card__milestone">khách hàng</span>
                 <span class="number main-color text-bold">1000+</span>
                 <i class="fa-solid fa-caret-down text-white"></i>
             </div>
-            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
-                <span class="icon"></span>
-                <span class="description text-bold">chi nhánh</span>
+            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
+                <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
+                <span class="description text-bold fun-fact-card__milestone">chi nhánh</span>
                 <span class="number main-color text-bold">30+</span>
                 <i class="fa-solid fa-caret-down text-white"></i>
             </div>
-            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50">
-                <span class="icon"></span>
-                <span class="description text-bold">năm kinh nghiệm</span>
+            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
+                <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
+                <span class="description text-bold fun-fact-card__milestone">năm kinh nghiệm</span>
                 <span class="number main-color text-bold">10+</span>
                 <i class="fa-solid fa-caret-down text-white"></i>
             </div>
@@ -275,6 +271,13 @@ get_header();
         <div class="custom-gallery grid grid-template__column_5">
             <?php echo do_shortcode('[custom_gallery start=120 end=130]'); ?>
         </div>
+    </div>
+</div>
+
+<div class="page-content bg-color-light-blue">
+    <h2 class="page__title text-center title__decoration text-color__white">Đối tác của chúng tôi</h2>
+    <div class="container">
+            <?php echo do_shortcode('[metaslider id="130"]'); ?>
     </div>
 </div>
 

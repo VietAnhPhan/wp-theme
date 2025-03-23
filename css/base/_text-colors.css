@@ -1,0 +1,7 @@
+.text_white{
+    color:var(--text-primary);
+}
+
+.text_blue{
+    color: var(--primary-color);
+}

@@ -1,0 +1,24 @@
+/* In components/card.css */
+
+.fun-fact-card{}
+
+.fun-fact-card__icon{
+    max-width: 60px;
+}
+
+.fun-fact-card__background{
+
+    background-color: #ececff;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.fun-fact-card__milestone{
+    color: var(--secondary-color);
+    font-weight: 600;
+}

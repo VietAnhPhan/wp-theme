@@ -1,0 +1,30 @@
+:root {
+    /* Theme Colors */
+    --primary-color: #0b3a94;
+    --secondary-color: #000000;
+    --accent-color: #ffd105;
+    
+    /* Background Colors */
+    --bg-primary: #fff;
+    --bg-secondary: #F4FAFD;
+    --bg-tertiary: #007cd2;
+    
+    /* Text Colors */
+    --text-primary: #fff;
+    --text-secondary: #000;
+    
+    /* UI Elements */
+    --header-bg: #F0F0F0;
+    --nav-item-color: var(--primary-color);
+    --tab-btn-bg: #efefef;
+    --overlay-opacity: rgba(255, 255, 255, 0.75);
+    
+    /* Utility Colors */
+    --alert-color: #f00;
+    --top-bar-bg: #B36811;
+    
+    /* Layout & Spacing */
+    --container-padding: 1rem;
+    --min-width: 240px;
+}
+

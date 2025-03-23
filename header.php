@@ -11,15 +11,15 @@
 </head>
 
 <body>
-    <div class="top-bar__mobile container text-center">
+    <div class="top-bar__mobile container text-center hidden-lg">
         <span class="top-bar__color slogan__identity display-block"> BẢO VỆ VIỆT BẢO LONG</span>
         <span class="slogan__text">An ninh tiên phong, bảo vệ chuyên nghiệp</span>
         <div class="pt-sm-6"><?php echo do_shortcode('[gtranslate]');?></div>
     </div>
     <header>
-        <div class="top-bar bg-color-2">
-            <div class="container flex-md justify-content-between align-items-center">
-                <div class="text-color__white">
+        <div class="top-bar header__top-bar_primary_color">
+            <div class="container d-flex flex-md justify-between align-center">
+                <div class="text_white">
                     <span> BẢO VỆ VIỆT BẢO LONG</span>
                     <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span>
                 </div>
@@ -38,27 +38,27 @@
                 </ul>
             </div>
         </div>
-        <nav class="nav-items bg-color-1">
-            <div class="container flex align-items-center justify-content-between no-padding__top-bottom-sm">
+        <nav class="nav-items bg-color-1 header__nav container row">
+            <!-- <div class="container flex align-items-center justify-content-between no-padding__top-bottom-sm"> -->
                 <div class="logo">
                     <a href="<?php echo site_url(); ?>">
                         <?php
                         $image_id = 54; // Replace with the ID of your image
                         $logo_url = wp_get_attachment_image_src($image_id, 'full')[0];
                         ?>
-                        <img src="<?php echo esc_url($logo_url); ?>" alt="logo image">
+                        <img class="logo__img" src="<?php echo esc_url($logo_url); ?>" alt="logo image">
                     </a>
                 </div>
                 <div class="menu">
-                    <ul>
-                        <li class="menu-item"><a href="<?php echo site_url("/")?>">Trang chủ</a></li>
-                        <li class="menu-item"><a href="<?php echo site_url('/gioi-thieu') ?>">Giới thiệu</a></li>
-                        <li class="menu-item position-relative">
-                            <a href="<?php echo site_url('/dich-vu') ?>">
+                    <ul class="d-flex menu__list align-center">
+                        <li class="menu__item"><a class="link menu__link" href="<?php echo site_url("/")?>">Trang chủ</a></li>
+                        <li class="menu__item"><a class="link menu__link" href="<?php echo site_url('/gioi-thieu') ?>">Giới thiệu</a></li>
+                        <li class="menu__item position-relative">
+                            <a class="link menu__link" href="<?php echo site_url('/dich-vu') ?>">
                                 Dịch vụ
                                 <i class="fa-solid fa-chevron-down"></i>
                             </a>
-                            <ul class="list-type-none flex-col submenu position-absolute">
+                            <ul class="list-type-none flex-col submenu position-absolute menu__list hidden">
                                 <?php
                                 $terms = get_terms(array(
                                     'taxonomy' => 'service-category',
@@ -66,7 +66,7 @@
                                 ));
                                 foreach ($terms as $term): ?>
                                     <li class="submenu-item">
-                                        <a href="<?php echo get_term_link($term); ?>">
+                                        <a class="link" href="<?php echo get_term_link($term); ?>">
                                             <?php echo $term->name; ?>
                                         </a>
                                     </li>
@@ -75,10 +75,10 @@
                                 ?>
                             </ul>
                         </li>
-                        <li class="menu-item"><a href="<?php echo site_url('/blog'); ?>">tin tức</a></li>
-                        <li class="menu-item"><a href="<?php echo site_url('/tuyen-dung') ?>">tuyển dụng</a></li>
-                        <li class="menu-item"><a href="<?php echo site_url('/lien-he') ?>">liên hệ</a></li>
-                        <li class="menu-item"><a href="<?php echo site_url('/du-an') ?>">dự án</a></li>
+                        <li class="menu__item"><a class="link menu__link" href="<?php echo site_url('/blog'); ?>">tin tức</a></li>
+                        <li class="menu__item"><a class="link menu__link" href="<?php echo site_url('/tuyen-dung') ?>">tuyển dụng</a></li>
+                        <li class="menu__item"><a class="link menu__link" href="<?php echo site_url('/lien-he') ?>">liên hệ</a></li>
+                        <li class="menu__item"><a class="link menu__link" href="<?php echo site_url('/du-an') ?>">dự án</a></li>
                         <!-- <li><a class="site-button" href="">Hồ sơ năng lực</a></li> -->
                         <li>
                             <button class="search-button">
@@ -87,7 +87,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="menu__mobile flex">
+                <div class="menu__mobile flex hidden-lg">
                     <button class="search-button search-button__mobile">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
@@ -136,7 +136,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
 
 
         </nav>
