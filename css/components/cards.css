@@ -21,4 +21,5 @@
 .fun-fact-card__milestone{
     color: var(--secondary-color);
     font-weight: 600;
+    margin: 10px 0;
 }

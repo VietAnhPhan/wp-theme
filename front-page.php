@@ -23,32 +23,36 @@ get_header();
     <button class="arrow-navigation__next arrow-navigation next"><i class="fa-solid fa-arrow-right"></i></button>
 </div> -->
 <?php echo do_shortcode('[metaslider id="156"]');?>
-<div class="tieuchi">
+<div class="tieuchi bg-f2f2f7">
     <div class="container">
         <div class="tieuchi-wrapper row flex-wrap gap-laptop-2 container justify-around">
             <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
                 <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                <span class="description text-bold fun-fact-card__milestone">nhân viên</span>
-                <span class="number main-color text-bold">2000+</span>
-                <i class="fa-solid fa-caret-down text-white"></i>
+                <span class="number main-color text-bold fun-fact-card__milestone text-2xl counter" data-target="50">2000+</span>
+                <span class="description text-bold">nhân viên</span>
+               
+                <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
             </div>
             <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
                 <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                <span class="description text-bold fun-fact-card__milestone">khách hàng</span>
-                <span class="number main-color text-bold">1000+</span>
-                <i class="fa-solid fa-caret-down text-white"></i>
+                <span class="number main-color text-bold fun-fact-card__milestone text-2xl">1000+</span>
+                <span class="description text-bold">khách hàng</span>
+               
+                <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
             </div>
             <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
                 <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                <span class="description text-bold fun-fact-card__milestone">chi nhánh</span>
-                <span class="number main-color text-bold">30+</span>
-                <i class="fa-solid fa-caret-down text-white"></i>
+                <span class="number main-color text-bold fun-fact-card__milestone text-2xl">30+</span>
+                <span class="description text-bold">chi nhánh</span>
+               
+                <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
             </div>
             <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
                 <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                <span class="description text-bold fun-fact-card__milestone">năm kinh nghiệm</span>
-                <span class="number main-color text-bold">10+</span>
-                <i class="fa-solid fa-caret-down text-white"></i>
+                <span class="number main-color text-bold fun-fact-card__milestone text-2xl">10+</span>
+                <span class="description text-bold">năm kinh nghiệm</span>
+               
+                <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
             </div>
         </div>
         <div class="tieuchi-convince">
