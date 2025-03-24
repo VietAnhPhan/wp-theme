@@ -304,8 +304,8 @@ get_header();
 </div>
 
 <!-- =========================THƯ VIỆN HÌNH ẢNH========================= -->
-<div class="thu-vien-hinh-anh city-bg page-content">
-    <h2 class="page__title text-center title__decoration text-color__white">THƯ VIỆN HÌNH ẢNH</h2>
+<div class="thu-vien-hinh-anh city-bg page-content bg-F4FAFD section">
+    <h2 class="text-bold main-color uppercase text_blue title__decoration_border_bottom title__section text-uppercase text-center">THƯ VIỆN HÌNH ẢNH</h2>
     <!-- <div class="tabs text-center">
         <button class="tab__btn tab__btn_active uppercase" onclick="openTab(event, 'tab1')">dịch vụ</button>
         <button class="tab__btn uppercase" onclick="openTab(event, 'tab2')">hoạt động</button>
@@ -313,15 +313,17 @@ get_header();
          
     </div> -->
     <div class="container">
-        <!-- <div class="custom-gallery grid grid-template__column_5">
-            <?php echo do_shortcode('[custom_gallery start=120 end=130]'); ?>
-        </div> -->
+        <div class="custom-gallery grid grid-template__column_5">
+            <!-- <?php echo do_shortcode('[custom_gallery start=120 end=130]'); ?> -->
+             <!-- <?php echo do_shortcode('[metaslider id="170"]');?> -->
+             <?php if( function_exists('photo_gallery') ) { photo_gallery(1); } ?>
+        </div>
     </div>
 </div>
 
 <!-- =========================ĐỐI TÁC=================================== -->
-<div class="page-content bg-color-light-blue">
-    <h2 class="page__title text-center title__decoration text-color__white">Đối tác của chúng tôi</h2>
+<div class="section bg-007cd2">
+    <h2 class="text-bold main-color uppercase text_white title__decoration_border_bottom title__section text-uppercase text-center">Đối tác của chúng tôi</h2>
     <div class="container">
         <?php echo do_shortcode('[metaslider id="130"]'); ?>
     </div>
