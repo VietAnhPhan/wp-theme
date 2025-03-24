@@ -22,72 +22,77 @@ get_header();
     <button class="arrow-navigation__prev arrow-navigation prev"><i class="fa-solid fa-arrow-left"></i></button>
     <button class="arrow-navigation__next arrow-navigation next"><i class="fa-solid fa-arrow-right"></i></button>
 </div> -->
-<?php echo do_shortcode('[metaslider id="156"]');?>
-<div class="tieuchi bg-f2f2f7">
+<?php echo do_shortcode('[metaslider id="156"]'); ?>
+<div class="tieuchi bg-f2f2f7 section">
     <div class="container">
-        <div class="tieuchi-wrapper row flex-wrap gap-laptop-2 container justify-around">
-            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
-                <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                <span class="number main-color text-bold fun-fact-card__milestone text-2xl counter" data-target="50">2000+</span>
-                <span class="description text-bold">nhân viên</span>
-               
-                <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
+        <div class="tieuchi-convince text-center text-bold">
+            <p class="text-white text-bold fs-l text_blue text-xl">Với hơn 10 năm kinh nghiệm trong nghề, việt bảo long cung cấp</p>
+            <p class="main-color text-bold fs-xl text_blue text-2xl">DỊCH VỤ BẢO VỆ CHUYÊN NGHIỆP VỚI CHI PHÍ TỐI ƯU NHẤT</p>
+        </div>
+        <div class="tieuchi-wrapper row flex-wrap gap-laptop-2 container">
+            <div class="col-lg-3 col-sm-6">
+                <div class="fun-fact-card tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-center">
+                    <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
+                    <span class="number main-color text-bold fun-fact-card__milestone text-2xl counter" data-target="50">2000+</span>
+                    <span class="description text-bold text-capitalize">nhân viên</span>
+                    <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
+                </div>
             </div>
-            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
-                <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                <span class="number main-color text-bold fun-fact-card__milestone text-2xl">1000+</span>
-                <span class="description text-bold">khách hàng</span>
-               
-                <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="fun-fact-card tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-center">
+                    <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
+                    <span class="number main-color text-bold fun-fact-card__milestone text-2xl">1000+</span>
+                    <span class="description text-bold text-capitalize">khách hàng</span>
+                    <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
+                </div>
             </div>
-            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
-                <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                <span class="number main-color text-bold fun-fact-card__milestone text-2xl">30+</span>
-                <span class="description text-bold">chi nhánh</span>
-               
-                <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="fun-fact-card tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-center">
+                    <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
+                    <span class="number main-color text-bold fun-fact-card__milestone text-2xl">30+</span>
+                    <span class="description text-bold text-capitalize">chi nhánh</span>
+                    <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
+                </div>
             </div>
-            <div class="tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-uppercase text-center">
-                <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                <span class="number main-color text-bold fun-fact-card__milestone text-2xl">10+</span>
-                <span class="description text-bold">năm kinh nghiệm</span>
-               
-                <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
+            <div class="col-lg-3 col-sm-6">
+                <div class="fun-fact-card tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-center">
+                    <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
+                    <span class="number main-color text-bold fun-fact-card__milestone text-2xl">10+</span>
+                    <span class="description text-bold text-capitalize">năm kinh nghiệm</span>
+                    <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
+                </div>
             </div>
         </div>
-        <div class="tieuchi-convince">
-            <p class="text-white text-bold fs-l">Với hơn 10 năm kinh nghiệm trong nghề, việt bảo long cung cấp</p>
-            <p class="main-color text-bold fs-xl">DỊCH VỤ BẢO VỆ CHUYÊN NGHIỆP VỚI CHI PHÍ TỐI ƯU NHẤT</p>
-        </div>
+
     </div>
 </div>
 <div class="su-menh bg-color-3">
-    <div class="container flex align-items-center gap-10 content-inner flex-wrap">
-        <div class="flex-laptop left-hidden__section">
+    <div class="container row align-items-center gap-10 content-inner flex-wrap">
+        <div class="flex-laptop left-hidden__section col-sm-6 col-12">
             <h2 class="text-bold main-color uppercase">SỨ MỆNH CỦA Việt Bảo Long</h2>
             <p>Ban Lãnh đạo Bảo Vệ việt bảo long xin gửi lời tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long vững mạnh, đoàn kết như ngày nay. Chúng tôi xin cam kết:</p>
             <div class="su-menh-items">
-                <div class="su-menh-item flex align-items-center gap-20">
+                <div class="su-menh-item d-flex align-items-center gap-20">
                     <div class="icon">
-                        <img class="icon-border" src="<?php echo wp_get_attachment_image_src(18)[0]; ?>" alt="">
+                        <img class="icon__img icon__img-border icon-border" src="<?php echo wp_get_attachment_image_src(18)[0]; ?>" alt="">
                     </div>
                     <div class="icon-content">
                         <p class="text-bold">Đối Với Khách Hàng</p>
                         <p>Cung cấp dịch vụ bảo vệ chuyên nghiệp nhất đáp ứng mọi nhu cầu của khách hàng</p>
                     </div>
                 </div>
-                <div class="su-menh-item flex align-items-center gap-20">
+                <div class="su-menh-item d-flex align-items-center gap-20">
                     <div class="icon">
-                        <img class="icon-border" src="<?php echo wp_get_attachment_image_src(17)[0]; ?>" alt="">
+                        <img class="icon__img icon__img-border icon-border" src="<?php echo wp_get_attachment_image_src(17)[0]; ?>" alt="">
                     </div>
                     <div class="icon-content">
                         <p class="text-bold">Đối Với Nhân Viên</p>
                         <p>Tạo môi trường làm việc chuyên nghiệp và nguồn thu nhập ổn định cho cán bộ nhân viên</p>
                     </div>
                 </div>
-                <div class="su-menh-item flex align-items-center gap-20">
+                <div class="su-menh-item d-flex align-items-center gap-20">
                     <div class="icon">
-                        <img class="icon-border" src="<?php echo wp_get_attachment_image_src(16)[0]; ?>" alt="">
+                        <img class="icon__img icon__img-border icon-border" src="<?php echo wp_get_attachment_image_src(16)[0]; ?>" alt="">
                     </div>
                     <div class="icon-content">
                         <p class="text-bold">Đối Với Xã Hội</p>
@@ -96,7 +101,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="flex-laptop">
+        <div class="flex-laptop col-sm-6 col-12">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/08.jpg" alt="hình đội ngũ">
         </div>
     </div>
@@ -109,7 +114,7 @@ get_header();
         <p class="text-white text-center max-w700 margin-auto m-bottom50">Ban Lãnh đạo Bảo vệ việt bảo long® xin gửi tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long® vững mạnh, đoàn kết như ngày nay</p>
     </div>
     <div class="dich-vu-bao-ve-items overflow-hidden carousel" data-range="300" data-unit="px">
-        <div class="carousel-track flex gap-30">
+        <div class="carousel-track gap-30 d-flex">
             <?php
             $services = new WP_Query(array(
                 'post_type' => 'service',
@@ -173,8 +178,8 @@ get_header();
         <h2 class="text-color__white text-center title__decoration">6 LÝ DO ĐỂ CHỌN BẢO VỆ VIỆT BẢO LONG:</h2>
         <p class="text-color__white max-w700 margin-auto text-center m-bottom50">Dịch vụ bảo vệ VIỆT BẢO LONG chú trọng trong việc đào tạo đội ngũ cân bộ nhân viên bài bản và chuyên sâu, luôn đảm bảo mang tới cho quý khách hàng một đội ngũ bảo vệ chuyên nghiệp – tâm huyết với nghề</p>
     </div>
-    <div class="flex container align-items-center gap-20 flex-wrap down-hidden__section">
-        <div class="flex-col flex-laptop">
+    <div class="row container align-items-center gap-20 flex-wrap down-hidden__section">
+        <div class="flex-col flex-laptop col-lg-4 col-12">
             <div class="flex">
                 <div class="icon-content text-color__white">
                     <p class="fs-md text-bold">Tiêu chuẩn chất lượng</p>
@@ -184,7 +189,7 @@ get_header();
                     <img src="<?php echo wp_get_attachment_image_src(35)[0]; ?>" alt="">
                 </div>
             </div>
-            <div class="flex">
+            <div class="flex col-lg-4">
                 <div class="icon-content text-color__white">
                     <p class="fs-md text-bold">Bảo hiểm trách nhiệm</p>
                     <p>Bảo hiểm trách nhiệm dân sự lên đến 10 tỷ đồng</p>
@@ -203,10 +208,10 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="flex-laptop">
+        <div class="flex-laptop col-lg-4 col-12">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/circle.png ?>" alt="">
         </div>
-        <div class="flex-col flex-laptop">
+        <div class="flex-col flex-laptop col-lg-4 col-12">
             <div class="flex">
                 <div class="icon-content text-color__white">
                     <p class="fs-md text-bold">Tiêu chuẩn chất lượng</p>
@@ -241,7 +246,7 @@ get_header();
 <div class="tin-tuc page-content">
     <h2 class="page__title text-center title__decoration">Tin tức mới nhất</h2>
     <p class="text-center">Tin tức liên quan đến bảo vệ cập nhật mới nhất</p>
-    <div class="container flex gap-30 overflow-hidden">
+    <div class="container gap-30 overflow-hidden d-flex">
         <?php
         $recentPosts = new WP_Query(array(
             'posts_per_page' => 9
@@ -272,22 +277,22 @@ get_header();
          
     </div> -->
     <div class="container">
-        <div class="custom-gallery grid grid-template__column_5">
+        <!-- <div class="custom-gallery grid grid-template__column_5">
             <?php echo do_shortcode('[custom_gallery start=120 end=130]'); ?>
-        </div>
+        </div> -->
     </div>
 </div>
 
 <div class="page-content bg-color-light-blue">
     <h2 class="page__title text-center title__decoration text-color__white">Đối tác của chúng tôi</h2>
     <div class="container">
-            <?php echo do_shortcode('[metaslider id="130"]'); ?>
+        <?php echo do_shortcode('[metaslider id="130"]'); ?>
     </div>
 </div>
 
 
 <div class="lien-he-ve-chung-toi page-content primary-color-bg">
-    <div class="flex justify-content-between align-items-center container">
+    <div class="row justify-content-between align-items-center container">
         <div class="contact__text flex-75">
             <h2 class="page__title third-color">Liên Hệ Với Chúng Tôi: 0966 673 288</h2>
             <p class="third-color">Việt Bảo Long hân hạnh được hợp tác với các Khách Hàng tiêu biểu</p>
@@ -298,7 +303,7 @@ get_header();
     </div>
 </div>
 
-<div class="yeu-cau-bao-gia flex flex-wrap overflow-hidden">
+<div class="yeu-cau-bao-gia row flex-wrap overflow-hidden">
     <div class="flex-laptop-60 camera-bg page-content p-b0">
         <div class="form__wrapper down-hidden__section">
             <div class="container">

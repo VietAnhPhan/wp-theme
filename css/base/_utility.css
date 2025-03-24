@@ -10,7 +10,7 @@
 /* Show elements at specific breakpoints */
 @media (min-width: 576px) {
     .hidden-sm {
-        display: block;
+        display: none;
     }
 
     .text-sm {
@@ -29,6 +29,9 @@
 }
 
 @media (min-width: 992px) {
+    .hidden-sm{
+        display: block;
+    }
     .hidden-lg {
         display: none;
     }
@@ -64,6 +67,7 @@
 .flex-column{
     flex-direction: column;
 }
+
 .justify-center {
     justify-content: center;
 }
@@ -109,8 +113,21 @@
     flex-basis: 25%;
 }
 
+.col {
+    flex: 1; /* Ensures equal width columns */
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 0; /* Prevents flex issues */
+}
+
 /* Responsive Grid */
+@media (max-width:575.9px){
+    .flex-column-sm{
+        flex-direction: column;
+    }
+}
 @media (min-width: 576px) {
+  
     .col-sm-6 {
         flex-basis: 50%;
     }
@@ -152,3 +169,16 @@
     }
 }
 
+img {
+    display: block;
+    max-width: 100%; /* Ensures the image doesn't exceed its container */
+    height: auto; /* Keeps the aspect ratio */
+}
+
+html, body, *{
+box-sizing: border-box;
+}
+
+iframe{
+    max-width: 100%;
+}

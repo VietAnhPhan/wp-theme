@@ -1,6 +1,11 @@
-header {}
+header {
+    z-index: 1;
+    position: relative;
+}
 
-.header__top-bar {}
+.header__top-bar {
+    position: relative;
+}
 
 .header__top-bar_primary_color {
     background-color: var(--primary-color);
@@ -13,6 +18,54 @@ header {}
     padding-top: 0.1rem;
     border-top: 1px solid rgba(255, 255, 255, .05);
     border-bottom: 1px solid rgba(255, 255, 255, .08);
+    background-color: var(--bg-primary);
+}
+
+.header__dropdown{
+    padding: 1rem;
+}
+
+.header__dropdown
+
+.header__dropdown-menu{
+
+}
+.header__dropdown-menu-item_not_last{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.header__dropdown-menu-item-link{
+    text-decoration: none;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+
+
+.header__dropdown-icon_size_md{
+    font-size: 1.5rem;
+}
+
+.header__search-button{
+    background: none;
+    border: none;
+}
+
+.header-scrolled{
+    position: sticky;
+    top: 0;
+    box-shadow: -1px 7px 10px -9px rgba(0,0,0,0.5);
+    -webkit-box-shadow: -1px 7px 10px -9px rgba(0,0,0,0.5);
+    -moz-box-shadow: -1px 7px 10px -9px rgba(0,0,0,0.5);
+}
+
+.header__cta{
+    background: linear-gradient(45deg, #ffb52d 34%, #ffd684 100%);
+    padding: 0.9rem 1rem;
+}
+
+.header__social-media-list{
+    gap: 10px;
 }
 
 .logo{
@@ -23,7 +76,9 @@ header {}
     height: auto;
 }
 
-.menu{}
+.menu{
+    position: relative;
+}
 .menu__list{
     list-style: none;
 }
@@ -38,6 +93,49 @@ header {}
     font-weight: bold;
 }
 
+.menu__mobile{
+    /* position: fixed; */
+    /* left: 0;
+    top: 0; */
+    background-color: var(--bg-primary);
+    padding: 30px 25px;
+    /* width: 280px; */
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+
+.menu__mobile-active{
+    display: block;
+}
+.menu__mobile-hidden{
+    display: none;
+}
+
+
 .search-overlay{
     display: none;
+}
+
+
+@media (min-width: 576px) {
+    
+}
+
+@media (min-width: 768px) {
+ 
+  
+}
+
+@media (min-width: 992px) {
+   
+}
+
+@media (min-width: 1200px) {
+   
+}
+
+@media (min-width: 1400px) {
+  
 }

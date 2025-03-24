@@ -3,6 +3,10 @@
     text-transform: uppercase;
 }
 
+.text-capitalize {
+    text-transform: capitalize;
+}
+
 .text-center{
     text-align: center;
 }
@@ -14,3 +18,13 @@
 .text-xl { font-size: 1.5rem; } /* 24px */
 .text-2xl { font-size: 2rem; } /* 32px */
 .text-3xl { font-size: 2.5rem; } /* 40px */
+
+.text-thin { font-weight: 100; } /* Thin */
+.text-extra-light { font-weight: 200; } /* Extra Light */
+.text-light { font-weight: 300; } /* Light */
+.text-regular { font-weight: 400; } /* Normal */
+.text-medium { font-weight: 500; } /* Medium */
+.text-semi-bold { font-weight: 600; } /* Semi-Bold */
+.text-bold { font-weight: 700; } /* Bold */
+.text-extra-bold { font-weight: 800; } /* Extra Bold */
+.text-black { font-weight: 900; } /* Black */

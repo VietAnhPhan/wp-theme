@@ -119,9 +119,9 @@ Text Domain: dichvubaove
         display: none;
     }
 
-    .navbar-expand-lg {
+    /* .navbar-expand-lg { */
         /* display: none; */
-    }
+    /* } */
 
     .flex-sm-100 {
         flex: 0 0 100%;
@@ -346,9 +346,9 @@ Text Domain: dichvubaove
 }
 
 @media (min-width: 1025px) {
-    .navbar-expand-lg {
+    /* .navbar-expand-lg { */
         /* display: flex; */
-    }
+    /* } */
 }
 
 @media screen and (max-width: 1200px) {
@@ -481,7 +481,7 @@ img {
     color: var(--third-color);
 }
 
-.tabs {}
+/* .tabs {} */
 
 .tab__btn_active {
     background-color: var(--main-color);

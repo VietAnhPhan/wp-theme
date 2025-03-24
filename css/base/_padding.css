@@ -1,0 +1,26 @@
+:root{
+    --section-padding-xs: 1rem;   /* 16px */
+    --section-padding-sm: 2rem;   /* 32px */
+    --section-padding-md: 3rem;   /* 48px */
+    --section-padding-lg: 4rem;   /* 64px */
+    --section-padding-xl: 5rem;   /* 80px */
+}
+
+/* Base Section */
+.section {
+    width: 100%;
+    padding-top: var(--section-padding-md);
+    padding-bottom: var(--section-padding-md);
+}
+
+/* Section Variants */
+.section--xs { padding-top: var(--section-padding-xs); padding-bottom: var(--section-padding-xs); }
+.section--sm { padding-top: var(--section-padding-sm); padding-bottom: var(--section-padding-sm); }
+.section--md { padding-top: var(--section-padding-md); padding-bottom: var(--section-padding-md); }
+.section--lg { padding-top: var(--section-padding-lg); padding-bottom: var(--section-padding-lg); }
+.section--xl { padding-top: var(--section-padding-xl); padding-bottom: var(--section-padding-xl); }
+
+/* Specific Sections */
+.section--hero { padding-top: var(--section-padding-lg); padding-bottom: var(--section-padding-lg); }
+.section--content { padding-top: var(--section-padding-md); padding-bottom: var(--section-padding-md); }
+.section--footer { padding-top: var(--section-padding-sm); padding-bottom: var(--section-padding-sm); }

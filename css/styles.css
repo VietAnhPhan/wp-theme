@@ -1,12 +1,13 @@
 @import "./base/_variables.css";
 @import "./base/_text-colors.css";
 @import "./base/_typography.css";
-
+@import "./base/_background.css";
+@import "./base/_padding.css";
 
 @import "./components/link.css";
 @import "./components/cards.css";
-
-
+@import "./components/icons.css";
+@import "./components/carousels.css";
 
 @import url("./base/_utility.css");
 @import url("./modules/container.css");

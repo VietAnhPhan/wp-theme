@@ -1,6 +1,13 @@
 /* In components/card.css */
 
-.fun-fact-card{}
+.fun-fact-card{
+    text-align: center;
+    background: #fff;
+    padding: 30px 10px;
+    border-radius: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
 
 .fun-fact-card__icon{
     max-width: 60px;
