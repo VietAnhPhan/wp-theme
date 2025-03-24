@@ -1,0 +1,27 @@
+/* modules/content-box.css */
+.content-box__background_white{
+    background-color: var(--bg-primary);
+}
+
+.content-box__background_blue{
+    background-color: var(--primary-color);
+}
+
+
+.content-box__border_bottom_rounded{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.content-box__title_padding{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content-box__title_color_white{
+    color: var(--text-primary);
+}
+
+.content-box__title_justify{
+    text-align: justify;
+}

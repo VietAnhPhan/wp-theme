@@ -161,10 +161,12 @@ get_header();
         while ($servicePricings->have_posts()) {
             $servicePricings->the_post(); ?>
             <div class="dich-vu-bao-ve-item bg-color-1 p-10 flex-sm-100 flex-laptop-20 slide carousel-item col-lg-4 service__item col-12">
-                <a class="link text_blue" href="<?php the_permalink(); ?>">
-                    <div class="image-thumbnail-container"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail')); ?></div>
-                    <p class="text-bold text-center"><?php the_title(); ?></p>
-                </a>
+                <div class="content-box__border_bottom_rounded content-box__background_white">
+                    <a class="link text_blue" href="<?php the_permalink(); ?>">
+                        <div class="image-thumbnail-container"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail')); ?></div>
+                        <p class="text-bold text-center content-box__title_padding"><?php the_title(); ?></p>
+                    </a>
+                </div>
             </div>
         <?php }
         wp_reset_postdata();
@@ -277,7 +279,7 @@ get_header();
 <div class="tin-tuc page-content section">
     <h2 class="text-bold main-color uppercase text_blue title__decoration_border_bottom title__section text-uppercase text-center">Tin tức mới nhất</h2>
     <p class="text-center">Tin tức liên quan đến bảo vệ cập nhật mới nhất</p>
-    <div class="container gap-30 overflow-hidden d-flex">
+    <div class="container gap-30 overflow-hidden d-flex row">
         <?php
         $recentPosts = new WP_Query(array(
             'posts_per_page' => 9
@@ -286,13 +288,15 @@ get_header();
         while ($recentPosts->have_posts()) {
             $recentPosts->the_post(); ?>
             <div class="post flex-laptop-30 post__border flex-sm-100 overflow-hidden flex-col justify-content-between slide col-12 col-lg-4">
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                <div class="post__info">
-                    <h3 class="post__title"><a class="link text_blue" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                    <!-- <div class="post-excerpt">
-                        <?php echo wp_trim_words(get_the_content(), 18); ?>
-                        <p><a class="btn btn__post_detail" href="<?php the_permalink(); ?>">CHI TIẾT</a></p>
-                    </div> -->
+                <div class="content-box__background_blue content-box__border_bottom_rounded">
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                    <div class="post__info">
+                        <h3 class="post__title content-box__title_padding content-box__title_justify"><a class="link content-box__title_color_white" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <!-- <div class="post-excerpt">
+                            <?php echo wp_trim_words(get_the_content(), 18); ?>
+                            <p><a class="btn btn__post_detail" href="<?php the_permalink(); ?>">CHI TIẾT</a></p>
+                        </div> -->
+                    </div>
                 </div>
             </div>
         <?php } ?>
