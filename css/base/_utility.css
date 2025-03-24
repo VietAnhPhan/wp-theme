@@ -193,7 +193,8 @@ body,
 body{
     min-width: var(--min-width);
     font-family: 'Roboto', sans-serif;
-    font-size: calc(16px + (26 - 16) * ((100vw - 320px) / (1600 - 320)));
+    font-size: 1rem;
+    /* font-size: calc(16px + (26 - 16) * ((100vw - 320px) / (1600 - 320))); */
 }
 
 iframe {

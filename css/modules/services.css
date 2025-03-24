@@ -1,0 +1,20 @@
+/* modules/services.css */
+.service__item{
+    overflow: hidden;
+}
+
+.service__item-image {
+    object-fit: cover;
+    object-position: center 0;
+    height: 265px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service__item-image:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+
+.service__item-image-container{
+    max-width: 100%;
+    overflow: hidden;
+}

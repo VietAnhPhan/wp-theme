@@ -76,6 +76,21 @@ function create_post_type()
         'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
         'show_in_rest'  => true
     ));
+
+    register_post_type('service-pricing', array(
+        'has_archive' => true,
+        'labels' => array(
+            'name' => 'Báo giá',
+            'singular_name' => 'Báo giá',
+            'add_new_item' => 'Thêm mới báo giá',
+            'edit_item' => 'Chỉnh sửa báo giá',
+            'singular_name' => 'service-pricing',
+        ),
+        'public' => true,
+        'rewrite' => array('slug' => 'bao-gia'),
+        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
+        'show_in_rest'  => true
+    ));
 }
 
 add_action('init', 'create_post_type');

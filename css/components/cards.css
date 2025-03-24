@@ -30,3 +30,45 @@
     font-weight: 600;
     margin: 10px 0;
 }
+
+.key-feature-card{
+    box-shadow: 0px 6px 20px rgb(26 137 185 / 35%);
+    border-radius: 0px 25px 0px 25px;
+    background-color: var(--bg-primary);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+    transition: 0.5s ease;
+}
+
+.key-feature-card_margin-left{
+    margin-left: 2rem;
+}
+
+
+.key-feature-card_margin-right{
+    margin-right: 2rem;
+}
+
+.key-feature-card__icon{
+    max-width: 68px;
+    order: 1;
+}
+
+.key-feature-card__text{
+    order: 2;
+}
+
+.key-feature-card__text_blue{
+    color: var(--primary-color);
+}
+
+.key-feature-card__text_md{
+    font-size: 18px;
+}
+
+.key-feature-card:hover{
+    transform: translateY(-5px);
+}

@@ -1,0 +1,30 @@
+/* components/decorations.css */
+
+.title__decoration_border_bottom::after{
+    content: "";
+    height: 2px;
+    width: 80px;
+    background-color: #fcc70b;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+}
+
+.title__decoration_border_bottom_left::after{
+    content: "";
+    height: 2px;
+    width: 80px;
+    background-color: #fcc70b;
+    display: block;
+    position: absolute;
+    left: 0;
+    /* transform: translateX(-50%); */
+    margin-top: 15px;
+}
+
+.title__section{
+    font-size: 28px;
+    position: relative;
+}
