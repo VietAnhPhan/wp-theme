@@ -1,0 +1,105 @@
+/* components/contact.css */
+.contact__bubble{
+    position: fixed;
+    left: 25px;
+    bottom: 50px;
+}
+
+
+.contact__bubble-zalo{
+    background-color: #00AFF0;
+    width: 41px;
+    height: 41px;
+    border-radius: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contact__bubble-phone{
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #eee;
+    font-size: 19px;
+    padding: 5px 10px;
+    border-radius: 28px;
+}
+
+.contact__bubble-icon-phone{
+    background-color: #F00;
+    border-radius: 100%;
+    padding: 5px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.contact__bubble_phone-number{
+    color: var(--alert-color);
+}
+
+.contact__bubble-ring {
+    animation: 1s ease-in-out 0s normal none infinite running ring-alo-animation;
+}
+
+
+.ring-alo-phone-circle {
+    animation: 1.2s ease-in-out 0s normal none infinite running ring-alo-circle-animation;
+    background-color: transparent;
+    border: 2px solid #ec1d25;
+    border-radius: 100%;
+    height: 70px;
+    left: -10px;
+    position: absolute;
+    transform-origin: 50% 50% 0;
+    transition: all 0.5s ease 0s;
+    width: 70px;
+    opacity: 0.5;
+}
+
+@keyframes ring-alo-animation {
+    0% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+
+}
+
+@keyframes ring-alo-circle-animation {
+    0% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+    }
+
+    30% {
+        opacity: 0.5;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+
+    100% {
+        opacity: 0.6;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+
+}
