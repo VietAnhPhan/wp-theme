@@ -16,5 +16,22 @@ export default class MobileMenu {
 
             this.menuMobile.classList.toggle("menu__mobile-hidden");
         });
+
+        this.subMenu = document.querySelector(".header__submenu-list");
+        this.openSubMenu();
     }
+
+    openSubMenu() {
+        const MenuItem = this.subMenu.nextElementSibling;
+        this.subMenu.addEventListener("mouseenter", () => {
+            this.subMenu.classList.remove("hidden");
+            // MenuItem.classList.remove("hidden");
+        });
+
+        this.subMenu.addEventListener("mouseleave", () => {
+            this.subMenu.classList.add("hidden");
+            // MenuItem.classList.add("hidden");
+        });
+    }
+
 }

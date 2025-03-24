@@ -17,56 +17,61 @@
         <div class="pt-sm-6"><?php echo do_shortcode('[gtranslate]'); ?></div>
     </div> -->
     <header>
-        <div class="top-bar header__top-bar_primary_color header__top-bar">
+        <div class="top-bar header__top-bar_primary_color header__top-bar header__top-bar__text_white header__top-bar__text_s">
             <div class="container d-flex flex-md justify-between align-center flex-column-sm">
                 <div class="text_white">
-                    <span> BẢO VỆ VIỆT BẢO LONG</span>
-                    <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span>
+                    <span class="header__top-bar__seperation header__top-bar__text_margin text-capitalize"> Bảo Vệ Việt Bảo Long</span>
+                    <!-- <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span> -->
+                    <i class="fa-solid fa-phone"></i><span class="header__top-bar__text_padding"><a class="link text_white" href="tel:0966 673 288">0966 673 288</a></span>
                 </div>
-                <div class="multi-language"><?php echo do_shortcode('[gtranslate]'); ?></div>
+                <div class="d-flex align-center">
+                    <span class="header__top-bar__seperation header__top-bar__text_margin"><a class="link text_white" href="#">Hồ sơ năng lực</a></span>
+                    <div class="multi-language"><?php echo do_shortcode('[gtranslate]'); ?></div>
+                </div>
             </div>
         </div>
-        <div class="search-overlay search-overlay__top container container-fluid">
-            <div class="container flex align-items-center gap-20 justify-content-lg-center">
-                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                <input type="text" id="search-term" class="search-term flex-50" placeholder="Nhập từ khóa tìm kiếm">
-                <i class="fa-solid fa-times search-overlay__close flex-0" aria-hidden="true"></i>
+        <div class="search-overlay search-overlay_top container-fluid d-flex flex-column justify-center align-center">
+            <div class="container text-center">
+                <i class="fa-solid fa-magnifying-glass search-overlay__icon" aria-hidden="true"></i>
+                <input type="text" id="search-term" class="search-term search-box text-center" placeholder="Nhập từ khóa tìm kiếm">
+                <i class="fa-solid fa-times search-overlay__icon flex-0 search-overlay__icon-close" aria-hidden="true"></i>
             </div>
             <div class="container">
                 <ul id="search-overlay__results" class="list-type-none">
-
                 </ul>
             </div>
         </div>
-        <nav class="nav-items bg-color-1 header__nav container row">
-            <!-- <div class="container flex align-items-center justify-content-between no-padding__top-bottom-sm"> -->
-            <div class="logo">
-                <a href="<?php echo site_url(); ?>">
+        <nav class="nav-items bg-color-1 header__nav container row justify-between">
+            <div class="header__logo">
+                <a href="<?php echo site_url(); ?>" class="d-flex align-center link">
                     <?php
                     $image_id = 54; // Replace with the ID of your image
                     $logo_url = wp_get_attachment_image_src($image_id, 'full')[0];
                     ?>
-                    <img class="logo__img" src="<?php echo esc_url($logo_url); ?>" alt="logo image">
+                    <span><img class="header__logo-image" src="<?php echo esc_url($logo_url); ?>" alt="logo image"></span>
+                    <span class="text-uppercase header__logo-text text-lg">An ninh tiên phong</span>
                 </a>
             </div>
-            <div class="menu hidden-sm">
-                <ul class="d-flex menu__list align-center">
-                    <li class="menu__item"><a class="link menu__link" href="<?php echo site_url("/") ?>">Trang chủ</a></li>
-                    <li class="menu__item"><a class="link menu__link" href="<?php echo site_url('/gioi-thieu') ?>">Giới thiệu</a></li>
-                    <li class="menu__item position-relative">
-                        <a class="link menu__link" href="<?php echo site_url('/dich-vu') ?>">
+
+
+            <div class="header__menu hidden-sm">
+                <ul class="d-flex header__menu-list align-center">
+                    <li class="header__menu-item"><a class="link header__menu-link" href="<?php echo site_url("/") ?>">Trang chủ</a></li>
+                    <li class="header__menu-item"><a class="link header__menu-link" href="<?php echo site_url('/gioi-thieu') ?>">Giới thiệu</a></li>
+                    <li class="header__menu-item position-relative">
+                        <a class="link header__menu-link header__submenu-link" href="<?php echo site_url('/dich-vu') ?>">
                             Dịch vụ
                             <i class="fa-solid fa-chevron-down"></i>
                         </a>
-                        <ul class="list-type-none flex-col submenu position-absolute menu__list hidden">
+                        <ul class="list-type-none flex-col header__submenu-list position-absolute header__menu-list hidden">
                             <?php
                             $terms = get_terms(array(
                                 'taxonomy' => 'service-category',
                                 'hide_empty' => false,
                             ));
                             foreach ($terms as $term): ?>
-                                <li class="submenu-item">
-                                    <a class="link" href="<?php echo get_term_link($term); ?>">
+                                <li class="header__submenu-item">
+                                    <a class="link header__submenu-item_link" href="<?php echo get_term_link($term); ?>">
                                         <?php echo $term->name; ?>
                                     </a>
                                 </li>
@@ -75,48 +80,40 @@
                             ?>
                         </ul>
                     </li>
-                    <li class="menu__item"><a class="link menu__link" href="<?php echo site_url('/blog'); ?>">tin tức</a></li>
-                    <li class="menu__item"><a class="link menu__link" href="<?php echo site_url('/tuyen-dung') ?>">tuyển dụng</a></li>
-                    <li class="menu__item"><a class="link menu__link" href="<?php echo site_url('/lien-he') ?>">liên hệ</a></li>
-                    <li class="menu__item"><a class="link menu__link" href="<?php echo site_url('/du-an') ?>">dự án</a></li>
+                    <li class="header__menu-item"><a class="link header__menu-link" href="<?php echo site_url('/blog'); ?>">tin tức</a></li>
+                    <li class="header__menu-item"><a class="link header__menu-link" href="<?php echo site_url('/tuyen-dung') ?>">tuyển dụng</a></li>
+                    <li class="header__menu-item"><a class="link header__menu-link" href="<?php echo site_url('/lien-he') ?>">liên hệ</a></li>
+                    <li class="header__menu-item"><a class="link header__menu-link" href="<?php echo site_url('/du-an') ?>">dự án</a></li>
                     <!-- <li><a class="site-button" href="">Hồ sơ năng lực</a></li> -->
-                    <li>
-                        <button class="search-button">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                    <!-- <li class="header__search">
+                        <button class="search-button header__search-button">
+                            <i class="fa-solid fa-magnifying-glass header__search-button__icon"></i>
                         </button>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
-            <div class="d-flex align-center">
-              
-                <button class="search-button search-button__mobile header__search-button">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="header__search hidden-sm">
+                <button class="search-button header__search-button">
+                    <i class="fa-solid fa-magnifying-glass header__search-button__icon"></i>
                 </button>
-                <div class="header__dropdown">
-                    <i class="fa-solid fa-bars icon__mobile header__dropdown-icon_size_md">
-                    </i>
+            </div>
+
+            <div class="header__mobile-navigation hidden-lg ">
+                <div class="d-flex align-center header__mobile-navigation__inner">
+                    <button class="search-button search-button__mobile header__search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="header__dropdown">
+                        <i class="fa-solid fa-bars icon__mobile header__dropdown-icon_size_md">
+                        </i>
+                    </div>
                 </div>
             </div>
 
 
 
-
-
-            <div class="menu__mobile flex">
-                <!-- <button class="search-button search-button__mobile">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button> -->
-                <!-- <div class="dropdown"> -->
-                    <!-- <div class="dropdown__closed">
-                            <i class="fa-solid fa-bars icon__mobile">
-                            </i>
-                        </div> -->
-                    <!-- <div class="dropdown__opened display-none overlay__background icon__mobile">
-                        <i class="fa-solid fa-times"></i>
-                    </div> -->
-                <!-- </div> -->
-                <div class="menu__mobile-hidden">
-                    <!-- <div class="logo text-center">
+            <div class="header__menu-mobile menu__mobile-hidden">
+                <!-- <div class="logo text-center">
                         <a href="<?php echo site_url(); ?>">
                             <?php
                             $image_id = 54; // Replace with the ID of your image
@@ -125,34 +122,30 @@
                             <img src="<?php echo esc_url($logo_url); ?>" alt="logo image">
                         </a>
                     </div> -->
-                    <ul class="flex-col menu__list">
-                        <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/') ?>">Trang chủ</a></li>
-                        <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/gioi-thieu') ?>">Giới thiệu</a></li>
-                        <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/dich-vu') ?>">Dịch vụ</a></li>
-                        <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/blog'); ?>">tin tức</a></li>
-                        <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/tuyen-dung') ?>">tuyển dụng</a></li>
-                        <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/lien-he') ?>">liên hệ</a></li>
-                        <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/du-an') ?>">dự án</a></li>
-                        <li class="header__cta text-center"><a class="site-button display-block text-center" href="">Hồ sơ năng lực</a></li>
-                    </ul>
-                    <ul class="d-flex menu__list header__social-media-list">
-                        <li><a href="#" class="icon__social-media_fb icon__social-media">
-                                <i class="fa fa-facebook third-color icon__social-media_white"></i></a></li>
-                        <li><a href="#" class="icon__social-media icon__social-media_yt">
-                                <i class="fa fa-youtube third-color icon__social-media_white"></i>
-                            </a></li>
-                        <li><a href="#" class="social-media__tiktok flex justify-content-center align-items-center">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/icon-tiktok.png" alt="Icon Tiktok" class="icon__social-media">
-                            </a></li>
-                        <li><a href="#" class="social-media__zalo flex justify-content-center align-items-center">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/iconzalo.png" alt="Icon Zalo" class="icon__social-media">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="flex-col header__menu-list header__menu-list__mobile_no_padding">
+                    <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/') ?>">Trang chủ</a></li>
+                    <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/gioi-thieu') ?>">Giới thiệu</a></li>
+                    <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/dich-vu') ?>">Dịch vụ</a></li>
+                    <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/blog'); ?>">tin tức</a></li>
+                    <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/tuyen-dung') ?>">tuyển dụng</a></li>
+                    <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/lien-he') ?>">liên hệ</a></li>
+                    <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/du-an') ?>">dự án</a></li>
+                    <li class="header__cta text-center"><a class="site-button display-block text-center" href="">Hồ sơ năng lực</a></li>
+                </ul>
+                <ul class="d-flex header__menu-list header__social-media-list header__menu-list__mobile_no_padding">
+                    <li><a href="#" class="icon__social-media_fb icon__social-media">
+                            <i class="fa fa-facebook third-color icon__social-media_white"></i></a></li>
+                    <li><a href="#" class="icon__social-media icon__social-media_yt">
+                            <i class="fa fa-youtube third-color icon__social-media_white"></i>
+                        </a></li>
+                    <li><a href="#" class="social-media__tiktok flex justify-content-center align-items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/icon-tiktok.png" alt="Icon Tiktok" class="icon__social-media">
+                        </a></li>
+                    <li><a href="#" class="social-media__zalo flex justify-content-center align-items-center">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/iconzalo.png" alt="Icon Zalo" class="icon__social-media">
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <!-- </div> -->
-
-
         </nav>
     </header>

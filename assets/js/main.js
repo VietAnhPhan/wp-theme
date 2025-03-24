@@ -16,14 +16,14 @@
 //     dropdownMenu.classList.toggle("display-none");
 // });
 
-const subMenu = document.querySelector(".submenu");
+// const subMenu = document.querySelector(".submenu");
 
-subMenu.addEventListener("mouseenter", () => {
-    const MenuItem = subMenu.previousElementSibling;
-    MenuItem.classList.add("menu-item__active");
-});
+// subMenu.addEventListener("mouseenter", () => {
+//     const MenuItem = subMenu.previousElementSibling;
+//     MenuItem.classList.add("menu-item__active");
+// });
 
-subMenu.addEventListener("mouseleave", () => {
-    const MenuItem = subMenu.previousElementSibling;
-    MenuItem.classList.remove("menu-item__active");
-});
+// subMenu.addEventListener("mouseleave", () => {
+//     const MenuItem = subMenu.previousElementSibling;
+//     MenuItem.classList.remove("menu-item__active");
+// });
