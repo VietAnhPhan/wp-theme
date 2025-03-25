@@ -5,3 +5,7 @@
 .text_blue{
     color: var(--primary-color);
 }
+
+.text_grey{
+    color:var(--overlay-opacity);
+}

@@ -9,7 +9,7 @@ get_header();
         <h2 class="text_blue text-center title__decoration_border_bottom title__section">6 LÝ DO ĐỂ CHỌN BẢO VỆ VIỆT BẢO LONG:</h2>
         <!-- <p class="text-color__white max-w700 margin-auto text-center m-bottom50">Dịch vụ bảo vệ VIỆT BẢO LONG chú trọng trong việc đào tạo đội ngũ cân bộ nhân viên bài bản và chuyên sâu, luôn đảm bảo mang tới cho quý khách hàng một đội ngũ bảo vệ chuyên nghiệp – tâm huyết với nghề</p> -->
     </div>
-    <div class="row container align-items-center gap-20 flex-wrap down-hidden__section">
+    <div class="row container align-center">
         <div class="flex-col flex-laptop col-lg-4 col-12">
             <div class="flex key-feature-card key-feature-card_margin-left">
                 <div class="icon-content text-color__white key-feature-card__text">
@@ -239,27 +239,27 @@ get_header();
             <p>Ban Lãnh đạo Bảo Vệ việt bảo long xin gửi lời tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long vững mạnh, đoàn kết như ngày nay. Chúng tôi xin cam kết:</p>
             <div class="su-menh-items">
                 <div class="su-menh-item d-flex align-items-center gap-20">
-                    <div class="icon key-feature-card__icon">
+                    <!-- <div class="icon key-feature-card__icon">
                         <img class="icon__img icon__img-border icon-border" src="<?php echo wp_get_attachment_image_src(18)[0]; ?>" alt="">
-                    </div>
+                    </div> -->
                     <div class="icon-content">
                         <p class="text-bold">Đối Với Khách Hàng</p>
                         <p>Cung cấp dịch vụ bảo vệ chuyên nghiệp nhất đáp ứng mọi nhu cầu của khách hàng</p>
                     </div>
                 </div>
                 <div class="su-menh-item d-flex align-items-center gap-20">
-                    <div class="icon key-feature-card__icon">
+                    <!-- <div class="icon key-feature-card__icon">
                         <img class="icon__img icon__img-border icon-border" src="<?php echo wp_get_attachment_image_src(17)[0]; ?>" alt="">
-                    </div>
+                    </div> -->
                     <div class="icon-content">
                         <p class="text-bold">Đối Với Nhân Viên</p>
                         <p>Tạo môi trường làm việc chuyên nghiệp và nguồn thu nhập ổn định cho cán bộ nhân viên</p>
                     </div>
                 </div>
                 <div class="su-menh-item d-flex align-items-center gap-20">
-                    <div class="icon key-feature-card__icon">
+                    <!-- <div class="icon key-feature-card__icon">
                         <img class="icon__img icon__img-border icon-border" src="<?php echo wp_get_attachment_image_src(16)[0]; ?>" alt="">
-                    </div>
+                    </div> -->
                     <div class="icon-content">
                         <p class="text-bold">Đối Với Xã Hội</p>
                         <p>Góp phần giữ gìn trật tự an toàn xã hội, Đóng góp vào sự phát triển kinh tế đất nước</p>
@@ -329,41 +329,43 @@ get_header();
     </div>
 </div>
 
-
-<div class="lien-he-ve-chung-toi page-content primary-color-bg">
-    <div class="row justify-content-between align-items-center container">
+<!--==========================LIEN HE===================================== -->
+<div class="lien-he-ve-chung-toi bg-0b3a94 section">
+    <div class="row justify-between align-center container text_white">
         <div class="contact__text flex-75">
-            <h2 class="page__title third-color">Liên Hệ Với Chúng Tôi: 0966 673 288</h2>
-            <p class="third-color">Việt Bảo Long hân hạnh được hợp tác với các Khách Hàng tiêu biểu</p>
+            <h2 class="page__title third-color text-2xl">Liên Hệ Với Chúng Tôi: 0966 673 288</h2>
+            <p class="third-color text-xl">Việt Bảo Long hân hạnh được hợp tác với các Khách Hàng tiêu biểu</p>
         </div>
         <div class="contact__btn flex-25">
-            <a class="btn" href="<?php echo site_url("/lien-he"); ?>">Liên hệ</a>
+            <a class="link text_white button__contact" href="<?php echo site_url("/lien-he"); ?>">Liên hệ</a>
         </div>
     </div>
 </div>
 
-<div class="yeu-cau-bao-gia row flex-wrap overflow-hidden">
-    <div class="flex-laptop-60 camera-bg page-content p-b0">
-        <div class="form__wrapper down-hidden__section">
-            <div class="container">
-                <h3 class="page__title text-color__white">Nhận yêu cầu báo giá chi tiết dịch vụ bảo vệ</h3>
-                <p class="third-color opacity-75">Nếu quý khách đang thắc mắc bất kỳ gì về dịch vụ bảo vệ của Việt Bảo Long, bạn hãy để lại thông tin, chúng tôi sẽ gọi lại hỗ trợ cho quý khách!</p>
-            </div>
-            <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" class="flex-col primary-color-bg gap-25" method="POST">
-                <input type="hidden" name="action" value="custom_form_submission">
-                <div class="flex gap-30 flex-wrap">
-                    <input type="text" name="fullname" id="hoten" placeholder="Họ tên" required>
-                    <input type="tel" name="mobile_phone" id="sdt" placeholder="Điện thoại" required>
+<div class="yeu-cau-bao-gia row flex-wrap overflow-hidden bg-image-01">
+    <div class="container row">
+        <div class="col-lg-6 col-12 camera-bg page-content p-b0">
+            <div class="form__wrapper down-hidden__section">
+                <div class="container text_white">
+                    <h3 class="page__title text-color__white text-2xl">Nhận yêu cầu báo giá chi tiết dịch vụ bảo vệ</h3>
+                    <p class="text_grey">Nếu quý khách đang thắc mắc bất kỳ gì về dịch vụ bảo vệ của Việt Bảo Long, bạn hãy để lại thông tin, chúng tôi sẽ gọi lại hỗ trợ cho quý khách!</p>
                 </div>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                <input type="text" name="address" id="địa chỉ" placeholder="Địa chỉ">
-                <textarea name="message_content" id="message" cols="30" rows="10" placeholder="Nội dung"></textarea>
-                <button class="btn">Gửi yêu cầu</button>
-            </form>
+                <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" class="flex-column primary-color-bg gap-25 row bg-0b3a94" method="POST">
+                    <input type="hidden" name="action" value="custom_form_submission">
+                    <div class="flex gap-30 flex-wrap">
+                        <input type="text" name="fullname" id="hoten" placeholder="Họ tên" required>
+                        <input type="tel" name="mobile_phone" id="sdt" placeholder="Điện thoại" required>
+                    </div>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="text" name="address" id="địa chỉ" placeholder="Địa chỉ">
+                    <textarea name="message_content" id="message" cols="30" rows="10" placeholder="Nội dung"></textarea>
+                    <button class="btn">Gửi yêu cầu</button>
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="flex-laptop-40 right-hidden__section">
-        <img class="height-100 object-fit-cover display-sm-none" src="<?php echo get_template_directory_uri(); ?>/assets/bg/TA9A0315.jpg" alt="Yêu cầu báo giá">
+        <div class="col-lg-6 col-12 right-hidden__section">
+            <img class="height-100 object-fit-cover display-sm-none image_cover" style="object-position: left bottom;" src="<?php echo get_template_directory_uri(); ?>/assets/bg/TA9A0315.jpg" alt="Yêu cầu báo giá">
+        </div>
     </div>
 </div>
 

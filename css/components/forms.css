@@ -1,0 +1,33 @@
+/* components/form.css */
+form {
+    input,
+    textarea,
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        padding: 9px 12px;
+        outline: none;
+        /* background: transparent; */
+        box-shadow: none;
+        line-height: 1.5;
+    }
+
+    input:-webkit-autofill {
+        background-color: transparent !important;
+        box-shadow: 0 0 0px 1000px white inset !important;
+    }
+
+    input,
+    textarea {
+        font-size: 16px;
+        /* Prevent iOS Safari zooming */
+    }
+    gap:25px;
+    padding: 30px;
+    button{
+        max-width: fit-content;
+        padding: 15px 30px;
+    }
+}

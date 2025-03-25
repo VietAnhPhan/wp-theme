@@ -112,16 +112,7 @@
 
 
 
-            <div class="header__menu-mobile menu__mobile-hidden">
-                <!-- <div class="logo text-center">
-                        <a href="<?php echo site_url(); ?>">
-                            <?php
-                            $image_id = 54; // Replace with the ID of your image
-                            $logo_url = wp_get_attachment_image_src($image_id, 'full')[0];
-                            ?>
-                            <img src="<?php echo esc_url($logo_url); ?>" alt="logo image">
-                        </a>
-                    </div> -->
+            <div class="header__menu-mobile menu__mobile-hidden container">
                 <ul class="flex-col header__menu-list header__menu-list__mobile_no_padding">
                     <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/') ?>">Trang chủ</a></li>
                     <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/gioi-thieu') ?>">Giới thiệu</a></li>
@@ -130,7 +121,7 @@
                     <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/tuyen-dung') ?>">tuyển dụng</a></li>
                     <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/lien-he') ?>">liên hệ</a></li>
                     <li class="menu-item header__dropdown-menu-item_not_last"><a class="header__dropdown-menu-item-link" href="<?php echo site_url('/du-an') ?>">dự án</a></li>
-                    <li class="header__cta text-center"><a class="site-button display-block text-center" href="">Hồ sơ năng lực</a></li>
+                    <li class="header__cta text-center"><a class="site-button display-block text-center link" href="#">Hồ sơ năng lực</a></li>
                 </ul>
                 <ul class="d-flex header__menu-list header__social-media-list header__menu-list__mobile_no_padding">
                     <li><a href="#" class="icon__social-media_fb icon__social-media">

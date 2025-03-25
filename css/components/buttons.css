@@ -27,3 +27,15 @@
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
 }
+
+.button__contact{
+    border-radius: 3px;
+    border: 1px solid var(--text-primary);
+    padding: 1rem 1.5rem;
+    transition: 0.5s ease;
+}
+
+.button__contact:hover{
+    background-color: var(--bg-tertiary);
+
+}

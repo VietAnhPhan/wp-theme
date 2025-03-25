@@ -15,3 +15,8 @@
 .bg-0b3a94{
     background-color: #0b3a94;
 }
+
+.bg-image-01 {
+    background-image: url("/assets/bg/background3.jpg");
+    background-size: cover;
+}

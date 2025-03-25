@@ -91,8 +91,8 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    /* margin-left: -15px;
+    margin-right: -15px; */
 }
 
 [class*="col-"] {
@@ -203,4 +203,9 @@ iframe {
 
 button{
     cursor: pointer;
+}
+
+.image_cover{
+    height: 100%;
+    object-fit: cover;
 }
