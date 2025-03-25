@@ -39,3 +39,35 @@
 .title__section-position_relative{
     position: relative;
 }
+
+.overlay__black::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    background-color: #000;
+    z-index: -1;
+}
+
+.side-bar__title{
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.side-bar__link_no_bold, .side-bar__text_no_bold{
+    font-weight: 400;
+    color:var(--text-404040);
+}
+
+.side-bar__thumbnail_border{
+    border-radius: 3px;
+}
+
+.side-bar__text_padding{
+    padding-left: 10px;
+}

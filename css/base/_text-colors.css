@@ -9,3 +9,7 @@
 .text_grey{
     color:var(--overlay-opacity);
 }
+
+.text_black{
+    color:var(--text-secondary);
+}

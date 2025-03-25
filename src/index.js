@@ -6,7 +6,7 @@ import Scroll from "./modules/Scroll.js";
 import MobileMenu from "./modules/MobileMenu.js";
 import Search from "./modules/Search.js";
 
-const counter = new Counter();
+// const counter = new Counter();
 const scroll = new Scroll();
 const mobilemenu = new MobileMenu();
 const search = new Search();

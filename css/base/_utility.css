@@ -126,6 +126,16 @@
     /* Prevents flex issues */
 }
 
+
+.flex-40{
+    flex:0 0 40%;
+    max-width: 40%;
+}
+.flex-60{
+    flex:0 0 60%;
+    max-width: 60%;
+}
+
 /* Responsive Grid */
 @media (max-width:575.9px) {
     .flex-column-sm {
@@ -163,6 +173,10 @@
 }
 
 @media (min-width: 992px) {
+
+    .col-lg-9{
+        flex-basis: 75%;
+    }
     .col-lg-6 {
         flex-basis: 50%;
     }
@@ -189,7 +203,9 @@ body,
 * {
     box-sizing: border-box;
 }
-
+html, body{
+    line-height: 1.5;
+}
 body{
     min-width: var(--min-width);
     font-family: 'Roboto', sans-serif;

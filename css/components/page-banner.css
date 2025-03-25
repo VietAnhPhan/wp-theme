@@ -1,0 +1,13 @@
+/* components/page-banner.css */
+
+.page__banner{
+    background-image: url('../../../../uploads/2025/03/video-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 40px;
+    position: relative;
+    min-height: 290px;
+    z-index: 1;
+}
+

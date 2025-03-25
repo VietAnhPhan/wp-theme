@@ -1,0 +1,14 @@
+/* components/breadcrumb.css */
+
+.breadcrumb__head::after{
+    content: "\f105";
+    margin-left: 7px;
+    font-family: fontawesome;
+}
+
+.breadcrumb__head_white::after{
+    content: "\f105";
+    margin-left: 7px;
+    font-family: fontawesome;
+    color:var(--text-primary);
+}
