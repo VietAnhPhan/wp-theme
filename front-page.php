@@ -350,7 +350,7 @@ get_header();
                     <h3 class="page__title text-color__white text-2xl">Nhận yêu cầu báo giá chi tiết dịch vụ bảo vệ</h3>
                     <p class="text_grey">Nếu quý khách đang thắc mắc bất kỳ gì về dịch vụ bảo vệ của Việt Bảo Long, bạn hãy để lại thông tin, chúng tôi sẽ gọi lại hỗ trợ cho quý khách!</p>
                 </div>
-                <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" class="flex-column primary-color-bg gap-25 row bg-0b3a94" method="POST">
+                <form action="<?php echo esc_url(admin_url('admin-post.php')); ?>" class="flex-column primary-color-bg gap-25 row bg-0b3a94 form-01" method="POST">
                     <input type="hidden" name="action" value="custom_form_submission">
                     <div class="flex gap-30 flex-wrap">
                         <input type="text" name="fullname" id="hoten" placeholder="Họ tên" required>

@@ -1,5 +1,7 @@
 /* components/decorations.css */
-
+.title__decoration_border_bottom{
+    margin-bottom: 45px;
+}
 .title__decoration_border_bottom::after{
     content: "";
     height: 2px;
@@ -24,8 +26,16 @@
     margin-top: 15px;
 }
 
+.title__decoration_border_bottom_left{
+    margin-bottom: 45px;
+}
+
 .title__section{
     font-size: 28px;
     position: relative;
     margin-top: 0;
+}
+
+.title__section-position_relative{
+    position: relative;
 }

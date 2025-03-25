@@ -1,7 +1,7 @@
 <div class="page-content secondary-color-bg section bg-0b3a94 text_white">
     <div class="flex container flex-wrap gap-30 row">
         <div class="footer__contact-info third-color flex-laptop-30 col-lg-4 col-12">
-            <h5 class="footer__title">THÔNG TIN LIÊN HỆ</h5>
+            <h5 class="footer__title text-xl title__decoration_border_bottom_left title__section-position_relative">THÔNG TIN LIÊN HỆ</h5>
             <p>CÔNG TY TNHH DỊCH VỤ BẢO VỆ VIỆT BẢO LONG</p>
 
             <p>T4/1M, khu phố Bình Thuận 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam</p>
@@ -14,7 +14,7 @@
             <p>MST: 3703270485</p>
         </div>
         <div class="footer__services col-lg-4 col-12">
-            <h5 class="third-color footer__title flex-laptop-30">
+            <h5 class="third-color footer__title flex-laptop-30 text-xl title__decoration_border_bottom_left title__section-position_relative">
                 DỊCH VỤ
             </h5>
             <ul class="footer__list">
@@ -34,7 +34,7 @@
 
         </div>
         <div class="footer__fanpage col-lg-4 col-12">
-            <h5 class="third-color footer__title flex-laptop-30">
+            <h5 class="third-color footer__title flex-laptop-30 text-xl title__decoration_border_bottom_left title__section-position_relative">
                 FANPAGE
             </h5>
             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61573532888901&tabs=timeline&width=340&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="auto" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
@@ -56,12 +56,13 @@
     </div>
 </div>
 <div class="footer__bottom">
-    <div class="container">
+    <div class="container row justify-between">
         <span>
             Copyright © 2021 Bản quyền thuộc về <?php $domain = parse_url(get_site_url(), PHP_URL_HOST);
                                                 echo $domain;
                                                 ?>
         </span>
+        <span>Design By: WePro</span>
     </div>
 </div>
 <?php wp_footer(); ?>
