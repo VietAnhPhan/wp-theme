@@ -29,71 +29,7 @@ function add_module_type_to_script($tag, $handle, $src)
 
 add_filter('script_loader_tag', 'add_module_type_to_script', 10, 3);
 
-function create_post_type()
-{
-    register_post_type('service', array(
-        'has_archive' => true,
-        'labels' => array(
-            'name' => 'Dịch vụ',
-            'singular_name' => 'Dịch Vụ',
-            'add_new_item' => 'Thêm mới dịch vụ',
-            'edit_item' => 'Chỉnh sửa dịch vụ',
-            'singular_name' => 'service',
-        ),
-        'public' => true,
-        'rewrite' => array('slug' => 'dich-vu'),
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
-        'taxonomies' => array('service-category'),
-        'show_in_rest'  => true
-    ));
 
-    register_post_type('hiring', array(
-        'has_archive' => true,
-        'labels' => array(
-            'name' => 'Tuyển dụng',
-            'singular_name' => 'Tuyển dụng',
-            'add_new_item' => 'Thêm mới tuyển dụng',
-            'edit_item' => 'Chỉnh sửa tuyển dụng',
-            'singular_name' => 'hiring',
-        ),
-        'public' => true,
-        'rewrite' => array('slug' => 'tuyen-dung'),
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
-        'show_in_rest'  => true
-    ));
-
-    register_post_type('project', array(
-        'has_archive' => true,
-        'labels' => array(
-            'name' => 'Dự án',
-            'singular_name' => 'Dự án',
-            'add_new_item' => 'Thêm mới dự án',
-            'edit_item' => 'Chỉnh sửa dự án',
-            'singular_name' => 'project',
-        ),
-        'public' => true,
-        'rewrite' => array('slug' => 'du-an'),
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
-        'show_in_rest'  => true
-    ));
-
-    register_post_type('service-pricing', array(
-        'has_archive' => true,
-        'labels' => array(
-            'name' => 'Báo giá',
-            'singular_name' => 'Báo giá',
-            'add_new_item' => 'Thêm mới báo giá',
-            'edit_item' => 'Chỉnh sửa báo giá',
-            'singular_name' => 'service-pricing',
-        ),
-        'public' => true,
-        'rewrite' => array('slug' => 'bao-gia'),
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
-        'show_in_rest'  => true
-    ));
-}
-
-add_action('init', 'create_post_type');
 
 function create_taxonomy()
 {
