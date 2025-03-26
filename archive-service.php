@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<div class="page-banner blog overlay-black-middle">
+<!-- <div class="page-banner blog overlay-black-middle">
     <div class="container">
         <h1 class="text-white position-relative z-2 capitalize"><?php post_type_archive_title(); ?></h1>
     </div>
@@ -11,7 +11,13 @@ get_header();
         <span><a href="<?php echo site_url("/"); ?>">Trang chủ</a></span>
         <span><?php echo get_the_archive_title(); ?></span>
     </div>
-</div>
+</div> -->
+
+<?php
+pageBanner(array(
+    'title' => get_the_archive_title()
+));
+?>
 
 <div class="container flex gap-30 page-content container flex gap-30 flex-wrap">
     <?php

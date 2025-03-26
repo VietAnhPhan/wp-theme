@@ -7,17 +7,10 @@ get_header();
 <?php
 get_header();
 ?>
-<div class="page__banner blog overlay__black">
-    <div class="container">
-        <h1 class="text_white text-capitalize"><?php the_title(); ?></h1>
-    </div>
-    <div class="breadcrumb-wrapper">
-        <div class="container">
-            <span class="breadcrumb__head_white"><a class="link text_white" href="<?php echo site_url("/"); ?>">Trang chủ</a></span>
-            <span class="text_white"><?php echo the_title(); ?></span>
-        </div>
-    </div>
-</div>
+
+<?php 
+pageBanner();
+?>
 
 
 <div class="container">

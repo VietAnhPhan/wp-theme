@@ -1,17 +1,11 @@
 <?php
 get_header();
 ?>
-<div class="page-banner blog overlay-black-middle">
-    <div class="container">
-        <h1 class="text-white position-relative z-2 capitalize">tin tức</h1>
-    </div>
-</div>
-<div class="breadcrumb-wrapper">
-    <div class="container">
-        <span><a href="<?php echo site_url("/"); ?>">Trang chủ</a></span>
-        <span>Tin tức</span>
-    </div>
-</div>
+<?php
+pageBanner(array(
+    'title' => "Tin tức"
+));
+?>
 
 <div class="container page-content">
     <div class="flex gap-30 flex gap-30 overflow-hidden pb-10">

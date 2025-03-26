@@ -173,3 +173,24 @@ function display_custom_form_submissions() {
 
     echo '</tbody></table></div>';
 }
+
+function pageBanner($args = NULL){
+    if(!isset($args['title'])){
+        $args['title'] = get_the_title();
+    }
+
+?>
+<div class="page__banner blog overlay__black">
+    <div class="container">
+        <h1 class="text_white text-capitalize"><?php echo $args['title']; ?></h1>
+    </div>
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <span class="breadcrumb__head_white"><a class="link text_white" href="<?php echo site_url("/"); ?>">Trang chủ</a></span>
+            <span class="text_white"><?php echo $args['title']; ?></span>
+        </div>
+    </div>
+</div>
+
+<?php
+}
