@@ -254,9 +254,9 @@ get_header();
                             <a class="link text_blue" href="<?php the_permalink(); ?>">
                                 <div class="project-card overlay__blue"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail image-thumbnail_height_330')); ?>
                                     <div class="project-card__content_absolute">
-                                        <p class="text-bold text_white">
+                                        <p class="text_white text-medium">
                                             <?php the_title(); ?></p>
-                                        <a class="button__project_read link" href="<?php the_permalink(); ?>">Xem thêm</a>
+                                        <a class="button__project_read link text_blue" href="<?php the_permalink(); ?>">Xem thêm</a>
                                     </div>
                                 </div>
 
@@ -282,7 +282,7 @@ get_header();
 <!-- ===================SỨ MỆNH============================= -->
 
 
-<div class="su-menh bg-color-3">
+<div class="su-menh bg-color-3 section">
     <div class="container row align-items-center gap-10 content-inner flex-wrap align-center">
         <div class="flex-laptop left-hidden__section col-sm-6 col-12">
             <h2 class="text-bold main-color uppercase text_blue title__decoration_border_bottom_left title__section text-uppercase">SỨ MỆNH CỦA Việt Bảo Long</h2>

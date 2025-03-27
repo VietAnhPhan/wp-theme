@@ -11,7 +11,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .title__decoration_border_bottom_left::after{
@@ -63,6 +63,7 @@
     z-index: -1;
     height: 80%;
     transition: 0.5s;
+    border-radius: 8px;
 }
 
 .overlay__blue:hover::after{
