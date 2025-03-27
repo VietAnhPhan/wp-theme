@@ -1,6 +1,6 @@
 /* In components/card.css */
 
-.fun-fact-card{
+.fun-fact-card {
     text-align: center;
     background: #fff;
     padding: 30px 10px;
@@ -9,29 +9,29 @@
     transition: 0.5s;
 }
 
-.fun-fact-card__icon{
+.fun-fact-card__icon {
     max-width: 60px;
 }
 
-.fun-fact-card__background{
+.fun-fact-card__background {
 
     background-color: #ececff;
-    display: inline-flex; 
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 60px; 
+    width: 60px;
     height: 60px;
     border-radius: 50%;
     margin: 0 auto;
 }
 
-.fun-fact-card__milestone{
+.fun-fact-card__milestone {
     color: var(--secondary-color);
     font-weight: 600;
     margin: 10px 0;
 }
 
-.key-feature-card{
+.key-feature-card {
     box-shadow: 0px 6px 20px rgb(26 137 185 / 35%);
     border-radius: 0px 25px 0px 25px;
     background-color: var(--bg-primary);
@@ -43,32 +43,47 @@
     transition: 0.5s ease;
 }
 
-.key-feature-card_margin-left{
+.key-feature-card_margin-left {
     margin-left: 2rem;
 }
 
 
-.key-feature-card_margin-right{
+.key-feature-card_margin-right {
     margin-right: 2rem;
 }
 
-.key-feature-card__icon{
+.key-feature-card__icon {
     max-width: 68px;
     order: 1;
 }
 
-.key-feature-card__text{
+.key-feature-card__text {
     order: 2;
 }
 
-.key-feature-card__text_blue{
+.key-feature-card__text_blue {
     color: var(--primary-color);
 }
 
-.key-feature-card__text_md{
+.key-feature-card__text_md {
     font-size: 18px;
 }
 
-.key-feature-card:hover{
+.key-feature-card:hover {
     transform: translateY(-5px);
+}
+.project-card{
+    position: relative;
+    z-index: 1;
+}
+.project-card__content_absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 22px 15px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 5;
 }

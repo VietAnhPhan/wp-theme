@@ -6,3 +6,19 @@
 .carousel__track{
 
 }
+
+.glide__bullets.slider__bullets{
+    bottom: -2rem;
+}
+
+
+
+.slider__bullets .glide__bullet{
+    width: 14px;
+    height: 14px;
+    background-color: #D6D6D6;
+}
+
+.slider__bullets .glide__bullet.glide__bullet--active{
+    background-color:#0000ff;
+}

@@ -13,6 +13,19 @@ class PostSlider{
 
           glide.mount();
         }
+
+        if(document.querySelector(".du-an")){
+
+          const glide = new Glide(".du-an", {
+            type: 'carousel',
+            startAt:0,
+            perView: 4,
+            autoplay: 3000
+          });
+
+          glide.mount();
+
+        }
       }
 }
 

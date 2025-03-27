@@ -39,3 +39,9 @@
     background-color: var(--bg-tertiary);
 
 }
+
+.button__project_read{
+    background-color: var(--bg-primary);
+    border-radius: 30px;
+    padding: 3px 20px;
+}

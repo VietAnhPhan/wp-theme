@@ -165,7 +165,7 @@ get_header();
                         <div class="dich-vu-bao-ve-item glide__slide">
                             <div class="content-box__border_bottom_rounded content-box__background_white">
                                 <a class="link text_blue" href="<?php the_permalink(); ?>">
-                                    <div class="image-thumbnail-container"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail')); ?></div>
+                                    <div class="image-thumbnail-container"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail image-thumbnail_hover')); ?></div>
                                     <p class="text-bold text-center content-box__title_padding"><?php the_title(); ?></p>
                                 </a>
                             </div>
@@ -186,12 +186,7 @@ get_header();
 
 
 
-<!-- ===============DỰ ÁN ĐÃ TRIỂN KHAI ========================= -->
-<div class="section">
-    <div class="container">
-    <h2 class="text-center title__decoration text-uppercase title__decoration_border_bottom text_blue title__section">Dịch vụ bảo vệ việt bảo long</h2>
-    </div>
-</div>
+
 
 <!-- =====================TIÊU CHÍ=========================== -->
 
@@ -240,7 +235,49 @@ get_header();
     </div>
 </div>
 
+<!-- ===============DỰ ÁN ĐÃ TRIỂN KHAI ========================= -->
+<div class="section">
+    <div class="container">
+        <h2 class="text-center title__decoration text-uppercase title__decoration_border_bottom text_blue title__section">DỰ ÁN ĐÃ TRIỂN KHAI</h2>
+        <div class="du-an position-relative">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                    <?php
+                    $projects = new WP_Query(array(
+                        'post_type' => 'project',
+                        'posts_per_page' => 6,
+                        'order' => 'ASC'
+                    ));
+                    while ($projects->have_posts()) {
+                        $projects->the_post(); ?>
+                        <div class="glide__slide">
+                            <a class="link text_blue" href="<?php the_permalink(); ?>">
+                                <div class="project-card overlay__blue"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail image-thumbnail_height_330')); ?>
+                                    <div class="project-card__content_absolute">
+                                        <p class="text-bold text_white">
+                                            <?php the_title(); ?></p>
+                                        <a class="button__project_read link" href="<?php the_permalink(); ?>">Xem thêm</a>
+                                    </div>
+                                </div>
 
+                            </a>
+                        </div>
+                    <?php }
+                    wp_reset_postdata();
+                    ?>
+                </div>
+            </div>
+            <div class="glide__bullets slider__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 <!-- ===================SỨ MỆNH============================= -->
 
