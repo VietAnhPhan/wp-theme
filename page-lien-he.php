@@ -1,9 +1,9 @@
 <?php
 get_header();
 ?>
-<div class="page-banner overlay-black-middle">
+<div class="page__banner_no_image blog overlay__black">
     <div class="container">
-        <h1 class="text-white position-relative z-2 capitalize"><?php the_title(); ?></h1>
+        <h1 class="text_white text-capitalize"><?php the_title(); ?></h1>
     </div>
 </div>
 <div class="container">

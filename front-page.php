@@ -149,30 +149,39 @@ get_header();
 <!-- ==============Báo giá dịch vụ bảo vệ======================= -->
 
 <div class="bao-gia-dich-vu section bg-f2f2f7">
-<div class="container">
-    <h2 class="text-uppercase title__decoration_border_bottom title__section text-center text_blue">Báo giá dịch vụ bảo vệ</h2>
-    <div class="row container">
-        <?php
-        $servicePricings = new WP_Query(array(
-            'post_type' => 'service-pricing',
-            'posts_per_page' => 6,
-            'order' => 'ASC'
-        ));
-        while ($servicePricings->have_posts()) {
-            $servicePricings->the_post(); ?>
-            <div class="dich-vu-bao-ve-item bg-color-1 p-10 flex-sm-100 flex-laptop-20 slide carousel-item col-lg-4 service__item col-12">
-                <div class="content-box__border_bottom_rounded content-box__background_white">
-                    <a class="link text_blue" href="<?php the_permalink(); ?>">
-                        <div class="image-thumbnail-container"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail')); ?></div>
-                        <p class="text-bold text-center content-box__title_padding"><?php the_title(); ?></p>
-                    </a>
+    <div class="container">
+        <h2 class="text-uppercase title__decoration_border_bottom title__section text-center text_blue">Báo giá dịch vụ bảo vệ</h2>
+        <div class="container bao-gia-dv row">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                    <?php
+                    $servicePricings = new WP_Query(array(
+                        'post_type' => 'service-pricing',
+                        'posts_per_page' => 6,
+                        'order' => 'ASC'
+                    ));
+                    while ($servicePricings->have_posts()) {
+                        $servicePricings->the_post(); ?>
+                        <div class="dich-vu-bao-ve-item glide__slide">
+                            <div class="content-box__border_bottom_rounded content-box__background_white">
+                                <a class="link text_blue" href="<?php the_permalink(); ?>">
+                                    <div class="image-thumbnail-container"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail')); ?></div>
+                                    <p class="text-bold text-center content-box__title_padding"><?php the_title(); ?></p>
+                                </a>
+                            </div>
+                        </div>
+                    <?php }
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
-        <?php }
-        wp_reset_postdata();
-        ?>
+
+            <!-- <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div> -->
+        </div>
     </div>
-</div>
 </div>
 
 
@@ -315,8 +324,10 @@ get_header();
     <div class="container">
         <div class="custom-gallery grid grid-template__column_5">
             <!-- <?php echo do_shortcode('[custom_gallery start=120 end=130]'); ?> -->
-             <!-- <?php echo do_shortcode('[metaslider id="170"]');?> -->
-             <?php if( function_exists('photo_gallery') ) { photo_gallery(1); } ?>
+            <!-- <?php echo do_shortcode('[metaslider id="170"]'); ?> -->
+            <?php if (function_exists('photo_gallery')) {
+                photo_gallery(1);
+            } ?>
         </div>
     </div>
 </div>

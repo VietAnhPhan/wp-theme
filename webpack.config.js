@@ -13,7 +13,7 @@ module.exports = {
       {
         test: /\.css$/, // Handle CSS files
         use: [MiniCssExtractPlugin.loader, "css-loader"],
-      },
+      }
     ],
   },
   plugins: [
