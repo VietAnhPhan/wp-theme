@@ -8,6 +8,10 @@ class PostSlider {
         type: 'carousel',
         startAt: 0,
         perView: 3,
+        breakpoints: {
+          600: { perView: 1 },
+          768: { perView: 2 }
+        },
         autoplay: 3000
       });
 
@@ -20,6 +24,10 @@ class PostSlider {
         type: 'carousel',
         startAt: 0,
         perView: 4,
+        breakpoints: {
+          600: { perView: 1 },
+          768: { perView: 2 }
+        },
         autoplay: 3000
       });
 
@@ -32,11 +40,14 @@ class PostSlider {
         type: 'carousel',
         startAt: 0,
         perView: 4,
+        breakpoints: {
+          600: { perView: 1 },
+          768: { perView: 2 }
+        },
         autoplay: 3000
       });
 
       glide.mount();
-
     }
   }
 }
