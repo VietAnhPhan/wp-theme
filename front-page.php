@@ -94,7 +94,7 @@ get_header();
         <!-- <p class="text-white text-center max-w700 margin-auto m-bottom50">Ban Lãnh đạo Bảo vệ việt bảo long® xin gửi tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long® vững mạnh, đoàn kết như ngày nay</p> -->
     </div>
 
-    <div class="dich-vu-bao-ve-items overflow-hidden row container">
+    <div class="dich-vu-bao-ve-items row container">
         <?php
         $services = new WP_Query(array(
             'post_type' => 'service',
