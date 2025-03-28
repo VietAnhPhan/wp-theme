@@ -1,32 +1,45 @@
 import Glide from "@glidejs/glide";
 
-class PostSlider{
-    constructor() {
-        if (document.querySelector(".bao-gia-dv")) {
+class PostSlider {
+  constructor() {
+    if (document.querySelector(".bao-gia-dv")) {
 
-          const glide = new Glide(".bao-gia-dv", {
-            type: 'carousel',
-            startAt:0,
-            perView: 3,
-            autoplay: 3000
-          });
+      const glide = new Glide(".bao-gia-dv", {
+        type: 'carousel',
+        startAt: 0,
+        perView: 3,
+        autoplay: 3000
+      });
 
-          glide.mount();
-        }
+      glide.mount();
+    }
 
-        if(document.querySelector(".du-an")){
+    if (document.querySelector(".du-an")) {
 
-          const glide = new Glide(".du-an", {
-            type: 'carousel',
-            startAt:0,
-            perView: 4,
-            autoplay: 3000
-          });
+      const glide = new Glide(".du-an", {
+        type: 'carousel',
+        startAt: 0,
+        perView: 4,
+        autoplay: 3000
+      });
 
-          glide.mount();
+      glide.mount();
 
-        }
-      }
+    }
+
+    if (document.querySelector(".tin-tuc__glide")) {
+      const glide = new Glide(".tin-tuc__glide", {
+        type: 'carousel',
+        startAt: 0,
+        perView: 4,
+        autoplay: 3000
+      });
+
+      glide.mount();
+
+    }
+  }
 }
+
 
 export default PostSlider;

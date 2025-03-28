@@ -22,3 +22,13 @@
 .slider__bullets .glide__bullet.glide__bullet--active{
     background-color:#0000ff;
 }
+
+.custom__arrow.glide__arrow{
+background-color: var(--bg-primary);
+color: var(--primary-color);
+}
+
+.custom__arrow.glide__arrow:hover{
+    background-color:#0000ff;
+    color: var(--text-primary);
+}

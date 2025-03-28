@@ -230,3 +230,8 @@ button{
 .position-relative{
     position: relative;
 }
+
+.overflow-hidden{
+    display: block;
+    overflow: hidden;
+}

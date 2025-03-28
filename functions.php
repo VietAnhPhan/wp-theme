@@ -15,6 +15,7 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_supports()
 {
     add_theme_support('post-thumbnails');
+    add_image_size('newsHomePage', 315, 150, array( 'center', 'top' ));
 }
 
 add_action('after_setup_theme', 'theme_supports');
@@ -50,7 +51,8 @@ function create_taxonomy()
 add_action('init', 'create_taxonomy');
 
 
-function create_custom_form_table() {
+function create_custom_form_table()
+{
     global $wpdb;
     $table_name = $wpdb->prefix . 'custom_form_data';
 
@@ -71,7 +73,8 @@ function create_custom_form_table() {
 }
 add_action('after_setup_theme', 'create_custom_form_table');
 
-function handle_custom_form_submission() {
+function handle_custom_form_submission()
+{
     error_log('Form submission started.'); // Log start
     error_log('Raw POST Data: ' . print_r($_POST, true));
     if (isset($_POST['fullname'], $_POST['mobile_phone'], $_POST['email'], $_POST['address'], $_POST['message_content'])) {
@@ -120,20 +123,22 @@ add_action('admin_post_custom_form_submission', 'handle_custom_form_submission')
 // Hook for guests (non-logged-in users)
 add_action('admin_post_nopriv_custom_form_submission', 'handle_custom_form_submission');
 
-function custom_form_admin_menu() {
+function custom_form_admin_menu()
+{
     add_menu_page(
         'Form Submissions',
-        'Form Data', 
-        'manage_options', 
-        'custom-form-submissions', 
+        'Form Data',
+        'manage_options',
+        'custom-form-submissions',
         'display_custom_form_submissions',
-        'dashicons-feedback', 
+        'dashicons-feedback',
         20
     );
 }
 add_action('admin_menu', 'custom_form_admin_menu');
 
-function display_custom_form_submissions() {
+function display_custom_form_submissions()
+{
     global $wpdb;
     $table_name = $wpdb->prefix . 'custom_form_data';
     $results = $wpdb->get_results("SELECT * FROM $table_name ORDER BY submitted_at DESC");
@@ -174,23 +179,24 @@ function display_custom_form_submissions() {
     echo '</tbody></table></div>';
 }
 
-function pageBanner($args = NULL){
-    if(!isset($args['title'])){
+function pageBanner($args = NULL)
+{
+    if (!isset($args['title'])) {
         $args['title'] = get_the_title();
     }
 
 ?>
-<div class="page__banner blog overlay__black">
-    <div class="container">
-        <h1 class="text_white text-capitalize"><?php echo $args['title']; ?></h1>
-    </div>
-    <div class="breadcrumb-wrapper">
+    <div class="page__banner blog overlay__black">
         <div class="container">
-            <span class="breadcrumb__head_white"><a class="link text_white" href="<?php echo site_url("/"); ?>">Trang chủ</a></span>
-            <span class="text_white"><?php echo $args['title']; ?></span>
+            <h1 class="text_white text-capitalize"><?php echo $args['title']; ?></h1>
+        </div>
+        <div class="breadcrumb-wrapper">
+            <div class="container">
+                <span class="breadcrumb__head_white"><a class="link text_white" href="<?php echo site_url("/"); ?>">Trang chủ</a></span>
+                <span class="text_white"><?php echo $args['title']; ?></span>
+            </div>
         </div>
     </div>
-</div>
 
 <?php
 }

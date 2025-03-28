@@ -329,27 +329,35 @@ get_header();
 <div class="tin-tuc page-content section">
     <h2 class="text-bold main-color uppercase text_blue title__decoration_border_bottom title__section text-uppercase text-center">Tin tức mới nhất</h2>
     <p class="text-center">Tin tức liên quan đến bảo vệ cập nhật mới nhất</p>
-    <div class="container gap-30 overflow-hidden d-flex row">
-        <?php
-        $recentPosts = new WP_Query(array(
-            'posts_per_page' => 9
-        ));
-
-        while ($recentPosts->have_posts()) {
-            $recentPosts->the_post(); ?>
-            <div class="post flex-laptop-30 post__border flex-sm-100 overflow-hidden flex-col justify-content-between slide col-12 col-lg-4">
-                <div class="content-box__background_blue content-box__border_bottom_rounded">
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                    <div class="post__info">
-                        <h3 class="post__title content-box__title_padding content-box__title_justify"><a class="link content-box__title_color_white" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                        <!-- <div class="post-excerpt">
-                            <?php echo wp_trim_words(get_the_content(), 18); ?>
-                            <p><a class="btn btn__post_detail" href="<?php the_permalink(); ?>">CHI TIẾT</a></p>
-                        </div> -->
+    <div class="container glide tin-tuc__glide">
+        <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+                <?php
+                $recentPosts = new WP_Query(array(
+                    'posts_per_page' => 9
+                ));
+                while ($recentPosts->have_posts()) {
+                    $recentPosts->the_post(); ?>
+                    <div class="post flex-laptop-30 post__border flex-sm-100 flex-col justify-content-between slide glide__slide">
+                        <div class="content-box__background_blue">
+                            <a class="overflow-hidden" href="<?php the_permalink(); ?>"><?php the_post_thumbnail("newsHomePage"); ?></a>
+                            <div class="post__info">
+                                <h3 class="content-box__title_padding text-center text-md"><a class="link content-box__title_color_white text-regular" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                <!-- <div class="post-excerpt">
+                                    <?php echo wp_trim_words(get_the_content(), 18); ?>
+                                    <p><a class="btn btn__post_detail" href="<?php the_permalink(); ?>">CHI TIẾT</a></p>
+                                </div> -->
+                            </div>
+                        </div>
                     </div>
-                </div>
+                <?php } ?>
             </div>
-        <?php } ?>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="custom__arrow glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="custom__arrow glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
     </div>
 </div>
 
