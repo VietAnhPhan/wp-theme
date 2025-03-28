@@ -21,3 +21,7 @@ color: var(--text-f7cf2b);
 .text_0000ff{
     color: var(--text-0000ff);
 }
+
+.text_red{
+    color: var(--text-red);
+}

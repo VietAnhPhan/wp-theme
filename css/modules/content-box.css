@@ -25,3 +25,7 @@
 .content-box__title_justify{
     text-align: justify;
 }
+
+.customer__content-box{
+    padding: 15px;
+}

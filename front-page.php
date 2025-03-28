@@ -235,17 +235,19 @@ get_header();
     </div>
 </div>
 
+<!-- =====================VE DICH VU BAO VE =================== -->
+
 <div class="section bg-0b3a94">
     <div class="container">
         <h2 class="text-uppercase text-center title__decoration_border_bottom title__decoration_border_bottom title__section"><span class="text_white">VỀ DỊCH VỤ BẢO VỆ</span> <span class="text_f7cf2b">Việt bảo long</span></h2>
         <div class="row">
             <div class="col-12 col-lg-6 position-relative">
-              <img class="image_cover about__image" src="/wp-content/uploads/2025/03/event1.jpg" alt="ve dich vu bao ve">
-              <div class="video__play">
-                <a href="#" class="bg-F4FAFD video__btn">
-                <i class="fa-solid fa-play text_white text-3xl video__play-icon"></i>
-                </a>
-              </div>
+                <img class="image_cover about__image" src="/wp-content/uploads/2025/03/event1.jpg" alt="ve dich vu bao ve">
+                <div class="video__play">
+                    <a href="#" class="bg-F4FAFD video__btn">
+                        <i class="fa-solid fa-play text_white text-3xl video__play-icon"></i>
+                    </a>
+                </div>
             </div>
             <div class="col-12 col-lg-6 about__text-content mt-sm-35">
                 <h3 class="text_f7cf2b d-flex align-center"><img class="icon__logo_size_s" src="wp-content/uploads/2025/03/huy-hieu.png" alt="logo"><span class="text-2xl">&nbsp;UY TÍN TRỌN NIỀM TIN</span></h3>
@@ -336,6 +338,44 @@ get_header();
 
     </div>
 
+</div>
+
+<!-- =============== ĐỘI NGŨ TƯ VẤN DỊCH VỤ ========================= -->
+
+<div class="section bg-gradient-0b3a94-007cd2">
+    <div class="container">
+        <h2 class="title__section text_white text-center title__decoration_border_bottom">ĐỘI NGŨ TƯ VẤN DỊCH VỤ</h2>
+    </div>
+
+    <div class="row container">
+
+        <?php
+        $customerServices = new WP_Query(array(
+            'post_type' => 'customer-service',
+            'posts_per_page' => 9,
+            'order' => 'ASC'
+        ));
+
+        while ($customerServices->have_posts()) {
+            $customerServices->the_post();
+        ?>
+
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="bg-F4FAFD overflow-hidden customer-service__content-box">
+                    <?php the_post_thumbnail('full', array('class'=>'image-thumbnail_scale img_100')); ?>
+                    <div class="customer__content-box">
+                        <p class="text-bold text-center text-xl customer__content-box_title"><?php the_title(); ?></p>
+                        <p class=""><a class="text-center text_red customer__content-box_phone link text-medium" href="tel:<?php the_field('phone_number'); ?>"><?php the_field('phone_number'); ?></a></p>
+                    </div>
+                </div>
+            </div>
+
+        <?php }
+        wp_reset_postdata();
+        ?>
+
+    </div>
 </div>
 
 <!-- ===================SỨ MỆNH============================= -->

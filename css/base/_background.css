@@ -1,22 +1,26 @@
 /* base/_background.css */
 
-.bg-f2f2f7{
+.bg-f2f2f7 {
     background-color: #f2f2f7;
 }
 
-.bg-F4FAFD{
+.bg-F4FAFD {
     background-color: #F4FAFD;
 }
 
-.bg-007cd2{
+.bg-007cd2 {
     background-color: #007cd2;
 }
 
-.bg-0b3a94{
+.bg-0b3a94 {
     background-color: #0b3a94;
 }
 
 .bg-image-01 {
     background-image: url("/assets/bg/background3.jpg");
     background-size: cover;
+}
+
+.bg-gradient-0b3a94-007cd2 {
+    background: linear-gradient(86.42deg, #0b3a94 0%, #007cd2 83.05%);
 }

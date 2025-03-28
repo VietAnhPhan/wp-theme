@@ -16,7 +16,26 @@
 .image-thumbnail_hover:hover{
     transform: scale(1.1) rotate(5deg);
 }
+.image-thumbnail_scale{
+    transition: 0.2s;
+}
+.image-thumbnail_scale:hover{
+    transform: scale(1.05);
+}
 
+
+.customer-service__content-box{
+    transition: 0.5s;
+}
+
+
+.customer-service__content-box:hover{
+    background-color: var(--primary-color);
+    transform: translateY(-5px);
+}
+.customer-service__content-box:hover .customer__content-box_title, .customer-service__content-box:hover .customer__content-box_phone{
+    color: var(--text-primary);
+}
 .image-thumbnail-container{
     max-width: 100%;
     overflow: hidden;
