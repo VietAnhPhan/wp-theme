@@ -151,35 +151,36 @@ get_header();
 <div class="bao-gia-dich-vu section bg-f2f2f7">
     <div class="container">
         <h2 class="text-uppercase title__decoration_border_bottom title__section text-center text_blue">Báo giá dịch vụ bảo vệ</h2>
-        <div class="container bao-gia-dv row">
-            <div class="glide__track" data-glide-el="track">
-                <div class="glide__slides">
-                    <?php
-                    $servicePricings = new WP_Query(array(
-                        'post_type' => 'service-pricing',
-                        'posts_per_page' => 6,
-                        'order' => 'ASC'
-                    ));
-                    while ($servicePricings->have_posts()) {
-                        $servicePricings->the_post(); ?>
-                        <div class="dich-vu-bao-ve-item glide__slide">
-                            <div class="content-box__border_bottom_rounded content-box__background_white">
-                                <a class="link text_blue" href="<?php the_permalink(); ?>">
-                                    <div class="image-thumbnail-container"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail image-thumbnail_hover')); ?></div>
-                                    <p class="text-bold text-center content-box__title_padding"><?php the_title(); ?></p>
-                                </a>
+        <div class="mt-45">
+            <div class="container bao-gia-dv row">
+                <div class="glide__track" data-glide-el="track">
+                    <div class="glide__slides">
+                        <?php
+                        $servicePricings = new WP_Query(array(
+                            'post_type' => 'service-pricing',
+                            'posts_per_page' => 6,
+                            'order' => 'ASC'
+                        ));
+                        while ($servicePricings->have_posts()) {
+                            $servicePricings->the_post(); ?>
+                            <div class="dich-vu-bao-ve-item glide__slide">
+                                <div class="content-box__border_bottom_rounded content-box__background_white">
+                                    <a class="link text_blue" href="<?php the_permalink(); ?>">
+                                        <div class="image-thumbnail-container"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail image-thumbnail_hover')); ?></div>
+                                        <p class="text-bold text-center content-box__title_padding"><?php the_title(); ?></p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    <?php }
-                    wp_reset_postdata();
-                    ?>
+                        <?php }
+                        wp_reset_postdata();
+                        ?>
+                    </div>
                 </div>
+                <!-- <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div> -->
             </div>
-
-            <!-- <div class="glide__arrows" data-glide-el="controls">
-                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-            </div> -->
         </div>
     </div>
 </div>
@@ -300,40 +301,40 @@ get_header();
 <div class="section">
     <div class="container">
         <h2 class="text-center title__decoration text-uppercase title__decoration_border_bottom text_blue title__section">DỰ ÁN ĐÃ TRIỂN KHAI</h2>
-        <div class="du-an position-relative">
-            <div class="glide__track" data-glide-el="track">
-                <div class="glide__slides">
-                    <?php
-                    $projects = new WP_Query(array(
-                        'post_type' => 'project',
-                        'posts_per_page' => 6,
-                        'order' => 'ASC'
-                    ));
-                    while ($projects->have_posts()) {
-                        $projects->the_post(); ?>
-                        <div class="glide__slide">
-                            <a class="link text_blue" href="<?php the_permalink(); ?>">
-                                <div class="project-card overlay__blue"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail image-thumbnail_height_330')); ?>
-                                    <div class="project-card__content_absolute">
-                                        <p class="text_white text-medium">
-                                            <?php the_title(); ?></p>
-                                        <a class="button__project_read link text_blue" href="<?php the_permalink(); ?>">Xem thêm</a>
+        <div class="mt-45">
+            <div class="du-an position-relative">
+                <div class="glide__track" data-glide-el="track">
+                    <div class="glide__slides">
+                        <?php
+                        $projects = new WP_Query(array(
+                            'post_type' => 'project',
+                            'posts_per_page' => 6,
+                            'order' => 'ASC'
+                        ));
+                        while ($projects->have_posts()) {
+                            $projects->the_post(); ?>
+                            <div class="glide__slide">
+                                <a class="link text_blue" href="<?php the_permalink(); ?>">
+                                    <div class="project-card overlay__blue"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail image-thumbnail_height_330')); ?>
+                                        <div class="project-card__content_absolute">
+                                            <p class="text_white text-medium">
+                                                <?php the_title(); ?></p>
+                                            <a class="button__project_read link text_blue" href="<?php the_permalink(); ?>">Xem thêm</a>
+                                        </div>
                                     </div>
-                                </div>
-
-                            </a>
-                        </div>
-                    <?php }
-                    wp_reset_postdata();
-                    ?>
+                                </a>
+                            </div>
+                        <?php }
+                        wp_reset_postdata();
+                        ?>
+                    </div>
+                </div>
+                <div class="glide__bullets slider__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
                 </div>
             </div>
-            <div class="glide__bullets slider__bullets" data-glide-el="controls[nav]">
-                <button class="glide__bullet" data-glide-dir="=0"></button>
-                <button class="glide__bullet" data-glide-dir="=1"></button>
-                <button class="glide__bullet" data-glide-dir="=2"></button>
-            </div>
-
         </div>
 
     </div>
@@ -342,7 +343,7 @@ get_header();
 
 <!-- =============== ĐỘI NGŨ TƯ VẤN DỊCH VỤ ========================= -->
 
-<div class="section bg-gradient-0b3a94-007cd2">
+<div class="section bg-gradient-0b3a94-007cd2 mt-45">
     <div class="container">
         <h2 class="title__section text_white text-center title__decoration_border_bottom">ĐỘI NGŨ TƯ VẤN DỊCH VỤ</h2>
     </div>
@@ -366,7 +367,7 @@ get_header();
                     <?php the_post_thumbnail('full', array('class'=>'image-thumbnail_scale img_100')); ?>
                     <div class="customer__content-box">
                         <p class="text-bold text-center text-xl customer__content-box_title"><?php the_title(); ?></p>
-                        <p class=""><a class="text-center text_red customer__content-box_phone link text-medium" href="tel:<?php the_field('phone_number'); ?>"><?php the_field('phone_number'); ?></a></p>
+                        <a class="text-center text_red customer__content-box_phone link text-medium link_display_block" href="tel:<?php the_field('phone_number'); ?>"><?php the_field('phone_number'); ?></a>
                     </div>
                 </div>
             </div>
@@ -428,34 +429,35 @@ get_header();
 <div class="tin-tuc page-content section">
     <h2 class="text-bold main-color uppercase text_blue title__decoration_border_bottom title__section text-uppercase text-center">Tin tức mới nhất</h2>
     <p class="text-center">Tin tức liên quan đến bảo vệ cập nhật mới nhất</p>
-    <div class="container glide tin-tuc__glide">
-        <div class="glide__track" data-glide-el="track">
-            <div class="glide__slides">
-                <?php
-                $recentPosts = new WP_Query(array(
-                    'posts_per_page' => 9
-                ));
-                while ($recentPosts->have_posts()) {
-                    $recentPosts->the_post(); ?>
-                    <div class="post flex-laptop-30 post__border flex-sm-100 flex-col justify-content-between slide glide__slide">
-                        <div class="content-box__background_blue">
-                            <a class="overflow-hidden" href="<?php the_permalink(); ?>"><?php the_post_thumbnail("newsHomePage"); ?></a>
-                            <div class="post__info">
-                                <h3 class="content-box__title_padding text-center text-md"><a class="link content-box__title_color_white text-regular" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                <!-- <div class="post-excerpt">
-                                    <?php echo wp_trim_words(get_the_content(), 18); ?>
-                                    <p><a class="btn btn__post_detail" href="<?php the_permalink(); ?>">CHI TIẾT</a></p>
-                                </div> -->
+    <div class="mt-45">
+        <div class="container glide tin-tuc__glide">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                    <?php
+                    $recentPosts = new WP_Query(array(
+                        'posts_per_page' => 9
+                    ));
+                    while ($recentPosts->have_posts()) {
+                        $recentPosts->the_post(); ?>
+                        <div class="post flex-laptop-30 post__border flex-sm-100 flex-col justify-content-between slide glide__slide">
+                            <div class="content-box__background_blue">
+                                <a class="overflow-hidden" href="<?php the_permalink(); ?>"><?php the_post_thumbnail("newsHomePage"); ?></a>
+                                <div class="post__info">
+                                    <h3 class="content-box__title_padding text-center text-md"><a class="link content-box__title_color_white text-regular" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                    <!-- <div class="post-excerpt">
+                                        <?php echo wp_trim_words(get_the_content(), 18); ?>
+                                        <p><a class="btn btn__post_detail" href="<?php the_permalink(); ?>">CHI TIẾT</a></p>
+                                    </div> -->
+                                </div>
                             </div>
                         </div>
-                    </div>
-                <?php } ?>
+                    <?php } ?>
+                </div>
             </div>
-        </div>
-
-        <div class="glide__arrows" data-glide-el="controls">
-            <button class="custom__arrow glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="custom__arrow glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-arrow-right"></i></button>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="custom__arrow glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-arrow-left"></i></button>
+                <button class="custom__arrow glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
         </div>
     </div>
 </div>
@@ -469,13 +471,15 @@ get_header();
         <button class="tab__btn uppercase" onclick="openTab(event, 'tab3')">sự kiện</button>
          
     </div> -->
-    <div class="container">
-        <div class="custom-gallery grid grid-template__column_5">
-            <!-- <?php echo do_shortcode('[custom_gallery start=120 end=130]'); ?> -->
-            <!-- <?php echo do_shortcode('[metaslider id="170"]'); ?> -->
-            <?php if (function_exists('photo_gallery')) {
-                photo_gallery(1);
-            } ?>
+    <div class="mt-45">
+        <div class="container">
+            <div class="custom-gallery grid grid-template__column_5">
+                <!-- <?php echo do_shortcode('[custom_gallery start=120 end=130]'); ?> -->
+                <!-- <?php echo do_shortcode('[metaslider id="170"]'); ?> -->
+                <?php if (function_exists('photo_gallery')) {
+                    photo_gallery(1);
+                } ?>
+            </div>
         </div>
     </div>
 </div>
@@ -483,8 +487,10 @@ get_header();
 <!-- =========================ĐỐI TÁC=================================== -->
 <div class="section bg-007cd2">
     <h2 class="text-bold main-color uppercase text_white title__decoration_border_bottom title__section text-uppercase text-center">Đối tác của chúng tôi</h2>
-    <div class="container">
-        <?php echo do_shortcode('[metaslider id="130"]'); ?>
+    <div class="mt-45">
+        <div class="container">
+            <?php echo do_shortcode('[metaslider id="130"]'); ?>
+        </div>
     </div>
 </div>
 

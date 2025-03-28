@@ -1,5 +1,8 @@
 .link{
     text-decoration: none;
+}
+
+.link_display_block{
     display: block;
 }
 
