@@ -13,3 +13,11 @@
 .text_black{
     color:var(--text-secondary);
 }
+
+.text_f7cf2b{
+color: var(--text-f7cf2b);
+}
+
+.text_0000ff{
+    color: var(--text-0000ff);
+}

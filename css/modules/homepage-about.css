@@ -1,0 +1,14 @@
+.about{}
+.about__text-content{
+    padding-left: 20px;
+    border-radius: 6px 6px 6px 6px;
+    background-color: var(--bg-primary);
+}
+.about__text-content_li_margin_bottom{
+    margin-bottom: 10px;
+}
+
+.about__image{
+    border-radius: 6px 6px 6px 6px;
+    border: 3px solid white;
+}

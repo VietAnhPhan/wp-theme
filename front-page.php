@@ -235,6 +235,65 @@ get_header();
     </div>
 </div>
 
+<div class="section bg-0b3a94">
+    <div class="container">
+        <h2 class="text-uppercase text-center title__decoration_border_bottom title__decoration_border_bottom title__section"><span class="text_white">VỀ DỊCH VỤ BẢO VỆ</span> <span class="text_f7cf2b">Việt bảo long</span></h2>
+        <div class="row">
+            <div class="col-12 col-lg-6 position-relative">
+              <img class="image_cover about__image" src="/wp-content/uploads/2025/03/event1.jpg" alt="ve dich vu bao ve">
+              <div class="video__play">
+                <a href="#" class="bg-F4FAFD video__btn">
+                <i class="fa-solid fa-play text_white text-3xl video__play-icon"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 about__text-content mt-sm-35">
+                <h3 class="text_f7cf2b d-flex align-center"><img class="icon__logo_size_s" src="wp-content/uploads/2025/03/huy-hieu.png" alt="logo"><span class="text-2xl">&nbsp;UY TÍN TRỌN NIỀM TIN</span></h3>
+                <p>Đội ngũ nhân viên của Hoàng Thiên Hưng được tuyển dụng và đào tạo dựa trên những yêu cầu khắc khe như sau:</p>
+                <ul class="list-type_none">
+                    <li class="d-flex text_blue text-bold about__text-content_li_margin_bottom">
+                        <img class="icon__image_size_s" src="/wp-content/uploads/2025/03/006-medal-2-svg.png" alt="Icon">
+                        &nbsp;Độ tuổi nhân viên trẻ trung từ 20 đến 52.
+                    </li>
+                    <li class="d-flex text_blue text-bold about__text-content_li_margin_bottom">
+                        <img class="icon__image_size_s" src="/wp-content/uploads/2025/03/006-medal-2-svg.png" alt="Icon">
+                        &nbsp;Hình ảnh thân thiện, tác phong chuyên nghiệp.
+                    </li>
+                    <li class="d-flex text_blue text-bold about__text-content_li_margin_bottom">
+                        <img class="icon__image_size_s" src="/wp-content/uploads/2025/03/006-medal-2-svg.png" alt="Icon">
+                        &nbsp;Nghiệp vụ chuyên môn đa năng, wrap, sedec, ctpat...
+                    </li>
+                    <li class="d-flex text_blue text-bold about__text-content_li_margin_bottom">
+                        <img class="icon__image_size_s" src="/wp-content/uploads/2025/03/006-medal-2-svg.png" alt="Icon">
+                        &nbsp;Thông thạo các ứng dụng công nghệ 4.0.
+                    </li>
+                    <li class="d-flex text_blue text-bold about__text-content_li_margin_bottom">
+                        <img class="icon__image_size_s" src="/wp-content/uploads/2025/03/006-medal-2-svg.png" alt="Icon">
+                        &nbsp;Đúng đủ quân số theo hợp đồng, không tăng ca.
+                    </li>
+                    <li class="d-flex text_blue text-bold about__text-content_li_margin_bottom">
+                        <img class="icon__image_size_s" src="/wp-content/uploads/2025/03/006-medal-2-svg.png" alt="Icon">
+                        &nbsp;Phí dịch vụ linh động hợp lý.
+                    </li>
+                    <li class="d-flex text_blue text-bold about__text-content_li_margin_bottom">
+                        <img class="icon__image_size_s" src="/wp-content/uploads/2025/03/006-medal-2-svg.png" alt="Icon">
+                        &nbsp;Kiểm soát chất lượng 24/7.
+                    </li>
+                    <li class="d-flex text_blue text-bold about__text-content_li_margin_bottom">
+                        <img class="icon__image_size_s" src="/wp-content/uploads/2025/03/006-medal-2-svg.png" alt="Icon">
+                        &nbsp;Hệ thống quản lý ISO 9001:2015.
+                    </li>
+                    <li class="d-flex text_blue text-bold about__text-content_li_margin_bottom">
+                        <img class="icon__image_size_s" src="/wp-content/uploads/2025/03/006-medal-2-svg.png" alt="Icon">
+                        &nbsp;Bảo hiểm NN 22 tỷ VNĐ.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- ===============DỰ ÁN ĐÃ TRIỂN KHAI ========================= -->
 <div class="section">
     <div class="container">

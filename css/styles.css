@@ -15,6 +15,7 @@
 @import "./components/forms.css";
 @import "./components/page-banner.css";
 @import "./components/breadcrumb.css";
+@import "./components/video-player.css";
 
 @import url("./base/_utility.css");
 @import url("./modules/container.css");
@@ -23,3 +24,4 @@
 @import "./modules/services.css";
 @import "./modules/content-box.css";
 @import "./modules/footer.css";
+@import "./modules/homepage-about.css";

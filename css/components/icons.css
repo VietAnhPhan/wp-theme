@@ -1,14 +1,23 @@
 /* components/icons.css */
-.icon__img{
+.icon__img {
     width: 61px;
 }
 
-.icon__img-border{
+.icon__image_size_s {
+    width: 20px;
+    height: 20px;
+}
+
+.icon__logo_size_s{
+    width: 50px;
+}
+
+.icon__img-border {
     border: 2px solid var(--primary-color);
     border-radius: 3px;
 }
 
-.icon__social-media{
+.icon__social-media {
     width: 40px;
     height: 40px;
     padding: 0;
@@ -21,14 +30,14 @@
     font-size: 1.5rem;
 }
 
-.icon__social-media_fb{
+.icon__social-media_fb {
     background-color: #3b5998;
 }
 
-.icon__social-media_yt{
+.icon__social-media_yt {
     background-color: #ce201f;
 }
 
-.icon__social-media_white{
-    color:  var(--text-primary);
+.icon__social-media_white {
+    color: var(--text-primary);
 }

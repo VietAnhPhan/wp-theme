@@ -96,7 +96,7 @@
 }
 
 [class*="col-"] {
-    padding: 15px;
+    padding: 0 15px;
     flex: 1 0 auto;
 }
 
@@ -172,6 +172,12 @@
     }
 }
 
+@media (max-width:992px){
+    .mt-sm-35{
+        margin-top: 35px;
+    }
+}
+
 @media (min-width: 992px) {
 
     .col-lg-9{
@@ -234,4 +240,9 @@ button{
 .overflow-hidden{
     display: block;
     overflow: hidden;
+}
+
+.list-type_none{
+    list-style: none;
+    padding-left: 0;
 }
