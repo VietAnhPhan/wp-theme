@@ -202,7 +202,7 @@ get_header();
             <div class="col-lg-3 col-sm-6">
                 <div class="fun-fact-card tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-center">
                     <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                    <span class="number main-color text-bold fun-fact-card__milestone text-2xl counter" data-target="50">2000+</span>
+                    <div><span id="counter__staffs" class="number main-color text-bold fun-fact-card__milestone text-2xl counter" data-target="50">2000</span><span class="main-color text-bold fun-fact-card__milestone text-2xl">+</span></div>
                     <span class="description text-bold text-capitalize">nhân viên</span>
                     <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
                 </div>
@@ -210,7 +210,7 @@ get_header();
             <div class="col-lg-3 col-sm-6">
                 <div class="fun-fact-card tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-center">
                     <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                    <span class="number main-color text-bold fun-fact-card__milestone text-2xl">1000+</span>
+                    <div><span id="counter__customers" class="number main-color text-bold fun-fact-card__milestone text-2xl">1000</span><span class="main-color text-bold fun-fact-card__milestone text-2xl">+</span></div>
                     <span class="description text-bold text-capitalize">khách hàng</span>
                     <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
                 </div>
@@ -218,7 +218,7 @@ get_header();
             <div class="col-lg-3 col-sm-6">
                 <div class="fun-fact-card tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-center">
                     <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                    <span class="number main-color text-bold fun-fact-card__milestone text-2xl">30+</span>
+                    <div><span id="counter__branches" class="number main-color text-bold fun-fact-card__milestone text-2xl">30</span><span class="main-color text-bold fun-fact-card__milestone text-2xl">+</span></div>
                     <span class="description text-bold text-capitalize">chi nhánh</span>
                     <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
                 </div>
@@ -226,8 +226,11 @@ get_header();
             <div class="col-lg-3 col-sm-6">
                 <div class="fun-fact-card tieuchi__item flex-sm-100 flex-laptop flex-tablet-50 d-flex flex-column text-center">
                     <span class="icon fun-fact-card__background"><img class="fun-fact-card__icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/cups-1.png" alt=""></span>
-                    <span class="number main-color text-bold fun-fact-card__milestone text-2xl">10+</span>
+                    <div>
+                        <span id="counter__experiences" class="number main-color text-bold fun-fact-card__milestone text-2xl">10</span><span class="main-color text-bold fun-fact-card__milestone text-2xl">+</span>
+                    </div>
                     <span class="description text-bold text-capitalize">năm kinh nghiệm</span>
+
                     <!-- <i class="fa-solid fa-caret-down text-white"></i> -->
                 </div>
             </div>
@@ -364,7 +367,7 @@ get_header();
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="bg-F4FAFD overflow-hidden customer-service__content-box">
-                    <?php the_post_thumbnail('full', array('class'=>'image-thumbnail_scale img_100')); ?>
+                    <?php the_post_thumbnail('full', array('class' => 'image-thumbnail_scale img_100')); ?>
                     <div class="customer__content-box">
                         <p class="text-bold text-center text-xl customer__content-box_title"><?php the_title(); ?></p>
                         <a class="text-center text_red customer__content-box_phone link text-medium link_display_block" href="tel:<?php the_field('phone_number'); ?>"><?php the_field('phone_number'); ?></a>
