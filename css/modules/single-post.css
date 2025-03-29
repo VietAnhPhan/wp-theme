@@ -1,0 +1,15 @@
+.post__info {
+    p {
+        color: #565968;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        margin-bottom: 18px;
+    }
+
+    h3{
+        margin-bottom: 15px;
+    }
+
+}

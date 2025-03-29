@@ -15,4 +15,4 @@ const scroll = new Scroll();
 const mobilemenu = new MobileMenu();
 const search = new Search();
 const postSlider = new PostSlider();
-const countrer = new Counter();
+// const countrer = new Counter();
