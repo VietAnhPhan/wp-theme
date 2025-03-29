@@ -95,6 +95,18 @@
     margin-right: -15px; */
 }
 
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    grid-auto-rows: 1fr;
+}
+
+
+
+
 [class*="col-"] {
     padding: 0 15px;
     flex: 1 0 auto;
@@ -283,4 +295,8 @@ p{
 
 .gap-20{
     gap: 20px;
+}
+
+.flex-grow-1{
+    flex-grow: 1;
 }
