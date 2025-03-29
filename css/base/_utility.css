@@ -223,9 +223,9 @@
     .col-lg-8{
         flex-basis: calc(2/3*100%);
     }
-    [class*="col-"]{
+    /* [class*="col-"]{
         margin-top: 0;
-    }
+    } */
 }
 
 img {

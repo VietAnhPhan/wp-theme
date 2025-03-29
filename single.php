@@ -27,14 +27,7 @@ pageBanner();
 
 <div class="section">
     <div class="container flex gap-30 page-content container flex gap-30 overflow-hidden flex-wrap">
-        <?php
-
-        if (function_exists('toc_get_index')) {
-            echo toc_get_index();
-        }
-
-
-        ?>
+     
         <div class="section row section_no_top_padding">
             <div class="col-12 col-lg-9">
                 <?php
@@ -50,7 +43,7 @@ pageBanner();
                 <?php } ?>
 
 
-                <h3 class="text-xl">Bài viết liên quan</h3>
+                <h3 class="text-2xl text-565968">Bài viết liên quan</h3>
 
                 <div class="row">
                     <?php

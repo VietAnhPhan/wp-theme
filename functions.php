@@ -15,7 +15,7 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_supports()
 {
     add_theme_support('post-thumbnails');
-    add_image_size('newsHomePage', 315, 150, array( 'center', 'top' ));
+    add_image_size('newsHomePage', 315, 150, array('center', 'top'));
 }
 
 add_action('after_setup_theme', 'theme_supports');
@@ -197,6 +197,42 @@ function pageBanner($args = NULL)
             </div>
         </div>
     </div>
+
+<?php
+}
+
+function relatedPosts($args=NULL)
+{
+
+    if (!isset($args['post_type'])) {
+        $args['post_type'] = get_post_type();
+    }
+
+
+?>
+    <div class="section">
+        <h3 class="text-2xl text-565968">Bài viết liên quan</h3>
+        <div class="row">
+            <?php
+            $posts = new WP_Query(array(
+                'post_type' => $args['post_type'],
+                'posts_per_page' => 6,
+            ));
+            while ($posts->have_posts()) {
+                $posts->the_post(); ?>
+                <div class="post col-lg-4 col-12 d-flex">
+                    <div class="box-shadow_post d-flex flex-column">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                        <div class="post__info d-flex flex-column justify-between flex-grow-1 content-box__post">
+                            <h3 class="post__title"><a class="link text-lg text-medium text_black" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        </div>
+                    </div>
+                </div>
+            <?php }
+            ?>
+        </div>
+    </div>
+
 
 <?php
 }
