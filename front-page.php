@@ -466,26 +466,19 @@ get_header();
 </div>
 
 <!-- =========================THƯ VIỆN HÌNH ẢNH========================= -->
-<div class="thu-vien-hinh-anh city-bg page-content bg-F4FAFD section">
+<!-- <div class="thu-vien-hinh-anh city-bg page-content bg-F4FAFD section">
     <h2 class="text-bold main-color uppercase text_blue title__decoration_border_bottom title__section text-uppercase text-center">THƯ VIỆN HÌNH ẢNH</h2>
-    <!-- <div class="tabs text-center">
-        <button class="tab__btn tab__btn_active uppercase" onclick="openTab(event, 'tab1')">dịch vụ</button>
-        <button class="tab__btn uppercase" onclick="openTab(event, 'tab2')">hoạt động</button>
-        <button class="tab__btn uppercase" onclick="openTab(event, 'tab3')">sự kiện</button>
-         
-    </div> -->
     <div class="mt-45">
         <div class="container">
             <div class="custom-gallery grid grid-template__column_5">
-                <!-- <?php echo do_shortcode('[custom_gallery start=120 end=130]'); ?> -->
-                <!-- <?php echo do_shortcode('[metaslider id="170"]'); ?> -->
+              
                 <?php if (function_exists('photo_gallery')) {
                     photo_gallery(1);
                 } ?>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- =========================ĐỐI TÁC=================================== -->
 <div class="section bg-007cd2">
@@ -542,6 +535,73 @@ get_header();
     </div>
 </div>
 
+<!-- =========================KHÁCH HÀNG NÓI GÌ VỀ=================================== -->
+
+<div class="section bg-image-02 giai-phap">
+    <div class="container">
+        <div class="row position-relative">
+            <div class="col-12 col-lg-6">
+                <p class="text_f7cf2b text-uppercase text-bold text__mb_12">Giải pháp an ninh</p>
+                <p class="text-2xl text_white text-extra-bold text__mb_12">Giải pháp an ninh tốt nhất cho doanh nghiệp của bạn</p>
+                <p class="text-sm text_white">Đến với Hoàng Thiên Hưng, chúng tôi sẽ tư vấn và đưa ra giải pháp tối ưu nhất để đảm bảo an toàn tính mạng tài sản cho doanh nghiệp của bạn một cách toàn diện.</p>
+                <button class="text-uppercase button_default">tư vấn ngay</button>
+            </div>
+            <div class="col-12 col-lg-6 position-relative">
+                <div class="video__play video__play_align">
+                    <a href="#" class="bg-F4FAFD video__btn">
+                        <i class="fa-solid fa-play text_white text-3xl video__play-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="section">
+    <div class="bg-0b3a94 container khach-hang-review bg-image-04">
+        <div class="d-flex justify-center mb-35">
+            <h2 class="text-bold text_white title__decoration_border_bottom title__section text-uppercase text-center title__section d-flex align-center justify-center heading__mb_0">KHÁCH HÀNG NÓI GÌ VỀ &nbsp;</h2>
+            <img class="icon__logo_size_s" src="wp-content/uploads/2025/03/huy-hieu.png" alt="logo">
+        </div>
+    </div>
+    <div class="glide__customer-review glide container">
+        <div class="glide__track" data-glide-el="track">
+            <div class="glide__slides">
+                <?php
+                $customerServices = new WP_Query(array(
+                    'post_type' => 'customer-review',
+                    'posts_per_page' => -1,
+                    'order' => 'ASC'
+                ));
+                while ($customerServices->have_posts()) {
+                    $customerServices->the_post();
+                ?>
+                    <div class="bg-white overflow-hidden glide__slide content-box__padding_30 box-shadow_white mb-35">
+                        <div class="customer__content-box">
+                            <p class="text-bold text-center text-xl customer__content-box_title"><em class="text-565968"><?php the_content(); ?></em></p>
+    
+                        </div>
+                        <div class="d-flex align-center gap-20">
+    
+                            <?php the_post_thumbnail('full', array('class' => 'icon__customer')) ?>
+                            <div class="d-flex flex-column">
+                                <span class="text_blue text-bold"><?php the_title(); ?></span>
+                                <span class="text_red"><?php the_field('position'); ?></span>
+                            </div>
+                        </div>
+                    </div>
+                <?php }
+                wp_reset_postdata();
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <!--==========================LIEN HE===================================== -->
 <div class="lien-he-ve-chung-toi bg-0b3a94 section">
     <div class="row justify-between align-center container text_white">
@@ -581,7 +641,7 @@ get_header();
         </div>
     </div>
 </div>
-
+</div>
 <!-- <div class="hinh-anh-cong-ty">
     <h2>Hình ảnh công ty</h2>
     <p>Tham khảo một số hình ảnh về công ty và các hoạt động của chúng tôi.</p>

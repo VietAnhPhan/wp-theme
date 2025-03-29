@@ -2,3 +2,7 @@
     box-shadow: 0px 6px 20px rgb(26 137 185 / 35%);
     border-radius: 5px;
 }
+
+.box-shadow_white{
+    box-shadow: 0px 5px 15px #f1f1f1;
+}

@@ -49,6 +49,21 @@ class PostSlider {
 
       glide.mount();
     }
+
+    if (document.querySelector(".glide__customer-review")) {
+      const glide = new Glide(".glide__customer-review", {
+        type: 'carousel',
+        startAt: 0,
+        perView: 3,
+        breakpoints: {
+          600: { perView: 1 },
+          768: { perView: 2 }
+        },
+        autoplay: 3000
+      });
+
+      glide.mount();
+    }
   }
 }
 

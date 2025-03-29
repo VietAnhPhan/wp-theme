@@ -1,6 +1,6 @@
 /* components/decorations.css */
 .title__decoration_border_bottom{
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 .title__decoration_border_bottom::after{
     content: "";
@@ -11,7 +11,8 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 8px;
+    /* margin-top: 8px; */
+    bottom: 0;
 }
 
 .title__decoration_border_bottom_left::after{

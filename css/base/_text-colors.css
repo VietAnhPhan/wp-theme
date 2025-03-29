@@ -25,3 +25,7 @@ color: var(--text-f7cf2b);
 .text_red{
     color: var(--text-red);
 }
+
+.text-565968{
+    color: var(--text-565968);
+}

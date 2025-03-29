@@ -13,6 +13,10 @@
     padding-bottom: var(--section-padding-md);
 }
 
+.section_no_top_padding{
+    padding-top: 0;
+}
+
 /* Section Variants */
 .section--xs { padding-top: var(--section-padding-xs); padding-bottom: var(--section-padding-xs); }
 .section--sm { padding-top: var(--section-padding-sm); padding-bottom: var(--section-padding-sm); }
@@ -26,5 +30,17 @@
 .section--footer { padding-top: var(--section-padding-sm); padding-bottom: var(--section-padding-sm); }
 
 h2{
+    margin-bottom: 35px;
+}
+
+.text__mb_12{
+    margin-bottom: 12px;
+}
+
+.heading__mb_0{
+    margin-bottom: 0;
+}
+
+.mb-35{
     margin-bottom: 35px;
 }

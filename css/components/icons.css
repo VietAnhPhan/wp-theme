@@ -10,6 +10,7 @@
 
 .icon__logo_size_s{
     width: 50px;
+    height: 100%;
 }
 
 .icon__img-border {
@@ -40,4 +41,10 @@
 
 .icon__social-media_white {
     color: var(--text-primary);
+}
+
+.icon__customer{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }

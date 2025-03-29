@@ -14,7 +14,7 @@ pageBanner();
 
 
 <div class="container">
-    <div class="section row">
+    <div class="section row section_no_top_padding">
         <div class="col-12 col-lg-9">
             <?php
             while (have_posts()) {
