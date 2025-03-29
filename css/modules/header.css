@@ -2,6 +2,8 @@ header {
     z-index: 1000;
     position: relative;
     background-color: var(--bg-primary);
+    transform: translateY(0);
+    width: 100%;
 }
 
 .header__top-bar {
@@ -82,11 +84,14 @@ header {
 }
 
 .header-scrolled {
-    position: sticky;
-    top: 0;
+    position: fixed;
+    bottom: 100%;
     box-shadow: -1px 7px 10px -9px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: -1px 7px 10px -9px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: -1px 7px 10px -9px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    /* transition: all 0.5s; */
+    transform: translateY(100%);
 }
 
 .header__cta {
