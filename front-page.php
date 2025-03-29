@@ -497,6 +497,51 @@ get_header();
     </div>
 </div>
 
+
+<!-- =========================TUYỂN DỤNG BẢO VỆ=================================== -->
+
+<div class="section">
+    <div class="container row">
+        <div class="col-12 col-lg-4">
+            <img class="box-shadow_blue" src="/wp-content/uploads/2025/03/banner-tuyen-dung-1.png" alt="">
+        </div>
+        <div class="col-12 col-lg-8">
+            <h3 class="text_blue d-flex align-center"><img class="icon__logo_size_s" src="wp-content/uploads/2025/03/huy-hieu.png" alt="logo"><span class="text-2xl">&nbsp;TUYỂN DỤNG BẢO VỆ</span></h3>
+            <p>Hãy gọi ngay cho chúng tôi nếu bạn đang có nhu cầu ứng tuyển vị trí bảo vệ</p>
+
+            <div class="row">
+
+                <?php
+                $customerServices = new WP_Query(array(
+                    'post_type' => 'customer-service',
+                    'posts_per_page' => 3,
+                    'order' => 'ASC'
+                ));
+
+                while ($customerServices->have_posts()) {
+                    $customerServices->the_post();
+                ?>
+
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="bg-F4FAFD overflow-hidden customer-service__content-box box-shadow_blue">
+                            <?php the_post_thumbnail('full', array('class' => 'image-thumbnail_scale img_100')); ?>
+                            <div class="customer__content-box">
+                                <p class="text-bold text-center text-xl customer__content-box_title"><?php the_title(); ?></p>
+                                <a class="text-center text_red customer__content-box_phone link text-medium link_display_block" href="tel:<?php the_field('phone_number'); ?>"><?php the_field('phone_number'); ?></a>
+                            </div>
+                        </div>
+                    </div>
+
+                <?php }
+                wp_reset_postdata();
+                ?>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <!--==========================LIEN HE===================================== -->
 <div class="lien-he-ve-chung-toi bg-0b3a94 section">
     <div class="row justify-between align-center container text_white">

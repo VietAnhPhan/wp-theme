@@ -123,6 +123,10 @@ header {
     margin-bottom: 10px;
 }
 
+.header__menu-list_no_padding{
+    padding: 0;
+}
+
 .header__menu-list__mobile_no_padding {
     padding: 0;
 }
@@ -133,7 +137,7 @@ header {
     position: relative;
 }
 .header__submenu-item{
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 
 .header__submenu-item:hover{
@@ -161,7 +165,7 @@ header {
 .header__submenu-list {
     position: absolute;
     background-color: var(--bg-primary);
-    padding: 10px 1rem;
+    /* padding: 10px 1rem; */
     width: 300px;
     top: 3rem;
     left: 0;

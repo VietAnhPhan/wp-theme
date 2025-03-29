@@ -199,12 +199,16 @@
     }
 
     .col-lg-4 {
-        flex-basis: 33.3333%;
+        flex-basis: calc(1/3*100%);
         flex-grow: 0;
     }
 
     .col-lg-3 {
         flex-basis: 25%;
+    }
+    
+    .col-lg-8{
+        flex-basis: calc(2/3*100%);
     }
 }
 

@@ -16,6 +16,7 @@
 @import "./components/page-banner.css";
 @import "./components/breadcrumb.css";
 @import "./components/video-player.css";
+@import "./components/box-shadows.css";
 
 @import url("./base/_utility.css");
 @import url("./modules/container.css");

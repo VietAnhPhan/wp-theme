@@ -63,7 +63,7 @@
                             Dịch vụ
                             <i class="fa-solid fa-chevron-down"></i>
                         </a>
-                        <ul class="list-type-none flex-col header__submenu-list position-absolute header__menu-list hidden">
+                        <ul class="list-type-none flex-col header__submenu-list position-absolute header__menu-list hidden header__menu-list_no_padding">
                             <?php
                             $terms = get_terms(array(
                                 'taxonomy' => 'service-category',
