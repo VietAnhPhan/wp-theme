@@ -12,7 +12,7 @@
     left: 50%;
     transform: translateX(-50%);
     /* margin-top: 8px; */
-    bottom: 0;
+    bottom: -12px;
 }
 
 .title__decoration_border_bottom_left::after{
