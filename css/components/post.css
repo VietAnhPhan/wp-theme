@@ -1,3 +1,9 @@
 .post__height_100{
     height: 100%;
 }
+
+.post__thumbnail{
+    object-fit: cover;
+    height: 350px;
+    object-position: top;
+}

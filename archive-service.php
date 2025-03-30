@@ -17,9 +17,11 @@ get_header();
 pageBanner(array(
     'title' => 'Dịch Vụ'
 ));
+
+get_template_part('template-parts/post-list');
 ?>
 
-<div class="container">
+<!-- <div class="container">
     <div class="section row">
         <?php
         while (have_posts()) {
@@ -31,7 +33,6 @@ pageBanner(array(
                         <h2 class="post__title"><a class="link text-lg text-medium text_black" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <div class="post-excerpt">
                             <?php echo wp_trim_words(get_the_content(), 18); ?>
-                            <!-- <p><a class="btn btn__post_detail" href="<?php the_permalink(); ?>">CHI TIẾT &raquo;</a></p> -->
                         </div>
                     </div>
                 </div>
@@ -39,7 +40,7 @@ pageBanner(array(
         <?php } ?>
     </div>
 
-</div>
+</div> -->
 <!-- Your main content goes here -->
 
 <?php

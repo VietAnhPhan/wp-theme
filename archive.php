@@ -6,8 +6,13 @@ get_header();
 
 <?php
 get_header();
+pageBanner(array(
+    'title'=>'Tin Tức'
+));
+
+get_template_part('template-parts/post-list');
 ?>
-<div class="page-banner blog overlay-black-middle">
+<!-- <div class="page-banner blog overlay-black-middle">
     <div class="container">
         <h1 class="text-white position-relative z-2 capitalize">tin tức</h1>
     </div>
@@ -17,9 +22,9 @@ get_header();
         <span><a href="<?php echo site_url("/");?>">Trang chủ</a></span>
         <span><?php echo the_title();?></span>
     </div>
-</div>
+</div> -->
 
-<div class="container flex gap-30 page-content container flex gap-30 overflow-hidden flex-wrap">
+<!-- <div class="container flex gap-30 page-content container flex gap-30 overflow-hidden flex-wrap">
     <div class="page__content flex-3">
         <?php
         while (have_posts()) {
@@ -40,8 +45,8 @@ get_header();
         <h5 class="side-bar__title">Dịch vụ</h5>
     </div>
 
-</div>
-</div>
+</div> -->
+
 <!-- Your main content goes here -->
 
 <?php

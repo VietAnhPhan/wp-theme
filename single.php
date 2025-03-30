@@ -28,7 +28,7 @@ pageBanner();
 <div class="section">
     <div class="container">
 
-        <div class="section row">
+        <div class="row">
             <div class="col-12 col-lg-9">
                 <?php
                 get_template_part('template-parts/post-content');
