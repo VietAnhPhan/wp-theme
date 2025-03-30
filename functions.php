@@ -213,7 +213,7 @@ function relatedPosts($args=NULL)
 
 
 ?>
-    <div class="section">
+    <div class="post__related-post">
         <h3 class="text-2xl text-565968">Bài viết liên quan</h3>
         <div class="row">
             <?php

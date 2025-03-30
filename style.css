@@ -66,15 +66,7 @@ Text Domain: dichvubaove
         flex-wrap: wrap;
     }
 
-    .flex-40 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
 
-    .flex-60 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
 
     .menu__mobile {
         z-index: 3;
@@ -1347,13 +1339,9 @@ iframe {
     opacity: 0.5;
 }
 
-.contact-page__box {
-    border: 2px solid rgba(0, 0, 0, .1);
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, .01);
-}
 
-.contact-page__form {
+
+/* .contact-page__form {
     box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 20px 0px;
     margin-top: 0px;
     height: 100%;
@@ -1368,7 +1356,7 @@ iframe {
     padding: 9px 12px;
     border-width: 0 0 1px;
     font-size: 16px;
-}
+} */
 
 @keyframes ring-alo-circle-animation {
     0% {

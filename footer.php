@@ -1,5 +1,5 @@
 <div class="page-content secondary-color-bg section bg-0b3a94 text_white">
-    <div class="flex container flex-wrap gap-30 row">
+    <div class="container row">
         <div class="footer__contact-info third-color flex-laptop-30 col-lg-4 col-12">
             <h5 class="footer__title text-xl title__decoration_border_bottom_left title__section-position_relative">THÔNG TIN LIÊN HỆ</h5>
             <p>CÔNG TY TNHH DỊCH VỤ BẢO VỆ VIỆT BẢO LONG</p>

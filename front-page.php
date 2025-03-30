@@ -301,52 +301,50 @@ get_header();
 </div>
 
 <!-- ===============DỰ ÁN ĐÃ TRIỂN KHAI ========================= -->
-<div class="section">
+<div class="section pb-6 bg-f2f2f7">
     <div class="container">
         <h2 class="text-center title__decoration text-uppercase title__decoration_border_bottom text_blue title__section">DỰ ÁN ĐÃ TRIỂN KHAI</h2>
-        <div class="mt-45">
-            <div class="du-an position-relative">
-                <div class="glide__track" data-glide-el="track">
-                    <div class="glide__slides">
-                        <?php
-                        $projects = new WP_Query(array(
-                            'post_type' => 'project',
-                            'posts_per_page' => 6,
-                            'order' => 'ASC'
-                        ));
-                        while ($projects->have_posts()) {
-                            $projects->the_post(); ?>
-                            <div class="glide__slide">
-                                <a class="link text_blue" href="<?php the_permalink(); ?>">
-                                    <div class="project-card overlay__blue"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail image-thumbnail_height_330')); ?>
-                                        <div class="project-card__content_absolute">
-                                            <p class="text_white text-medium">
-                                                <?php the_title(); ?></p>
-                                            <a class="button__project_read link text_blue" href="<?php the_permalink(); ?>">Xem thêm</a>
-                                        </div>
+        <div class="du-an position-relative">
+            <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                    <?php
+                    $projects = new WP_Query(array(
+                        'post_type' => 'project',
+                        'posts_per_page' => 6,
+                        'order' => 'ASC'
+                    ));
+                    while ($projects->have_posts()) {
+                        $projects->the_post(); ?>
+                        <div class="glide__slide">
+                            <a class="link text_blue" href="<?php the_permalink(); ?>">
+                                <div class="project-card overlay__blue"><?php the_post_thumbnail("full", array('class' => 'image-thumbnail image-thumbnail_height_330')); ?>
+                                    <div class="project-card__content_absolute">
+                                        <p class="text_white text-medium">
+                                            <?php the_title(); ?></p>
+                                        <a class="button__project_read link text_blue" href="<?php the_permalink(); ?>">Xem thêm</a>
                                     </div>
-                                </a>
-                            </div>
-                        <?php }
-                        wp_reset_postdata();
-                        ?>
-                    </div>
-                </div>
-                <div class="glide__bullets slider__bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                                </div>
+                            </a>
+                        </div>
+                    <?php }
+                    wp_reset_postdata();
+                    ?>
                 </div>
             </div>
+            <div class="glide__bullets slider__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
         </div>
-
+    
     </div>
-
+    
 </div>
 
 <!-- =============== ĐỘI NGŨ TƯ VẤN DỊCH VỤ ========================= -->
 
-<div class="section bg-gradient-0b3a94-007cd2 mt-45">
+<div class="section bg-gradient-0b3a94-007cd2">
     <div class="container">
         <h2 class="title__section text_white text-center title__decoration_border_bottom">ĐỘI NGŨ TƯ VẤN DỊCH VỤ</h2>
     </div>
@@ -368,8 +366,8 @@ get_header();
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="bg-F4FAFD overflow-hidden customer-service__content-box">
                     <?php the_post_thumbnail('full', array('class' => 'image-thumbnail_scale img_100')); ?>
-                    <div class="customer__content-box">
-                        <p class="text-bold text-center text-xl customer__content-box_title"><?php the_title(); ?></p>
+                    <div class="customer__content-box text-center">
+                        <span class="text-bold text-center text-xl customer__content-box_title"><?php the_title(); ?></span>
                         <a class="text-center text_red customer__content-box_phone link text-medium link_display_block" href="tel:<?php the_field('phone_number'); ?>"><?php the_field('phone_number'); ?></a>
                     </div>
                 </div>
@@ -429,7 +427,7 @@ get_header();
 <!-- 6 lý do để chọn -->
 
 <!-- =========================TIN TỨC========================= -->
-<div class="tin-tuc page-content section">
+<div class="tin-tuc page-content section bg-f2f2f7">
     <h2 class="text-bold main-color uppercase text_blue title__decoration_border_bottom title__section text-uppercase text-center">Tin tức mới nhất</h2>
     <p class="text-center">Tin tức liên quan đến bảo vệ cập nhật mới nhất</p>
     <div class="mt-45">
@@ -615,7 +613,7 @@ get_header();
     </div>
 </div>
 
-<div class="yeu-cau-bao-gia row flex-wrap overflow-hidden bg-image-01">
+<div class="yeu-cau-bao-gia row flex-wrap overflow-hidden bg-image-01 section">
     <div class="container row">
         <div class="col-lg-6 col-12 camera-bg page-content p-b0">
             <div class="form__wrapper down-hidden__section">

@@ -46,3 +46,11 @@
     border-radius: 30px;
     padding: 3px 20px;
 }
+
+.button__request-form{
+    max-width: fit-content;
+    padding: 15px 30px;
+    color: var(--text-primary);
+    background-color: var(--primary-color);
+    border: none;
+}

@@ -41,7 +41,7 @@
                 </ul>
             </div>
         </div>
-        <nav class="nav-items bg-color-1 header__nav container row justify-between">
+        <nav class="nav-items bg-color-1 header__nav container header__nav_expand_md justify-between">
             <div class="header__logo">
                 <a href="<?php echo site_url(); ?>" class="d-flex align-center link">
                     <?php

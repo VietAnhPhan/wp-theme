@@ -1,6 +1,6 @@
 /* components/decorations.css */
 .title__decoration_border_bottom{
-    /* margin-bottom: 15px; */
+    margin-bottom: 50px;
 }
 .title__decoration_border_bottom::after{
     content: "";
@@ -48,7 +48,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 0.5;
+    opacity: 0.4;
     background-color: #000;
     z-index: -1;
 }

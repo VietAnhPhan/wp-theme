@@ -26,29 +26,18 @@ pageBanner();
 </div> -->
 
 <div class="section">
-    <div class="container flex gap-30 page-content container flex gap-30 overflow-hidden flex-wrap">
+    <div class="container">
 
-        <div class="section row section_no_top_padding">
+        <div class="section row">
             <div class="col-12 col-lg-9">
-
-
-
-
                 <?php
-
                 get_template_part('template-parts/post-content');
                 relatedPosts();
-
-
                 ?>
-
-
-
-
             </div>
             <div class="col-12 col-lg-3">
-                <?php get_template_part('template-parts/service-list-sidebar') ?>
-                <?php get_template_part('template-parts/post-list-sidebar') ?>
+                <?php get_template_part('template-parts/service-list-sidebar'); ?>
+                <?php get_template_part('template-parts/post-list-sidebar'); ?>
             </div>
         </div>
 

@@ -1,7 +1,7 @@
 :root{
     --section-padding-xs: 1rem;   /* 16px */
     --section-padding-sm: 2rem;   /* 32px */
-    --section-padding-md: 30px;   /* 48px */
+    --section-padding-md: 3rem;   /* 48px */
     --section-padding-lg: 4rem;   /* 64px */
     --section-padding-xl: 5rem;   /* 80px */
 }
@@ -51,4 +51,12 @@ h5{
 
 .mt-0{
     margin-top: 0;
+}
+
+.pb-6{
+    padding-bottom: 6rem;
+}
+
+.gap-30{
+    gap: 30px;
 }

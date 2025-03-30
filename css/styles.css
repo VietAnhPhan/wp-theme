@@ -18,13 +18,15 @@
 @import "./components/video-player.css";
 @import "./components/box-shadows.css";
 @import "./components/post.css";
+@import "./components/content-box.css";
+
 
 @import url("./base/_utility.css");
 @import url("./modules/container.css");
 @import url("./modules/header.css");
 @import "./modules/plugins.css";
 @import "./modules/services.css";
-@import "./modules/content-box.css";
+
 @import "./modules/footer.css";
 @import "./modules/homepage-about.css";
 @import "./modules/giai-phap.css";
