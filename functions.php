@@ -188,7 +188,7 @@ function pageBanner($args = NULL)
 ?>
     <div class="page__banner blog overlay__black">
 
-        <div class="container">
+        <div class="page__banner_inner text-center">
             <h1 class="text_white text-capitalize"><?php echo $args['title']; ?></h1>
             <span class="breadcrumb__head_white"><a class="link text_white" href="<?php echo site_url("/"); ?>">Trang chủ</a></span>
             <span class="text_white"><?php echo $args['title']; ?></span>

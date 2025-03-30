@@ -1,5 +1,5 @@
 <h5 class="side-bar__title">Dịch vụ</h5>
-<div class="flex-col gap-5">
+<div class="sidebar__inner">
     <?php
     $services = new WP_Query(array(
         'post_type' => 'service',

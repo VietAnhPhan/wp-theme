@@ -19,7 +19,7 @@
 @import "./components/box-shadows.css";
 @import "./components/post.css";
 @import "./components/content-box.css";
-
+@import "./components/sidebar.css";
 
 @import url("./base/_utility.css");
 @import url("./modules/container.css");
