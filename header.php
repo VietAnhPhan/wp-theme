@@ -17,7 +17,7 @@
         <div class="pt-sm-6"><?php echo do_shortcode('[gtranslate]'); ?></div>
     </div> -->
     <header>
-        <div class="top-bar header__top-bar_primary_color header__top-bar header__top-bar__text_white header__top-bar__text_s">
+        <div class="top-bar header__top-bar_primary_color header__top-bar header__top-bar__text_white header__top-bar__text_s hidden-sm">
             <div class="container d-flex flex-md justify-between align-center flex-column-sm">
                 <div class="text_white">
                     <span class="header__top-bar__seperation header__top-bar__text_margin text-capitalize"> Bảo Vệ Việt Bảo Long</span>
@@ -26,6 +26,20 @@
                 </div>
                 <div class="d-flex align-center">
                     <span class="header__top-bar__seperation header__top-bar__text_margin"><a class="link text_white" href="#">Hồ sơ năng lực</a></span>
+                    <div class="multi-language"><?php echo do_shortcode('[gtranslate]'); ?></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-bar header__top-bar_primary_color header__top-bar header__top-bar__text_white header__top-bar__text_s hidden-lg">
+            <div class="container d-flex flex-md justify-between align-center flex-column-sm">
+                <div class="text_white">
+                    <span class="header__top-bar__text_margin text-capitalize header__top-bar__text_sm"> Bảo Vệ Việt Bảo Long</span>
+                    <!-- <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span> -->
+                    <i class="fa-solid fa-phone"></i><span class="header__top-bar__text_padding"><a class="link text_white header__top-bar__text_sm" href="tel:0966 673 288">0966 673 288</a></span>
+                </div>
+                <div class="d-flex align-center">
+                    <span class="header__top-bar__text_margin"><a class="link text_white header__top-bar__text_sm" href="#">Hồ sơ năng lực</a></span>
                     <div class="multi-language"><?php echo do_shortcode('[gtranslate]'); ?></div>
                 </div>
             </div>
@@ -45,11 +59,12 @@
             <div class="header__logo">
                 <a href="<?php echo site_url(); ?>" class="d-flex align-center link">
                     <?php
-                    $image_id = 54; // Replace with the ID of your image
-                    $logo_url = wp_get_attachment_image_src($image_id, 'full')[0];
+                    // $image_id = 54; 
+                    // $logo_url = wp_get_attachment_image_src($image_id, 'full')[0];
                     ?>
-                    <span><img class="header__logo-image" src="<?php echo esc_url($logo_url); ?>" alt="logo image"></span>
-                    <span class="text-uppercase header__logo-text text-lg">An ninh tiên phong</span>
+                    <span class="hidden-sm"><img class="header__logo-image" src="<?php echo esc_url('/wp-content/uploads/2025/03/huy-hieu-slogan-compressed.png'); ?>" alt="logo image"></span>
+                    <span class="hidden-lg"><img class="header__logo-image header__logo-sm-image" src="<?php echo esc_url('/wp-content/uploads/2025/03/huy-hieu.png'); ?>" alt="logo image"></span>
+                    <!-- <span class="text-uppercase header__logo-text text-lg">An ninh tiên phong</span> -->
                 </a>
             </div>
 

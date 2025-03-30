@@ -30,50 +30,72 @@ import { Odometer } from 'odometer_countup';
 
 export default class Counter {
     constructor() {
+        const counterStaff = document.querySelector("#counter__staffs");
+        if (counterStaff) {
+            const counterStaffs = new CountUp('counter__staffs', 2000, {
+                plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
+                duration: 1.5,
+                enableScrollSpy: true
+            });
+            if (!counterStaffs.error) {
+                counterStaffs.start();
+            } else {
+                console.error(counterStaffs.error);
+            }
 
-        const counterStaffs = new CountUp('counter__staffs', 2000, {
-            plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
-            duration: 1.5,
-            enableScrollSpy: true
-        });
-        if (!counterStaffs.error) {
-            counterStaffs.start();
-        } else {
-            console.error(counterStaffs.error);
         }
 
-        const counterCustomers = new CountUp('counter__customers', 1000, {
-            plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
-            duration: 1.5,
-            enableScrollSpy: true
-        });
-        if (!counterCustomers.error) {
-            counterCustomers.start();
-        } else {
-            console.error(counterCustomers.error);
+
+        const StaffId = document.querySelector("#counter__customers");
+
+        if (StaffId) {
+       
+
+            const counterCustomer = new CountUp('counter__customers', 1000, {
+                plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
+                duration: 1.5,
+                enableScrollSpy: true
+            });
+
+            if (!counterCustomer.error) {
+                counterCustomer.start();
+            } else {
+                console.error(counterCustomer.error);
+            }
         }
 
-        const counterBranches = new CountUp('counter__branches', 30, {
-            plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
-            duration: 1.5,
-            enableScrollSpy: true
-        });
-        if (!counterBranches.error) {
-            counterBranches.start();
-        } else {
-            console.error(counterBranches.error);
+
+        const branchesId = document.querySelector("#counter__branches");
+        if (branchesId) {
+
+
+            const counterBranches = new CountUp('counter__branches', 30, {
+                plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
+                duration: 1.5,
+                enableScrollSpy: true
+            });
+            if (!counterBranches.error) {
+                counterBranches.start();
+            } else {
+                console.error(counterBranches.error);
+            }
         }
 
-        const counterExperiences = new CountUp('counter__experiences', 10, {
-            plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
-            duration: 1.5,
-            enableScrollSpy: true
-        });
-        if (!counterExperiences.error) {
-            counterExperiences.start();
-        } else {
-            console.error(counterExperiences.error);
-        }
 
+        const experiencesId = document.querySelector("#counter__experiences");
+        if (experiencesId) {
+
+
+            const counterExperiences = new CountUp('counter__experiences', 10, {
+                plugin: new Odometer({ duration: 0.5, lastDigitDelay: 0 }),
+                duration: 1.5,
+                enableScrollSpy: true
+            });
+            if (!counterExperiences.error) {
+                counterExperiences.start();
+            } else {
+                console.error(counterExperiences.error);
+            }
+        }
     }
 }

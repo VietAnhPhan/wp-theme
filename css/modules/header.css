@@ -25,6 +25,10 @@ header {
     font-size: 13px;
 }
 
+.header__top-bar__text_sm {
+    font-size: 11.5px;
+}
+
 .header__top-bar__text_margin {
     margin-right: 30px;
     position: relative;
@@ -245,6 +249,10 @@ header {
 }
 
 .header__logo-image{
+    max-width: 460px;
+}
+
+.header__logo-sm-image{
     max-width: 60px;
 }
 
