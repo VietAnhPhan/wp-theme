@@ -249,7 +249,11 @@ header {
 }
 
 .header__logo-image{
-    max-width: 460px;
+    /* max-width: 460px; */
+
+    width: clamp(390px, 40vw, 460px);
+  
+    
 }
 
 .header__logo-sm-image{

@@ -97,6 +97,7 @@
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
+    row-gap: 30px;
 }
 
 

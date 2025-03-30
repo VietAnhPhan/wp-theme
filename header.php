@@ -70,7 +70,7 @@
 
 
             <div class="header__menu hidden-sm">
-                <ul class="d-flex header__menu-list align-center">
+                <ul class="d-flex header__menu-list align-center header__menu-list_no_padding">
                     <li class="header__menu-item"><a class="link header__menu-link" href="<?php echo site_url("/") ?>">Trang chủ</a></li>
                     <li class="header__menu-item"><a class="link header__menu-link" href="<?php echo site_url('/gioi-thieu') ?>">Giới thiệu</a></li>
                     <li class="header__menu-item position-relative">
