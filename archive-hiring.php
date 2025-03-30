@@ -3,7 +3,7 @@ get_header();
 ?>
 <?php
 pageBanner(array(
-    'title' => get_the_archive_title()
+    'title' => 'Tuyển Dụng'
 ));
 
 
