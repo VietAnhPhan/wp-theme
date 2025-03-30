@@ -175,7 +175,7 @@ header {
 .header__menu-mobile {
     position: absolute;
     /* left: 0; */
-    top: 103px;
+    top: 74px;
     background-color: var(--bg-primary);
     padding: 30px 25px;
     /* width: 280px; */

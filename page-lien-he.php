@@ -1,25 +1,35 @@
 <?php
 get_header();
 ?>
+
+
+
 <div class="page__banner_no_image blog overlay__black">
     <div class="container">
         <h1 class="text_white text-capitalize"><?php the_title(); ?></h1>
     </div>
 </div>
-<div class="container">
-    <?php
-     while (have_posts()) {
-        the_post(); ?>
 
-        <div class="post__info">
-            <div class="post-excerpt">
-                <?php echo get_the_content(); ?>
 
+<div class="section">
+    <div class="container">
+        <?php
+         while (have_posts()) {
+            the_post(); ?>
+    
+            <div class="post__info">
+                <div class="post-excerpt">
+                    <?php echo get_the_content(); ?>
+    
+                </div>
             </div>
-        </div>
-
-    <?php } ?>
+    
+        <?php } ?>
+    </div>
 </div>
+
+
+
 <div class="container flex gap-30 page-content container flex gap-30 flex-wrap-sm">
     <div class="flex-40">
         <div class="contact-page__box  p-20">

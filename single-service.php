@@ -25,29 +25,18 @@ pageBanner();
 
 <div class="container row">
     <div class="col-12 col-lg-9">
+
+
+
         <?php
-        while (have_posts()) {
-            the_post(); ?>
 
-            <?php the_post_thumbnail(); ?>
-            <div class="post__info">
-                <h2 class="post__title"><?php the_title(); ?></a></h2>
-                <div class="post-excerpt">
-                    <?php echo get_the_content(); ?>
-
-                </div>
-            </div>
-
-        <?php } 
-        
-        
-        
+        get_template_part('template-parts/post-content');
         relatedPosts();
-        
-        
+
+
         ?>
 
-        
+
 
 
     </div>

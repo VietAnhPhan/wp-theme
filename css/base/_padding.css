@@ -1,7 +1,7 @@
 :root{
     --section-padding-xs: 1rem;   /* 16px */
     --section-padding-sm: 2rem;   /* 32px */
-    --section-padding-md: 3rem;   /* 48px */
+    --section-padding-md: 30px;   /* 48px */
     --section-padding-lg: 4rem;   /* 64px */
     --section-padding-xl: 5rem;   /* 80px */
 }
@@ -43,4 +43,12 @@ h2{
 
 .mb-35{
     margin-bottom: 35px;
+}
+
+h5{
+    margin-top: 0;
+}
+
+.mt-0{
+    margin-top: 0;
 }
