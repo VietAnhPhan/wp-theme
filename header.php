@@ -22,7 +22,7 @@
                 <div class="text_white">
                     <span class="header__top-bar__seperation header__top-bar__text_margin text-capitalize"> Bảo Vệ Việt Bảo Long</span>
                     <!-- <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span> -->
-                    <i class="fa-solid fa-phone"></i><span class="header__top-bar__text_padding"><a class="link text_white" href="tel:0966 673 288">0966 673 288</a></span>
+                    <i class="fa-solid fa-phone"></i><span class="header__top-bar__text_padding"><a class="link text_white" href="tel:0961905659">0961905659</a></span>
                 </div>
                 <div class="d-flex align-center">
                     <span class="header__top-bar__seperation header__top-bar__text_margin"><a class="link text_white" href="#">Hồ sơ năng lực</a></span>
@@ -36,7 +36,7 @@
                 <div class="text_white">
                     <span class="header__top-bar__text_margin text-capitalize header__top-bar__text_sm"> Bảo Vệ Việt Bảo Long</span>
                     <!-- <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span> -->
-                    <i class="fa-solid fa-phone"></i><span class="header__top-bar__text_padding"><a class="link text_white header__top-bar__text_sm" href="tel:0966 673 288">0966 673 288</a></span>
+                    <i class="fa-solid fa-phone"></i><span class="header__top-bar__text_padding"><a class="link text_white header__top-bar__text_sm" href="tel:0961905659">0961905659</a></span>
                 </div>
                 <div class="d-flex align-center">
                     <span class="header__top-bar__text_margin"><a class="link text_white header__top-bar__text_sm" href="#">Hồ sơ năng lực</a></span>

@@ -6,7 +6,7 @@
 
             <p>T4/1M, khu phố Bình Thuận 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam</p>
 
-            <p>Hotline: 0966 673 288</p>
+            <p>Hotline: 0961905659</p>
 
             <p>Website: <?php echo home_url(); ?></p>
 
@@ -69,15 +69,15 @@
 
 <!-- <div class="contact__bubble">
     <a href="#" class="contact__bubble-zalo"><img class="contact__bubble-ring" src="<?php echo get_template_directory_uri(); ?>/assets/icons/iconzalo.png" alt="Zalo button"></a>
-    <a href="tel:0966 673 288" class="d-flex align-items-center contact__bubble-phone contact__bubble-phone align-center">
+    <a href="tel:0961905659" class="d-flex align-items-center contact__bubble-phone contact__bubble-phone align-center">
         <div class="ring-alo-phone-circle"></div>
         <img class="contact__bubble-ring contact__bubble-icon-phone" src="<?php echo get_template_directory_uri(); ?>/assets/icons/goi.png" alt="Phone button">
-        <span class="contact__bubble_phone-number">0966 673 288</span>
+        <span class="contact__bubble_phone-number">0961905659</span>
     </a>
 </div> -->
 
 <!-- <div class="contact__bar mobile flex">
-    <a href="tel:0966 673 288" class="flex align-items-center flex-1 flex-col text-center p-10">
+    <a href="tel:0961905659" class="flex align-items-center flex-1 flex-col text-center p-10">
 
         <img class="" src="<?php echo get_template_directory_uri(); ?>/assets/icons/goi.png" alt="Phone button">
         <span class="">Gọi ngay</span>

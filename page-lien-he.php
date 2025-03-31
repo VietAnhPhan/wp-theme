@@ -23,7 +23,7 @@ get_header();
                     <h5 class="d-flex align-center gap-10"><i class="fa-solid fa-location-dot"></i>THÔNG TIN LIÊN HỆ</h5>
                     <p>CÔNG TY TNHH DỊCH VỤ BẢO VỆ VIỆT BẢO LONG</p>
                     <p>Địa chỉ: T4/1M, khu phố Bình Thuận 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam</p>
-                    <p>Hotline: 0966 673 288</p>
+                    <p>Hotline: 0961905659</p>
                     <p>Website: baovevietbaolong.com</p>
                     <p>Email: thanhtamht0302@gmail.com</p>
                 </div>

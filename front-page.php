@@ -255,7 +255,7 @@ get_header();
             </div>
             <div class="col-12 col-lg-6 about__text-content mt-sm-35">
                 <h3 class="text_f7cf2b d-flex align-center"><img class="icon__logo_size_s" src="wp-content/uploads/2025/03/huy-hieu.png" alt="logo"><span class="text-2xl">&nbsp;UY TÍN TRỌN NIỀM TIN</span></h3>
-                <p>Đội ngũ nhân viên của Hoàng Thiên Hưng được tuyển dụng và đào tạo dựa trên những yêu cầu khắc khe như sau:</p>
+                <p>Đội ngũ nhân viên của Việt Bảo Long được tuyển dụng và đào tạo dựa trên những yêu cầu khắc khe như sau:</p>
                 <ul class="list-type_none">
                     <li class="d-flex text_blue text-bold about__text-content_li_margin_bottom">
                         <img class="icon__image_size_s" src="/wp-content/uploads/2025/03/006-medal-2-svg.png" alt="Icon">
@@ -337,9 +337,9 @@ get_header();
                 <button class="glide__bullet" data-glide-dir="=2"></button>
             </div>
         </div>
-    
+
     </div>
-    
+
 </div>
 
 <!-- =============== ĐỘI NGŨ TƯ VẤN DỊCH VỤ ========================= -->
@@ -384,7 +384,7 @@ get_header();
 
 
 <div class="su-menh bg-color-3 section">
-    <div class="container row align-items-center gap-10 content-inner flex-wrap align-center">
+    <div class="container row align-items-center content-inner flex-wrap align-center">
         <div class="flex-laptop left-hidden__section col-sm-6 col-12">
             <h2 class="text-bold main-color uppercase text_blue title__decoration_border_bottom_left title__section text-uppercase">SỨ MỆNH CỦA Việt Bảo Long</h2>
             <p>Ban Lãnh đạo Bảo Vệ việt bảo long xin gửi lời tri ân sâu sắc đến toàn thể Quý khách hàng, Cán bộ nhân viên, và cộng đồng xã hội đã tin tưởng hợp tác, sẻ chia và cùng nhau làm nên tập thể việt bảo long vững mạnh, đoàn kết như ngày nay. Chúng tôi xin cam kết:</p>
@@ -492,7 +492,66 @@ get_header();
 <!-- =========================TUYỂN DỤNG BẢO VỆ=================================== -->
 
 <div class="section">
-    <div class="container row">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <img class="box-shadow_blue" src="/wp-content/uploads/2025/03/banner-tuyen-dung-1.png" alt="">
+            </div>
+            <div class="col-12 col-lg-6">
+
+                <h2 class="text_blue">📣 TUYỂN DỤNG BẢO VỆ NAM/NỮ - CƠ HỘI VIỆC LÀM HẤP DẪN TẠI VIỆT BẢO LONG! 📣</h2>
+
+
+
+                <p>🛡️ Bạn đang tìm kiếm một công việc ổn định, môi trường làm việc chuyên nghiệp và cơ hội phát triển? Hãy gia nhập đội ngũ bảo vệ của CÔNG TY TNHH DỊCH VỤ BẢO VỆ VIỆT BẢO LONG! 🛡️</p>
+
+                <p>Chúng tôi đang mở rộng đội ngũ và tìm kiếm những ứng viên năng động, trách nhiệm và tận tâm cho vị trí Bảo vệ Nam/Nữ.</p>
+
+                <h3>👉 Tại sao bạn nên chọn VIỆT BẢO LONG?</h3>
+
+                <ul>
+                    <li>✔️ Chỉ cần CCCD đi làm ngay: 📄 Thủ tục đơn giản, nhanh chóng.</li>
+                    <li>✔️ Môi trường làm việc chuyên nghiệp: 🏢 Đội ngũ đồng nghiệp thân thiện, hỗ trợ.</li>
+                    <li>✔️ Phúc lợi xã hội đầy đủ: 🎁 BHXH, BHYT, BHTN và các chế độ đãi ngộ khác theo quy định.</li>
+                    <li>✔️ Đào tạo và cơ hội thăng tiến: 📚 Được đào tạo nghiệp vụ bài bản và có lộ trình phát triển rõ ràng.</li>
+                </ul>
+
+
+                <h3>📝 Mô tả công việc:</h3>
+
+                <ul>
+                    <li>Đảm bảo an ninh trật tự tại khu vực được phân công.</li>
+                    <li>Kiểm soát người và phương tiện ra vào.</li>
+                    <li>Tuần tra, giám sát và phát hiện các hành vi vi phạm.</li>
+                    <li>Hỗ trợ khách hàng và giải quyết các sự cố phát sinh.</li>
+                    <li>Thực hiện các nhiệm vụ khác theo yêu cầu của cấp trên.</li>
+                </ul>
+                <!-- <h3>🎯 Yêu cầu ứng viên:</h3> -->
+                <!-- <ul>
+                    <li>Nam/Nữ tuổi từ 18 trở lên.</li>
+                    <li>Có sức khỏe tốt, lý lịch rõ ràng.</li>
+                    <li>Ưu tiên ứng viên có kinh nghiệm trong lĩnh vực bảo vệ.</li>
+                    <li>Có tinh thần trách nhiệm cao, trung thực, nhanh nhẹn.</li>
+                    <li>Có khả năng giao tiếp cơ bản.</li>
+                 
+                </ul>
+                <h3>🚀 Cách thức ứng tuyển:</h3>
+                <ul>
+                    <li>📞 Liên hệ ngay Hotline: 0966 673 288</li>
+                    <li>🌐 Hoặc truy cập website: <a href="http://www.baovevietbaolong.com">www.baovevietbaolong.com</a></li>
+                    <li>🏢 Hoặc đến trực tiếp tại: CÔNG TY TNHH DỊCH VỤ BẢO VỆ VIỆT BẢO LONG</li>
+                    <li>T4/1M, khu phố Bình Thuận 2, Phường Thuận Giao, Thành phố Thuận An, Tỉnh Bình Dương, Việt Nam</li>
+                </ul> -->
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="container row">
         <div class="col-12 col-lg-4">
             <img class="box-shadow_blue" src="/wp-content/uploads/2025/03/banner-tuyen-dung-1.png" alt="">
         </div>
@@ -530,7 +589,7 @@ get_header();
 
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
 
 <!-- =========================KHÁCH HÀNG NÓI GÌ VỀ=================================== -->
@@ -541,7 +600,7 @@ get_header();
             <div class="col-12 col-lg-6">
                 <p class="text_f7cf2b text-uppercase text-bold text__mb_12">Giải pháp an ninh</p>
                 <p class="text-2xl text_white text-extra-bold text__mb_12">Giải pháp an ninh tốt nhất cho doanh nghiệp của bạn</p>
-                <p class="text-sm text_white">Đến với Hoàng Thiên Hưng, chúng tôi sẽ tư vấn và đưa ra giải pháp tối ưu nhất để đảm bảo an toàn tính mạng tài sản cho doanh nghiệp của bạn một cách toàn diện.</p>
+                <p class="text-sm text_white">Đến với Việt Bảo Long, chúng tôi sẽ tư vấn và đưa ra giải pháp tối ưu nhất để đảm bảo an toàn tính mạng tài sản cho doanh nghiệp của bạn một cách toàn diện.</p>
                 <button class="text-uppercase button_default">tư vấn ngay</button>
             </div>
             <div class="col-12 col-lg-6 position-relative">
@@ -579,10 +638,10 @@ get_header();
                     <div class="bg-white overflow-hidden glide__slide content-box__padding_30 box-shadow_white mb-35">
                         <div class="customer__content-box">
                             <p class="text-bold text-center text-xl customer__content-box_title"><em class="text-565968"><?php the_content(); ?></em></p>
-    
+
                         </div>
                         <div class="d-flex align-center gap-20">
-    
+
                             <?php the_post_thumbnail('full', array('class' => 'icon__customer')) ?>
                             <div class="d-flex flex-column">
                                 <span class="text_blue text-bold"><?php the_title(); ?></span>
@@ -604,7 +663,7 @@ get_header();
 <div class="lien-he-ve-chung-toi bg-0b3a94 section">
     <div class="row justify-between align-center container text_white">
         <div class="contact__text flex-75">
-            <h2 class="page__title third-color text-2xl">Liên Hệ Với Chúng Tôi: 0966 673 288</h2>
+            <h2 class="page__title third-color text-2xl">Liên Hệ Với Chúng Tôi: 0961905659</h2>
             <p class="third-color text-xl">Việt Bảo Long hân hạnh được hợp tác với các Khách Hàng tiêu biểu</p>
         </div>
         <div class="contact__btn flex-25">
