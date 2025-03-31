@@ -688,7 +688,7 @@ get_header();
                     </div>
                     <input type="email" name="email" id="email" placeholder="Email" required>
                     <input type="text" name="address" id="địa chỉ" placeholder="Địa chỉ">
-                    <textarea name="message_content" id="message" cols="30" rows="10" placeholder="Nội dung"></textarea>
+                    <textarea name="message_content" id="message" cols="30" rows="3" placeholder="Nội dung"></textarea>
                     <button class="btn">Gửi yêu cầu</button>
                 </form>
             </div>

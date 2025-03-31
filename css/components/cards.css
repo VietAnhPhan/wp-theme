@@ -45,11 +45,13 @@
 
 .key-feature-card_margin-left {
     margin-left: 2rem;
+
 }
 
 
 .key-feature-card_margin-right {
     margin-right: 2rem;
+
 }
 
 .key-feature-card__icon {
@@ -91,4 +93,18 @@
 
 .project-card:hover .project-card__content_absolute{
     bottom: 1.5rem;
+}
+
+@media (min-width:1400px){
+    .key-feature-card_margin-left {
+        /* margin-left: 2rem; */
+        margin-right: -1rem;
+    }
+    
+    
+    .key-feature-card_margin-right {
+        /* margin-right: 2rem; */
+        margin-left: -1rem;
+    }
+    
 }

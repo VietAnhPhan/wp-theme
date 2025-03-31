@@ -127,7 +127,7 @@ function custom_form_admin_menu()
 {
     add_menu_page(
         'Form Submissions',
-        'Form Data',
+        'Form Khách Hàng',
         'manage_options',
         'custom-form-submissions',
         'display_custom_form_submissions',
