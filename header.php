@@ -17,25 +17,25 @@
         <div class="pt-sm-6"><?php echo do_shortcode('[gtranslate]'); ?></div>
     </div> -->
     <header>
-        <div class="top-bar header__top-bar_primary_color header__top-bar header__top-bar__text_white header__top-bar__text_s hidden-sm">
+        <div class="top-bar header__top-bar_primary_color header__top-bar header__top-bar__text_white header__top-bar__text_s">
             <div class="container d-flex flex-md justify-between align-center flex-column-sm">
                 <div class="text_white">
-                    <span class="header__top-bar__seperation header__top-bar__text_margin text-capitalize"> Bảo Vệ Việt Bảo Long</span>
+                    <span class="header__top-bar__seperation_lg header__top-bar__text_margin text-capitalize"> Bảo Vệ Việt Bảo Long</span>
                     <!-- <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span> -->
                     <i class="fa-solid fa-phone"></i><span class="header__top-bar__text_padding"><a class="link text_white" href="tel:0961905659">0961905659</a></span>
                 </div>
                 <div class="d-flex align-center">
-                    <span class="header__top-bar__seperation header__top-bar__text_margin"><a class="link text_white" href="#">Hồ sơ năng lực</a></span>
+                    <span class="header__top-bar__seperation_lg header__top-bar__text_margin"><a class="link text_white" href="#">Hồ sơ năng lực</a></span>
                     <div class="multi-language"><?php echo do_shortcode('[gtranslate]'); ?></div>
                 </div>
             </div>
         </div>
 
-        <div class="top-bar header__top-bar_primary_color header__top-bar header__top-bar__text_white header__top-bar__text_s hidden-lg">
+        <!-- <div class="top-bar header__top-bar_primary_color header__top-bar header__top-bar__text_white header__top-bar__text_s hidden-lg">
             <div class="container d-flex flex-md justify-between align-center flex-column-sm">
                 <div class="text_white">
                     <span class="header__top-bar__text_margin text-capitalize header__top-bar__text_sm"> Bảo Vệ Việt Bảo Long</span>
-                    <!-- <span>An ninh tiên phong, bảo vệ chuyên nghiệp</span> -->
+                    
                     <i class="fa-solid fa-phone"></i><span class="header__top-bar__text_padding"><a class="link text_white header__top-bar__text_sm" href="tel:0961905659">0961905659</a></span>
                 </div>
                 <div class="d-flex align-center">
@@ -43,7 +43,7 @@
                     <div class="multi-language"><?php echo do_shortcode('[gtranslate]'); ?></div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="search-overlay search-overlay_top container-fluid d-flex flex-column justify-center align-center">
             <div class="container text-center">
                 <i class="fa-solid fa-magnifying-glass search-overlay__icon" aria-hidden="true"></i>
